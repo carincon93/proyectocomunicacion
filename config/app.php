@@ -3,7 +3,7 @@
 	session_start();
 
 	//Assets Publics
- 	$base_url     = "http://localhost/proyectobienestar/";
+ 	$base_url     = "http://localhost/proyectocomunicacion/";
  	$assets_css   = $base_url."public/css/";
  	$assets_js    = $base_url."public/js/";
  	$assets_imgs  = $base_url."public/imgs/";
