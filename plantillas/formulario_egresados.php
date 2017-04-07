@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Formulario</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="js/jquery-3.1.1.js">
-</head>
-<body>
+<?php 
+	include '../config/app.php';
+	include '../templates/header.inc';
+	include '../config/conexion.php';
 
+ ?>
 	<h1 class="text-center">Formulario Egresados</h1>
 	<hr>
 	<a href="gestion_empleado.php" class="btn btn-danger"><i class="fa fa-arrow-left" aria-hidden="true"></i>Volver</a>
@@ -148,35 +142,52 @@
 		<input class="btn btn-danger" type="reset" value="Borrar">
 	</form>
 	</div>
+<?php 
+	if ($_POST) {
+	    $nombre =$_POST["nombre"];
+	    $centro = $_POST["centro"];
+	    $plan = $_POST["plan"];
+	    $gestor = $_POST["gestor"];
+	    $regional = $_POST["regional"];
+	    $consecutivo = $_POST["consecutivo"];
+	    $fecha_elaboracion = $_POST["fecha_elaboracion"];
+	    $fase = $_POST["fase"];
+	    $actividad = $_POST["actividad"];
+	    $responsable = $_POST["responsable"];
+	    $resultado = $_POST["resultado"];
+	    $fecha_proyectada = $_POST["fecha_proyectada"];
+	    $fecha_ejecutada = $_POST["fecha_ejecutada"];
+	    $observaciones = $_POST["observaciones"];
 
 
 
-	<script src="js/jquery-3.1.1.js"></script>
-	<script>
-		$(document).ready(function() {
+	    if ($nombre != '' && $centro != '' && $plan != '' && $gestor != '' && $regional != '' && $consecutivo != '' && $fecha_elaboracion != '' && $fase != '' && $actividad != '' && $responsable != '' && $resultado != '' && $fecha_proyectada != '' && $fecha_ejecutada != '' && $observaciones != '') {
+	    
+	      $sql = "INSERT INTO form_asesorias VALUES ('',
+	      '$nombre', 
+	      '$centro', 
+	      '$plan', 
+	      '$gestor', 
+	      '$regional', 
+	      '$consecutivo', 
+	      '$fecha_elaboracion', 
+	      '$fase', 
+	      '$actividad',
+	      '$responsable', 
+	      '$resultado', 
+	      '$fecha_proyectada', 
+	      '$fecha_ejecutada', 
+	      '$observaciones')";
 
+	      $row=mysqli_query($con,$sql);
+                if ($row) {
+                    echo "<script>alert('User registered successfully....');</script>";
+                
 
-			$('#regionales').change(function(event) {
-				$marca = parseInt($(this).val());
-
-				if($marca != 0) {
-					$.get('centros.php',{ marca: $marca}, function(data) {
-						console.log(data);
-
-						$('#referencias').hide();
-						setTimeout(function() {
-
-							$('#referencias').removeAttr('disabled');
-							$('#referencias').show().html(data);
-						}, 1000);
-						
-					});
-				} else {
-					alert('Debe seleccionar un centro de formacion');
-				}
-				
-			});
-		});
-	</script>
-</body>
-</html>
+            } else {
+	          echo "<script>alert('Error al realizar la consulta!');</script>";
+	      	}
+	    }
+	}
+?>
+<?php include '../templates/footer.inc';?>
