@@ -1,88 +1,89 @@
 <?php 
+	include '../config/app.php';
 	include '../templates/header.inc';
+	include '../config/conexion.php';
 
  ?>
 	<div class="container-fluid dashboard">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12 ">
 		      	<h4 class="text-uppercase">SERVICIO NACIONAL DE APRENDIZAJE SENA</h4>
 		      	<hr>
 		      	<form method="POST" enctype="multipart/form-data">
 			        <div>
 			          <label>PROGRAMA DE FORMACIÓN:</label>
-			          <input type="text" name="programa_formacion" class="form-control" data-validation="required">
+			          <input type="text" name="programa_formacion" data-validation="required">
 			        </div>
 			        <div>
-			          	<label>REGIONAL::</label>
-			          	<input type="text" name="regional" class="form-control" data-validation="required">
+			          	<label>REGIONAL:</label>
+			          	<input type="text" name="regional" data-validation="required">
 			        </div>
 			        <div>
 			          <label>CENTRO DE FORMACIÓN: </label>
-			          <input type="number" name="centro_formacion" class="form-control" data-validation="required">
+			          <input type="text" name="centro_formacion" data-validation="required">
 			        </div>  
-			        <div>
-			          <label>TELEFONO</label>
-			          <input type="number" name="telefono" class="form-control" data-validation="required">
+			        <br><br>
+			        <div class="row">
+			        	
+				        	<div class="col-md-2">
+						          <label>REGIONAL-CENTRO DE FORMACIÓN</label>
+						          <input type="text" name="regional_centro"  data-validation="required">
+				        	</div>
+				        	<div class="col-md-2">
+						          <label>NOMBRE DEL GRUPO</label>
+						          <input type="text" name="nombre_grupo"  data-validation="required">
+				        	</div>
+					        <div class="col-md-2">
+					          <label>AREA DE INVESTIGACIÓN</label>
+					          <input type="text" name="area_investigacion"  data-validation="required">
+					        </div>
+					        <div class="col-md-2">
+					          <label>LÍNEAS DE INVESTIGACIÓN</label>
+					          <input type="text" name="lineas_investigacion"  data-validation="required">
+					        </div>
+					        <div class="col-md-2">
+					          <label>INVESTIGADOR PRINCIPAL</label>
+					          <input type="text" name="investigador_principal"  data-validation="required">
+					        </div>
+					        <div class="col-md-2">
+					          <label>CÓDIGO Y CATEGORIA EN COLCIENCIAS </label>
+					          <input type="text" name="codigo_categoria"  data-validation="required">
+					        </div>
 			        </div>
-			        <div>
-			          <label>OBSERVACIONES</label>
-			          <input type="text" name="observaciones" class="form-control" data-validation="required">
-			        </div>
-			        <div>
-			          <label>Estrato</label>
-			          <input type="number" name="estrato" class="form-control" data-validation="required">
-			        </div>
-			        <button type="submit" class="btn btn-success">Enviar</button>
-			        <button type="reset" class="btn btn-info">Borrar</button>
-			        <a class="btn btn-primary" href="index.php">Volver</a>
+			        <br><br>
+				    <button type="submit" class="btn btn-success">Enviar</button>
+				    <button type="reset" class="btn btn-info">Borrar</button>
+				    <a class="btn btn-primary" href="index.php">Volver</a>
 			      </form>
 		    </div>
 		</div>
 	</div>
 <?php 
 	if ($_POST) {
-	    $nombre_completo =$_POST["nombre_completo"];
-	    $tipo_documento = $_POST["tipo_documento"];
-	    $numero_documento = $_POST["numero_documento"];
-	    $direccion = $_POST["direccion"];
-	    $barrio = $_POST["barrio"];
-	    $estrato = $_POST["estrato"];
-	    $telefono = $_POST["telefono"];
-	    $email = $_POST["email"];
-	    $programa_formacion = $_POST["programa_formacion"];
-	    $numero_ficha = $_POST["numero_ficha"];
-	    $jornada = $_POST["jornada"];
-	    $dep1 = $_POST["dep1"];
-	    $dep2 = $_POST["dep2"];
-	    $dep3 = $_POST["dep3"];
-	    $apoyo = $_POST["apoyo"];
-	    $compromiso = $_POST["compromiso"];
-	    $especificacion_suplemento = $_POST["especificacion_suplemento"];
-	    $cod_aprendiz = $_POST["cod_aprendiz"];
+	    $programa_formacion =$_POST["programa_formacion"];
+	    $regional = $_POST["regional"];
+	    $centro_formacion = $_POST["centro_formacion"];
+	    $regional_centro = $_POST["regional_centro"];
+	    $nombre_grupo = $_POST["nombre_grupo"];
+	    $area_investigacion = $_POST["area_investigacion"];
+	    $lineas_investigacion = $_POST["lineas_investigacion"];
+	    $investigador_principal = $_POST["investigador_principal"];
+	    $codigo_categoria = $_POST["codigo_categoria"];
 
 
 
-	    if ($nombre_completo != '' && $tipo_documento != '' && $numero_documento != '' && $direccion != '' && $barrio != '' && $estrato != '' && $telefono != '' && $email != '' && $programa_formacion != '' && $numero_ficha != '' && $jornada != '' && $dep1 != '' && $dep2 != '' && $dep3 != '' && $apoyo != '' && $compromiso != '' && $especificacion_suplemento != '' && $cod_aprendiz != '') {
+	    if ($programa_formacion != '' && $regional != '' && $centro_formacion != '' && $regional_centro != '' && $nombre_grupo != '' && $area_investigacion != '' && $lineas_investigacion != '' && $investigador_principal != '' && $codigo_categoria != '') {
 	    
-	      $sql = "INSERT INTO aprendices VALUES ('',
-	      '$nombre_completo', 
-	      '$tipo_documento', 
-	      '$numero_documento', 
-	      '$direccion', 
-	      '$barrio', 
-	      '$estrato', 
-	      '$telefono', 
-	      '$email', 
+	      $sql = "INSERT INTO investigacion VALUES ('',
 	      '$programa_formacion', 
-	      '$numero_ficha', 
-	      '$jornada', 
-	      '$dep1', 
-	      '$dep2', 
-	      '$dep3', 
-	      '$apoyo', 
-	      '$compromiso', 
-	      '$especificacion_suplemento', 
-	      '$cod_aprendiz',default)";
+	      '$regional', 
+	      '$centro_formacion', 
+	      '$regional_centro', 
+	      '$nombre_grupo', 
+	      '$area_investigacion', 
+	      '$lineas_investigacion', 
+	      '$investigador_principal', 
+	      '$codigo_categoria')";
 
 	      $row=mysqli_query($con,$sql);
                 if ($row) {
