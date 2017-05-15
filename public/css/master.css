@@ -9,6 +9,10 @@ li { list-style: none; }
 ul { 
   margin: 0;
   padding: 0; }
+
+  p{
+    margin: 0;
+  }
 body {
 	font-family: zurich-bt;
 	font-size: 15px;
@@ -325,7 +329,8 @@ body {
 .fcinfo nav ul li { display: inline-block; }
 .social-networks ul { 
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 15px; }
 .social-networks ul li a {
   border: 1px solid;
   border-radius: 50%;
@@ -339,17 +344,32 @@ body {
 }
 
 footer { 
-  background-color: #333;
+  background: rgba(35,130,118, 0.6);
+  /*background: -webkit-linear-gradient(top, #8EB8B3, #FFF);*/
   color: #fff;
-  padding: 4rem 5rem 0; }
+  padding: 3rem 5rem 0; }
 
   footer div.container { margin-bottom: 2rem; }
 
-  .footer-info ul li {
-    margin-bottom: 2rem;
-  }
+
   .footer-info ul li span { 
     width: 10rem; }
+  .footer-info {
+    margin-left: 6rem;
+  }
+
+    .informacion{
+      font-size: 13px;
+     
+    }
+    .logo_footer{
+      width: 100%;
+    }
+    .logosena{
+         width: 115px;
+        height: 111px;
+        margin-top: 40px;
+    }
 .view-first img { width: 100%; }
 
 .view {
