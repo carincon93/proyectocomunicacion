@@ -69,9 +69,20 @@
 				<div class="container">
 					<div class="row">
 						<article class="col-md-6 p">
-							<div class="about-inner">
+							<div class="about-inner nosotros">
 								<h1 class="text-center "">Sobre <strong class="stitle2">Nosotros</strong></h1>
 								<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium veniam quae rerum nemo deleniti aliquam sint aperiam possimus illo? Inventore repellat eius nihil minima reiciendis a id, vel, consequuntur obcaecati, cupiditate perspiciatis. Alias dicta nobis, sint tenetur, exercitationem voluptate consectetur ipsam facilis, numquam eum, animi enim cumque minima. Cupiditate, laudantium!</p>
+								<button class="btn btn-default" id="btnObjetivos">Objetivos Estrategicos</button>
+							</div>	
+							<div class="about-inner objetivos">
+								<h1 class="text-center ">Objetivos <strong class="stitle2">Estrategicos</strong></h1>
+								<p class="">• Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.</p>
+								<p>• Fortalecer el relacionamiento con el sector productivo y gubernamental para diseño e implementación de políticas, estrategias y programas que dinamicen la competitividad y productividad empresarial. 
+								</p>
+								<p>• Establecer alianzas a nivel internacional para fortalecer las capacidades del talento humano de la Red.</p>
+								<p>• Desarrollar actividades que permitan definir las líneas temáticas de los semilleros de investigación para incursionar en la estrategia Sennova y el sector externo, apoyando los centros asociados a la red.
+								</p>								
+								<button class="btn btn-default text-center" id="btnNosotros">Nosotros</button>
 							</div>	
 						</article>
 						<article class="col-md-4 slider">
@@ -463,6 +474,19 @@
 			$('#btnMision').click(function(event) {
 				$('.vision').fadeOut('slow/400/fast', function() {
 					$('.mision').fadeIn('slow/400/fast', function() {});
+				});
+				
+			});
+
+			$('.objetivos').hide();
+			$('#btnObjetivos').click(function(event) {
+				$('.nosotros').fadeOut('slow/400/fast', function() {
+					$('.objetivos').fadeIn('slow/400/fast', function(){});
+				});
+			});
+			$('#btnNosotros').click(function(event) {
+				$('.objetivos').fadeOut('slow/400/fast', function() {
+					$('.nosotros').fadeIn('slow/400/fast', function() {});
 				});
 				
 			});
