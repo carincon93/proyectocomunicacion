@@ -2,7 +2,10 @@
 	font-family: zurich-bt;
 	src: url(../fonts/zurich-bt.TTF);
 }
-a[href] { text-decoration: none; }
+body {
+  font-family: zurich-bt !important;
+}
+a[href=""] { text-decoration: none; }
 input { display: block; }
 input:focus { outline: none; }
 li { list-style: none; }
@@ -29,28 +32,11 @@ body {
   background: #fff;
   display: none;
   position: fixed;
-  height: 51px;
+  height: 7.5rem;
   width: 100%;
   z-index: 2;
 }
-.navbar-index {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-.navbar-index-scroll {
-  display: block;
-}
-.navbar-index .navbar-links {
-	display: flex;
-  justify-content: space-between;
-}
-.navbar-index .navbar-links li{
-	padding: 15px;
-}
-.navbar-index .navbar-links li a{
-	color: #fff;
-}
+
 .navbar-brand {
 	flex: 1;
   text-align: center;
@@ -188,16 +174,11 @@ body {
   height: 40rem;
 }*/
 /*.info article { flex: 1; }*/
-.noticias div  {
-  color: #969696;
-}
+.noticias div  { color: #969696; }
 .about-inner
 {
     color: #333;
     padding: 3rem;
-    height: 500px;
-    vertical-align: top;
-    width: 600px;
 }
 .about-inner h1 {
   font-size: 5rem;
@@ -262,7 +243,6 @@ body {
 .encuestas {
   background: linear-gradient(135deg, rgba(35,130,118,0.6) 0%, rgba(51,51,51,0.3) 100%);
   color: #fff;
-  height: 80vh;
   margin-top: 10rem;
   padding: 4rem 0;
 }
@@ -334,11 +314,11 @@ body {
   margin-bottom: 1.5rem;
   width: 100%;  }
 .fcinfo nav ul li { display: inline-block; }
-.social-networks ul { 
+.icontec ul { 
   display: flex;
   justify-content: space-around;
   padding: 15px; }
-.social-networks ul li a {
+.icontec ul li a {
   border: 1px solid;
   border-radius: 50%;
   color: #69a740;
@@ -354,7 +334,7 @@ footer {
   background: rgba(35,130,118, 0.6);
   /*background: -webkit-linear-gradient(top, #8EB8B3, #FFF);*/
   color: #fff;
-  padding: 3rem 5rem 0; }
+  padding: 3rem 0; }
 
   footer div.container { margin-bottom: 2rem; }
 
@@ -587,10 +567,10 @@ footer {
 .nav-arrows a {
   width: 42px;
   height: 42px;
-  background: #06b3a1 url(../imgs/nav.png) no-repeat top left;
+  background: #cbbfae url(../imgs/nav.png) no-repeat top left;
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 2px;
   text-indent: -9000px;
   cursor: pointer;
   margin-top: -21px;
@@ -601,7 +581,7 @@ footer {
 
 .nav-arrows a:first-child{
   left: auto;
-  right: 15px;
+  right: 2px;
   background-position: top right;
 }
 
@@ -644,15 +624,15 @@ footer {
   width: 70px;
   height: 30px;
   position: absolute;
-  right: 45%;
-  bottom: 70px;
+  right: 70px;
+  bottom: 0px;
   display: none;
 }
 
 .nav-options span {
   width: 30px;
   height: 30px;
-  background: #fc7323 url(../imgs/options.png) no-repeat top left;
+  background: #cbbfae url(../imgs/options.png) no-repeat top left;
   text-indent: -9000px;
   cursor: pointer;
   opacity: 0.7;
@@ -668,28 +648,6 @@ footer {
 .nav-options span:hover {
   opacity: 1;
 }
-.btng {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 15px 80px;
-  display: inline-block;
-  margin: 5px 50px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-
-
 
 /*Maicol*/|
 .slider{
@@ -701,7 +659,7 @@ footer {
 .espu {
   margin-top: 10px;
 }
-.desplegable {
+/*.desplegable {
   width: 180px;
 }
 .desplegable ul{
@@ -711,4 +669,49 @@ footer {
 .desplegable:hover ul{
   display: block;
 
+}*/
+
+/*Navbar Index*/
+.navbar-index {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
+.navbar-index-scroll {
+  display: block;
+}
+.navbar-index .navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-index .navbar-links li, .login-link { padding: 2rem; }
+.login-link { float: right; }
+.login-link a { float: right; }
+.navbar-index .navbar-links li a{
+  color: #fff;
+}
+.nav-logo, .navbar-links { float: left; }
+.nav-logo { 
+  display: inline-block;
+  padding: 0 15px;
+  width: 22%;
+}
+.ltext {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+.ltext span { display: block; }
+.login-link a { text-decoration: none; }
+
+.social-networks {
+  position: fixed;
+  left: 0;
+  top: 28%;
+  z-index: 999;
+}
+.social-networks a { 
+  display: block;
+  font-size: 4rem;
+  padding: 2rem; }

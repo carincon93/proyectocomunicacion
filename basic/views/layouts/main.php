@@ -25,40 +25,6 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <nav class="sec"></nav>
-    <nav class="navbar-index">
-        <ul class="navbar-links">
-            <li>
-                <a class="" href="#about-section">Inicio</a>
-            </li>
-            <li>
-                <a href="#about-section">Ambientes</a>
-            </li>
-            <li>
-                <a href="#about-section">Instructores</a>
-            </li>
-            <li>
-                <a href="#about-section">Catalogo Información</a>
-            </li>
-            <li class="desplegable">
-                <a href="#about-section">Plan Estrategico</a>
-                <ul class="mostrar">
-                    <li>Plan de Acción</li>
-                    <!-- <li>Plan de Modernizacion Tecnologica</li> -->
-                </ul>
-            </li>
-            <li>
-                <a href="#contactanos">PQRS</a>
-            </li>
-            <li>
-                <a href="#contactanos">Contáctanos</a>
-            </li>
-            <li>
-                <a class="cd-nav-trigger" href="javascript:void(0)">Iniciar Sesión</a>
-            </li>
-        </ul>
-    </nav>
-
 
     <!-- <?php
     NavBar::begin([
@@ -136,19 +102,19 @@ AppAsset::register($this);
                 </nav>                  
             </div>
             <div class="col-md-5">
-                <nav class="social-networks">
+                <nav class="icontec">
                     <ul>
                         <li>
-                            <img class="social_networks" src="imgs/icontecA.png" alt="">
+                            <img src="imgs/icontecA.png" alt="">
                         </li>
                         <li>
-                            <img class="social_networks" src="imgs/icontecB.png" alt="">
+                            <img src="imgs/icontecB.png" alt="">
                         </li>
                         <li>
-                            <img class="social_networks" src="imgs/icontecC.png" alt="">
+                            <img src="imgs/icontecC.png" alt="">
                         </li>
                         <li>
-                            <img class="social_networks" src="imgs/icontecD.png" alt="">
+                            <img src="imgs/icontecD.png" alt="">
                         </li>
                     </ul>
 

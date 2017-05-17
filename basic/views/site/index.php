@@ -4,14 +4,51 @@
 
 $this->title = 'Red de Conocimiento SENA';
 ?>
+<nav class="sec"></nav>
+<nav class="navbar-index">
+    <div class="nav-logo">
+        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/navl.svg" alt="" width="20%">
+        <h6 class="ltext">Red de Conocimiento <span>Gestión de la Producción</span></h6>
+    </div>
+    <ul class="navbar-links">
+        <li>
+            <a href="#about-section">Ambientes</a>
+        </li>
+        <li>
+            <a href="#about-section">Catalogo Información</a>
+        </li>
+        <li class="desplegable">
+            <a href="#about-section">Plan Estrategico</a>
+            <!--<ul class="mostrar">
+                 <li>Plan de Acción</li>
+               <li>Plan de Modernizacion Tecnologica</li> 
+            </ul>-->
+        </li>
+        <li>
+            <a href="#contactanos">PQRS</a>
+        </li>
+        <li>
+            <a href="#contactanos">Contáctanos</a>
+        </li>
+    </ul>
+    <div class="login-link">
+        <a href="javascript:void(0)" class="cd-nav-trigger" >Iniciar Sesión</a>        
+    </div>
+</nav>
+<div class="social-networks">
+    <a href=""><i class="fa fa-facebook"></i></a>
+    <a href=""><i class="fa fa-twitter"></i></a>
+    <a href=""><i class="fa fa-instagram"></i></a>
+    <a href=""><i class="fa fa-google-plus"></i></a>
+</div>
 <header class="hero">
     <div class="overlay">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 769.59 394.99"><title>asset1</title><circle cx="654" cy="195.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="238" cy="385.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="364" cy="18.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="51" cy="27.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="575" cy="376.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="424" cy="223.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="686" cy="325.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="9" cy="136.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="663" cy="18.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="536" cy="103.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><polyline points="535.5 103.49 662.5 18.49 768.5 179.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.20000000298023224;isolation:isolate"/><polyline points="768.5 179.49 654 195.99 536 103.99 364 18.99 51.5 27.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.20000000298023224;isolation:isolate"/><polyline points="769.5 0.49 8.5 137.49 685.5 326.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.10000000149011612;isolation:isolate"/><polyline points="663.5 19.49 652 195.99 574.5 376.49 238.5 386.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.07000000029802322;isolation:isolate"/><polyline points="652.5 196.49 423.5 224.49 574.5 377.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.20000000298023224;isolation:isolate"/><line x1="423.5" y1="224.49" x2="536.5" y2="104.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10"/></svg>
     </div>
     <div class="container-fluid conocimiento-wrap">
         <article class="article-conocimiento">
-            <img class="redsena-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/redsena-logo.png">
-            <p><strong>Descripción</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit illo rem id molestiae, quaerat, omnis! Quibusdam, enim, ex veniam, architecto sunt quaerat et saepe distinctio odit id atque aliquid animi ad dicta excepturi possimus ea nisi quia recusandae. Neque, nam.</p>
+            <!-- <img class="redsena-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/redsena-logo.png"> -->
+            <p><strong>Descripción: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit illo rem id molestiae, quaerat, omnis! Quibusdam, enim, ex veniam, architecto sunt quaerat et saepe distinctio odit id atque aliquid animi ad dicta excepturi possimus ea nisi quia recusandae. Neque, nam.</p>
         </article>
     </div>
     <div class="triangles">
@@ -26,25 +63,17 @@ $this->title = 'Red de Conocimiento SENA';
             <div id="about-section" class="info">
                 <div class="container">
                     <div class="row">
-                        <article class="col-md-6 p">
+                        <article class="">
                             <div class="about-inner">
-                                <h1 class="text-center "">Sobre <strong class="stitle2">Nosotros</strong></h1>
-                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium veniam quae rerum nemo deleniti aliquam sint aperiam possimus illo? Inventore repellat eius nihil minima reiciendis a id, vel, consequuntur obcaecati, cupiditate perspiciatis. Alias dicta nobis, sint tenetur, exercitationem voluptate consectetur ipsam facilis, numquam eum, animi enim cumque minima. Cupiditate, laudantium!</p>
-                            </div>  
-                        </article>
-                        <article class="col-md-4 slider">
-                            <div class="about-inner mision">
                                 <h1 class="text-center " data-scrollreveal="enter right over 3s after 2.5s">Nuestra <strong class="stitle2">Mision</strong></h1>
                                 <p class="">Articula la respuesta institucional en las áreas temáticas de gestión de operaciones industriales, propendiendo por el logro de estándares internacionales de productividad, garantizando calidad y pertinencia de la formación profesional.
                                 </p>
-                                <button class="btn btn-default text-center" id="btnVision">Vision</button>
-
                             </div>
-                            <div class="about-inner vision">
-                                <h1 class="text-center ">Nuestra <strong class="stitle2">Visión</strong></h1>
+                        </article>
+                        <article>                        
+                            <div class="about-inner">
+                                <h1 class="text-center">Nuestra <strong class="stitle2">Visión</strong></h1>
                                 <p class="">Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector productivo.</p>
-                                <button class="btn btn-default text-center" id="btnMision">Mision</button>
-
                             </div>
                         </article>      
                     </div>
@@ -209,58 +238,6 @@ $this->title = 'Red de Conocimiento SENA';
 
                 </nav>
                 
-            </div>
-        </section>
-        <section class="galeria">
-            <h1 class="text-center gtitle">Galería <strong>SENA</strong></h1>
-            <i class="splitter-news"></i>
-
-            <div class="container">
-
-                <div class="wrapper">
-                    <div class="col-md-10">
-                        <ul id="sb-slider" class="sb-slider">
-                            <li>
-                                <a target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/1.jpg" alt="image1"/></a>                          
-                            </li>
-                            <li>
-                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/2.jpg" alt="image2"/></a>                         
-                            </li>
-                            <li>
-                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/3.jpg" alt="image1"/></a>                         
-                            </li>
-                            <li>
-                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/4.jpg" alt="image1"/></a>                         
-                            </li>
-                            <li>
-                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/5.jpg" alt="image1"/></a>
-                            </li>
-                            </li>
-                        </ul>
-
-                        <div id="shadow" class="shadow"></div>
-
-                        <div id="nav-arrows" class="nav-arrows">
-                            <a href="#">Next</a>
-                            <a href="#">Previous</a>
-                        </div>
-
-                        <div id="nav-options" class="nav-options">
-                            <span id="navPlay">Play</span>
-                            <span id="navPause">Pause</span>
-                        </div>                      
-                    </div>
-                    
-
-                </div><!-- /wrapper -->
-                <div class="col-md-4">
-                    <button class="btn btng">Ambiente Confinado</button>
-                    <button class="btn btng">Ambientes de Química</button>
-                    <button class="btn btng">Gestión de la Producción</button>
-                    <button class="btn btng">Gestión Integrada de la Calidad</button>
-                    <button class="btn btng">Inventario de Salud Ocupacional</button>
-
-                </div>
             </div>
         </section>
 

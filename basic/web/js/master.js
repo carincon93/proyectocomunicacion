@@ -43,14 +43,17 @@ $(document).ready(function() {
 	var $nlinks = $('.navbar-links li a');
 	function navbarScrollposStyles() {				
 		var st = $(this).scrollTop();
-		$('.splitter').css('height', (st * 9 / 8)+'px');
-		$('.title-parallax').css('top', (st * 1 / 8)+'px');
+		// $('.splitter').css('height', (st * 9 / 8)+'px');
+		// $('.title-parallax').css('top', (st * 1 / 8)+'px');
 	    if($(window).scrollTop() > 650) {
 	        $($sec).addClass('navbar-index-scroll animated fadeInDown').removeClass('fadeOutUp');
-	        $($nlinks).css('color', '#FC7323');
+	        $('.ltext').css('color', '#90c0b6');
+	        $($nlinks).css('color', '#90c0b6');
+	        $('.login-link').css('color', '#90c0b6');
 	    } else {
 	        $($sec).removeClass('fadeInDown').addClass('fadeOutUp');
 	        $($nlinks).css('color', '#fff');
+	        $('.ltext').fadeIn().css('color', '#fff');
 	    }
 	}
 
