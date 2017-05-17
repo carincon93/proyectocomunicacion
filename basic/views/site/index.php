@@ -240,6 +240,58 @@ $this->title = 'Red de Conocimiento SENA';
                 
             </div>
         </section>
+        <section class="galeria">
+            <h1 class="text-center gtitle">Galería <strong>SENA</strong></h1>
+            <i class="splitter-news"></i>
+
+            <div class="container">
+
+                <div class="wrapper">
+                    <div class="col-md-10">
+                        <ul id="sb-slider" class="sb-slider">
+                            <li>
+                                <a target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/1.jpg" alt="image1"/></a>                          
+                            </li>
+                            <li>
+                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/2.jpg" alt="image2"/></a>                         
+                            </li>
+                            <li>
+                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/3.jpg" alt="image1"/></a>                         
+                            </li>
+                            <li>
+                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/4.jpg" alt="image1"/></a>                         
+                            </li>
+                            <li>
+                                <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/5.jpg" alt="image1"/></a>
+                            </li>
+                            </li>
+                        </ul>
+
+                        <div id="shadow" class="shadow"></div>
+
+                        <div id="nav-arrows" class="nav-arrows">
+                            <a href="#">Next</a>
+                            <a href="#">Previous</a>
+                        </div>
+
+                        <div id="nav-options" class="nav-options">
+                            <span id="navPlay">Play</span>
+                            <span id="navPause">Pause</span>
+                        </div>                      
+                    </div>
+                    
+
+                </div><!-- /wrapper -->
+                <div class="col-md-4">
+                    <button class="btn btng">Ambiente Confinado</button>
+                    <button class="btn btng">Ambientes de Química</button>
+                    <button class="btn btng">Gestión de la Producción</button>
+                    <button class="btn btng">Gestión Integrada de la Calidad</button>
+                    <button class="btn btng">Inventario de Salud Ocupacional</button>
+
+                </div>
+            </div>
+        </section>
 
 
     <!-- --Login-- -->
