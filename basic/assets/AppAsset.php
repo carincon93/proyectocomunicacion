@@ -23,15 +23,16 @@ class AppAsset extends AssetBundle
         'css/component.css',
         'css/animate.css',
         'css/overlay.css',
-        // 'css/demo.css',
+        'css/demo.css',
         'css/slicebox.css',
         'css/master.css',
     ];
     public $js = [
-        'js/jquery.slicebox.js',
         'js/velocity.min.js',
         'https://unpkg.com/scrollreveal/dist/scrollreveal.min.js',
         'js/master.js',
+        'js/modernizr.custom.46884.js',
+        'js/jquery.slicebox.js',
 
     ];
     public $depends = [
