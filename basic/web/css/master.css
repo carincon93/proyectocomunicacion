@@ -567,10 +567,10 @@ footer {
 .nav-arrows a {
   width: 42px;
   height: 42px;
-  background: #cbbfae url(../imgs/nav.png) no-repeat top left;
+  background: #06b3a1 url(../imgs/nav.png) no-repeat top left;
   position: absolute;
   top: 50%;
-  left: 2px;
+  left: 15px;
   text-indent: -9000px;
   cursor: pointer;
   margin-top: -21px;
@@ -581,7 +581,7 @@ footer {
 
 .nav-arrows a:first-child{
   left: auto;
-  right: 2px;
+  right: 15px;
   background-position: top right;
 }
 
@@ -624,15 +624,15 @@ footer {
   width: 70px;
   height: 30px;
   position: absolute;
-  right: 70px;
-  bottom: 0px;
+  right: 45%;
+  bottom: 70px;
   display: none;
 }
 
 .nav-options span {
   width: 30px;
   height: 30px;
-  background: #cbbfae url(../imgs/options.png) no-repeat top left;
+  background: #fc7323 url(../imgs/options.png) no-repeat top left;
   text-indent: -9000px;
   cursor: pointer;
   opacity: 0.7;
@@ -647,6 +647,25 @@ footer {
 
 .nav-options span:hover {
   opacity: 1;
+}
+.btng {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 15px 80px;
+  display: inline-block;
+  margin: 5px 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 /*Maicol*/|
@@ -687,9 +706,7 @@ footer {
 .navbar-index .navbar-links li, .login-link { padding: 2rem; }
 .login-link { float: right; }
 .login-link a { float: right; }
-.navbar-index .navbar-links li a{
-  color: #fff;
-}
+.navbar-index .navbar-links li a{ color: #fff; }
 .nav-logo, .navbar-links { float: left; }
 .nav-logo { 
   display: inline-block;

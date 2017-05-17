@@ -282,14 +282,13 @@ $this->title = 'Red de Conocimiento SENA';
                     
 
                 </div><!-- /wrapper -->
-                <div class="col-md-4">
-                    <button class="btn btng">Ambiente Confinado</button>
-                    <button class="btn btng">Ambientes de Química</button>
-                    <button class="btn btng">Gestión de la Producción</button>
-                    <button class="btn btng">Gestión Integrada de la Calidad</button>
-                    <button class="btn btng">Inventario de Salud Ocupacional</button>
-
-                </div>
+                <nav class="col-md-4 cl-effect-16" id="cl-effect-16">
+                    <a href="#cl-effect-16" data-hover="Ambiente Confinado">Ambiente Confinado</a>
+                    <a href="#cl-effect-16" data-hover="Ambientes de Química">Ambientes de Química</a>
+                    <a href="#cl-effect-16" data-hover="Gestión de la Producción">Gestión de la Producción</a>
+                    <a href="#cl-effect-16" data-hover="Gestión Integrada de la Calidad">Gestión Integrada de la Calidad</a>
+                    <a href="#cl-effect-16" data-hover="Inventario de Salud Ocupacional">Inventario de Salud Ocupacional</a>
+                </nav>
             </div>
         </section>
 
