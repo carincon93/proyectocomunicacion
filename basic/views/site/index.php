@@ -15,10 +15,10 @@ $this->title = 'Red de Conocimiento SENA';
             <a href="#about-section">Ambientes</a>
         </li>
         <li>
-            <a href="#about-section">Catalogo Información</a>
+            <a href="#about-section">Catálogo Información</a>
         </li>
         <li class="desplegable">
-            <a href="#about-section">Plan Estrategico</a>
+            <a href="#about-section">Plan Estratégico</a>
             <!--<ul class="mostrar">
                  <li>Plan de Acción</li>
                <li>Plan de Modernizacion Tecnologica</li> 
@@ -61,22 +61,42 @@ $this->title = 'Red de Conocimiento SENA';
 
         <section>
             <div id="about-section" class="info">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
-                        <article class="">
+                        <article class="col-md-4">
                             <div class="about-inner">
-                                <h1 class="text-center " data-scrollreveal="enter right over 3s after 2.5s">Nuestra <strong class="stitle2">Mision</strong></h1>
+                                <h1 class=""><strong>MISIÓN</strong></h1>
                                 <p class="">Articula la respuesta institucional en las áreas temáticas de gestión de operaciones industriales, propendiendo por el logro de estándares internacionales de productividad, garantizando calidad y pertinencia de la formación profesional.
                                 </p>
                             </div>
                         </article>
-                        <article>                        
+                        <article class="col-md-4 objetivos">
                             <div class="about-inner">
-                                <h1 class="text-center">Nuestra <strong class="stitle2">Visión</strong></h1>
-                                <p class="">Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector productivo.</p>
+                                <h1 class="" data-scrollreveal="enter right over 3s after 2.5s">OBJETIVOS <strong>ESTRATÉGICOS</strong></h1>
+                                <ul class="">
+                                    <li>
+                                        * Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.                                        
+                                    </li>
+                                    <li>
+                                        * Fortalecer el relacionamiento con el sector productivo y gubernamental para diseño e implementación de políticas, estrategias y programas que dinamicen la competitividad y productividad empresarial.                                        
+                                    </li>
+                                    <li>
+                                        * Establecer alianzas a nivel internacional para fortalecer las capacidades del talento humano de la Red.                                        
+                                    </li>
+                                    <li>
+                                        * Desarrollar actividades que permitan definir las líneas temáticas de los semilleros de investigación para incursionar en la estrategia Sennova y el sector externo, apoyando los centros asociados a la red.                                        
+                                    </li>
+                                </ul>
                             </div>
-                        </article>      
+                        </article>
+                        <article class="col-md-4">                        
+                            <div class="about-inner">
+                                <h1><strong>VISIÓN</strong></h1>
+                                <p>Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector productivo.</p>
+                            </div>
+                        </article>
                     </div>
+                    <img class="about-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/red-conocimiento-logo.svg" alt="" width="20%">
                 </div>
             </div>
         </section>
@@ -108,7 +128,7 @@ $this->title = 'Red de Conocimiento SENA';
                             </header>
                             <div>
                                 <ul>
-                                    <li>Gestión intefrada de la calidad, medio ambiente, seguridad y salud ocupacional</li>
+                                    <li>Gestión integrada de la calidad, medio ambiente, seguridad y salud ocupacional</li>
                                     <li>Gestión de la producción industrial</li>
                                     <li>Gestión de recursos en plantas de producción</li>
                                     <li>Salud ocupacional</li>
@@ -181,46 +201,51 @@ $this->title = 'Red de Conocimiento SENA';
             <div>
                 <div class="container">
                     <h1 class="text-center">Noticias <strong>SENA</strong></h1>
-                    <h1 class="title-parallax">Noticias SENA</h1>
                     <i class="splitter-news"></i>
                     <i class="fa fa-newspaper-o"></i>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="owl-carousel">
                             <div class="news">
-                                <img class="img1 img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/120150202082049.jpg">
+                                <div class="cover">
+                                    <img class="img img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/120150202082049.jpg">                                    
+                                </div>
                                 <div class="inner-news">
                                     <h6>11/05/2017</h6>
                                     <p>Desde el #SENA apostamos a la competitividad de la economía, por eso realizamos taller con mesas productivas para revisar su alcance.</p>
                                 </div>                              
                             </div>
-                        </div>
-                        <div class="col-md-3">
+
                             <div class="news">
-                                <img class="img1 img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/C_pbYxRXoAA5Jo2.jpg">
+                                <div class="cover">
+                                    <img class="img img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/C_pbYxRXoAA5Jo2.jpg">                                    
+                                </div>
                                 <div class="inner-news">
                                     <h6>12/05/2017</h6>
                                     <p>En el #SENA estamos conectados con las necesidades del sector empresarial en #SanAndrés y con la realidad de los ciudadanos: @MAndreaNieto.</p>
                                 </div>                              
                             </div>
-                        </div>
-                        <div class="col-md-3">
+
                             <div class="news">
-                                <img class="img1 img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/as1.jpg">
+                                <div class="cover">
+                                    <img class="img img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/as1.jpg">                                    
+                                </div>
                                 <div class="inner-news">
                                     <h6>12/05/2017</h6>
                                     <p>#EstudiaEnElSENA porque además de formarte técnicamente nos interesamos por brindarte #Bienestar @SENAComunica @MAndreaNieto.</p>
                                 </div>                              
                             </div>
-                        </div>
-                        <div class="col-md-3">
                             <div class="news">
-                                <img class="img1 img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/qw1.jpg">
+                                <div class="cover">
+                                    <img class="img img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/qw1.jpg">                                    
+                                </div>
                                 <div class="inner-news">
                                     <h6>12/05/2017</h6>
                                     <p>Es importante que cuando los colombianos busquen en qué formarse, piensen en qué les gustaría trabajar: @MAndreaNieto #EstudiaEnElSENA.</p>
                                 </div>                              
                             </div>
+                            
                         </div>
+           
                     </div>
                 </div>
             </div>

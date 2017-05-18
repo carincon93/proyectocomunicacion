@@ -73,30 +73,31 @@ AppAsset::register($this);
                     
                     <ul class="informacion"> 
                         <h4 > INFORMACION </h4><br>
-                        <li>Servicio Nacional de Aprendizaje SENA <br> Regional Distrito Capital</li>
+                        <li>Servicio Nacional de Aprendizaje SENA</li>
+                        <li>Regional Distrito Capital</li>
                         <li>
-                            <span>Centro De Gestión IndustrialL</span>
+                            <span>Centro de Gestión IndustrialL</span>
                         </li>
                         <li>
-                            <span>Direccion: </span> Calle 15 No 31 - 42 
+                            <span>Dirección: </span> Calle 15 No 31 - 42 
                         </li>
                         <li>
                             <span>Ciudad: </span> Bogotá – Colombia
                         </li>
                         <li>
-                            <span>Correo Electronico: </span>redproduccionsena@gmail.com
+                            <span>Correo Electrónico: </span>redproduccionsena@gmail.com
                         </li>
                         <li>
-                            <span>Líneas Gratuitas Atencio Al Ciudadano: </span> Bogotá (57 1) 5925555
+                            <span>Líneas Gratuitas Atención al Ciudadano: </span> Bogotá (57 1) 5925555
                         </li>
                         <li>
-                            <span>Resto del pais: </span> 018000 910270
+                            <span>Resto del país: </span> 018000 910270
                         </li>
                         <li>
-                            <span>Líneas gratuitas atención al empresario: </span>Bogotá (57 1) 4049494 
+                            <span>Líneas Gratuitas Atención al Empresario: </span>Bogotá (57 1) 4049494 
                         </li>
                         <li>
-                            <span>Resto del pais:</span>  018000 910682
+                            <span>Resto del país:</span>  018000 910682
                         </li>
                     </ul>
                 </nav>                  

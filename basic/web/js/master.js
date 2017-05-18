@@ -1,44 +1,43 @@
 $(document).ready(function() {
-	$('.vision').hide();
-	$('#btnVision').click(function(event) {
-		$('.mision').fadeOut('slow/400/fast', function() {
-			$('.vision').fadeIn('slow/400/fast', function(){});
-		});
-	});
-	$('#btnMision').click(function(event) {
-		$('.vision').fadeOut('slow/400/fast', function() {
-			$('.mision').fadeIn('slow/400/fast', function() {});
-		});
-		
-	});
+	// $(".owl-carousel").owlCarousel();
+	$(".owl-carousel").owlCarousel({
+			items: 4,
+			autoplay: true,
+			loop: true,
+			margin: 42,
+			nav: true,
+			navText: [
+				"<i class='cs-slider-arrows fa fa-angle-left'></i>",
+				"<i class='cs-slider-arrows fa fa-angle-right'></i>"
+			],
+			dots: false,
 
-	// Select all links with hashes
-	$('a[href*="#"]')
-	// Remove links that don't actually link to anything
-	.not('[href="#"]')
-	.not('[href="#0"]')
-	.click(function(event) {
-	    // On-page links
-	    if (
-	    	location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-	    	&& 
-	    	location.hostname == this.hostname
-	    ) {
-	      	// Figure out element to scroll to
-	  		var target = $(this.hash);
-	  		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-	      	// Does a scroll target exist?
-	      	if (target.length) {
-		        // Only prevent default if animation is actually gonna happen
-		        event.preventDefault();
-		        $('html, body').animate({
-		        	scrollTop: target.offset().top
-		        }, 1000, function() {
-		          // Callback after animation
-		    	});
-	    	}
-		}
-	});
+			responsive: {
+				0: {
+					items: 1,
+					dots: true,
+					nav: false
+				},
+				600: {
+					items: 1,
+					dots: true,
+					nav: false
+
+				},
+				992: {
+					items: 2,
+					dots: true,
+					nav: false
+				},
+				1000: {
+					items: 3
+				},
+				1200: {
+					items: 4
+				}
+			}
+		});
+
 	var $sec = $('.sec');
 	var $nlinks = $('.navbar-links li a');
 	function navbarScrollposStyles() {				
@@ -59,18 +58,6 @@ $(document).ready(function() {
 
 	$(navbarScrollposStyles);                           // 2. Do on DOM ready and 
 	$(window).on('load scroll', navbarScrollposStyles); // 3. on window.onload and onscroll
-
-	// $('.btnp').click(function(event) {
-	// 	$('.btnp').show();
-	// 	$('.par').hide();
-	// 	$(this).next().show();
-	// 	$(this).hide();
-	// });
-
-	// Changing the defaults
-	window.sr = ScrollReveal({ reset: false,});
-	// Customizing a reveal set
-	sr.reveal('.foo');
 
 	var overlayNav = $('.cd-overlay-nav'),
 	overlayContent = $('.cd-overlay-content'),
