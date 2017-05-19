@@ -1,42 +1,63 @@
 $(document).ready(function() {
-	// $(".owl-carousel").owlCarousel();
 	$(".owl-carousel").owlCarousel({
-			items: 4,
-			autoplay: true,
-			loop: true,
-			margin: 42,
-			nav: true,
-			navText: [
-				"<i class='cs-slider-arrows fa fa-angle-left'></i>",
-				"<i class='cs-slider-arrows fa fa-angle-right'></i>"
-			],
-			dots: false,
-
-			responsive: {
-				0: {
-					items: 1,
-					dots: true,
-					nav: false
-				},
-				600: {
-					items: 1,
-					dots: true,
-					nav: false
-
-				},
-				992: {
-					items: 2,
-					dots: true,
-					nav: false
-				},
-				1000: {
-					items: 3
-				},
-				1200: {
-					items: 4
-				}
+		nav: true,
+		margin: 30,
+		autoplay: true,
+		loop: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1,
+				dots: true,
+				nav: false
+			},
+			768: {
+				items: 3,
+				dots: true,
+				nav: false
+			},
+			1024: {
+				items: 4
 			}
-		});
+		}
+	});
+	// $(".owl-carousel").owlCarousel({
+	// 		items: 4,
+	// 		autoplay: true,
+	// 		loop: true,
+	// 		margin: 42,
+	// 		nav: true,
+	// 		navText: [
+	// 			"<i class='cs-slider-arrows fa fa-angle-left'></i>",
+	// 			"<i class='cs-slider-arrows fa fa-angle-right'></i>"
+	// 		],
+	// 		dots: false,
+
+	// 		responsive: {
+	// 			0: {
+	// 				items: 1,
+	// 				dots: true,
+	// 				nav: false
+	// 			},
+	// 			600: {
+	// 				items: 1,
+	// 				dots: true,
+	// 				nav: false
+
+	// 			},
+	// 			992: {
+	// 				items: 2,
+	// 				dots: true,
+	// 				nav: false
+	// 			},
+	// 			1000: {
+	// 				items: 3
+	// 			},
+	// 			1200: {
+	// 				items: 4
+	// 			}
+	// 		}
+	// 	});
 
 	var $sec = $('.sec');
 	var $nlinks = $('.navbar-links li a');

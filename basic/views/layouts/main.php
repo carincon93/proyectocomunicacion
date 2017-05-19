@@ -72,11 +72,11 @@ AppAsset::register($this);
                 <nav class="footer-info">
                     
                     <ul class="informacion"> 
-                        <h4 > INFORMACION </h4><br>
+                        <h4 > INFORMACIÓN </h4><br>
                         <li>Servicio Nacional de Aprendizaje SENA</li>
                         <li>Regional Distrito Capital</li>
                         <li>
-                            <span>Centro de Gestión IndustrialL</span>
+                            <span>Centro de Gestión Industrial</span>
                         </li>
                         <li>
                             <span>Dirección: </span> Calle 15 No 31 - 42 
@@ -105,7 +105,7 @@ AppAsset::register($this);
             <div class="col-md-5">
                 <nav class="icontec">
                     <ul>
-                        <li>
+                       <!--  <li>
                             <img src="imgs/icontecA.png" alt="">
                         </li>
                         <li>
@@ -116,7 +116,7 @@ AppAsset::register($this);
                         </li>
                         <li>
                             <img src="imgs/icontecD.png" alt="">
-                        </li>
+                        </li> -->
                     </ul>
 
                 </nav>
