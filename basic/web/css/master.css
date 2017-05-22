@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
 	font-family: zurich-bt;
 	src: url(../fonts/zurich-bt.TTF);
 }*/
@@ -13,7 +13,7 @@
 body {
   font-family: 'zurich-bt' !important;
 }
-a[href=""] { text-decoration: none; }
+/*a[href=""] { text-decoration: none; }*/
 input { display: block; }
 input:focus { outline: none; }
 li { list-style: none; }
@@ -102,16 +102,25 @@ body {
   border: none;
 }
 .login form div input {
-  border-bottom: 0.1rem solid #ccc;
-  display: block;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+/*  border-bottom: 0.1rem solid #ccc;
   margin-bottom: 2rem;
   opacity: 0.5;
   outline: none;
-  width: 100%;
+  width: 100%;*/
 }
-.login form div input:focus, .fcontact div form input:focus, .fcontact div form textarea:focus {
-  border-bottom: 0.1rem solid #fc7323;
-  outline: none;
+.form-control {
+  border: none;
+  border-radius: inherit;
+  box-shadow: none;
+}
+.login form div input:focus, .has-error .form-control, .has-success .form-control:focus {
+  border-bottom: 0.1rem solid #fc7323 !important;
+  box-shadow: none;
+  border: none;
+  border-radius: inherit;
+  outline: none !important;
 }
 .login form div button { 
   background-color: #238276;
@@ -168,7 +177,7 @@ body {
   margin-bottom: 3rem;
   margin-top: 0;
 }
-/*.stitle2 { border-bottom: 4px solid #FC7323; }*/
+.hero-title { color: #FC7323; }
 .objetivos {
   position: relative;
   top: -10rem;
@@ -543,6 +552,7 @@ footer {
 }
 .navbar-index .navbar-links { width: 100%; }
   .navbar-index .navbar-links li { 
+    color: #fff;
     display: inline-block;
     padding: 2rem; }
   .navbar-index .navbar-links li a{ color: #fff; }
@@ -669,6 +679,19 @@ footer {
   transform: translateY(-40rem);
  }
 }*/
+.navbar-links .sub-menu {
+  position: absolute;
+  display: none;
+}
+.navbar-links .sub-menu li {
+  display: block;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar-links li:hover .sub-menu {
+    display: block;
+}
 
 @media (max-width: 991px) {
   .social-networks { display: none; }
@@ -683,7 +706,35 @@ footer {
 }
 /*@media (max-width: 768px) {
   .cover { height: 40rem; }
-}*/
+}
+
+
+/*PQRS*/
+.pqrs {
+  background-color: rgb(35,130,118);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.pqrs form {
+  background-color: #fff;
+  padding: 2rem;
+  color: #969696;
+  position: fixed;
+  margin-top: 10rem;
+  margin: 15px auto;
+}
+.pqrs form div div input, .pqrs form div div label {
+  display: block;
+  width: 100%;
+}
+.open-pqrs { display: block; }
+
+
 #en {
   background-color: #238276;
 }

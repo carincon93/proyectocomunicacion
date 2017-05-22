@@ -1,4 +1,31 @@
 $(document).ready(function() {
+
+	// $('.navbar-links li').mouseover(function(event) {		
+	// 	$(this).children().fadeIn();
+	// });
+	$('.pqrs-link').click(function(event) {
+		$('.pqrs').addClass('open-pqrs');
+	});
+	$('.fa.fa-close').click(function(event) {
+		$('.pqrs').removeClass('open-pqrs');
+	});
+
+	var $galeria 	= $("#go-galeria"),
+	$formacion 		= $("#go-formacion");
+ 
+	$galeria.on("click", function() {
+	  $(".galeria").velocity("scroll", { 
+	    duration: 2000,
+	    easing: "easeInBack"
+	  });
+	});
+
+	$formacion.on("click", function() {
+	  $(".pformacion").velocity("scroll", { 
+	    duration: 2000,
+	    easing: "easeInBack"
+	  });
+	});
 	AOS.init();
 	window.onscroll = function(event) {
 		var scroll = pageYOffset,

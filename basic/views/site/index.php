@@ -1,29 +1,67 @@
 <?php
 /* @var $this yii\web\View */
 
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
 $this->title = 'Red de Conocimiento SENA';
 ?>
 <nav class="sec"></nav>
 <nav class="navbar-index">
     <ul class="navbar-links">
         <li>
-            <a href="#about-section">Ambientes</a>
+            Formación   
+            <ul class="sub-menu">
+                <li><a href="">Redes del Conocimiento</a></li>
+                <li><a href="">Evaluación y Certificación por Competencias Laborales</a></li>
+                <li><a href="">Técnico</a></li>
+                <li><a href="">Tecnólogo</a></li>
+            </ul>
         </li>
         <li>
-            <a href="#about-section">Catálogo Información</a>
-        </li>
-        <li class="desplegable">
-            <a href="#about-section">Plan Estratégico</a>
-            <!--<ul class="mostrar">
-                 <li>Plan de Acción</li>
-               <li>Plan de Modernizacion Tecnologica</li> 
-            </ul>-->
+            Instructores   
+            <ul class="sub-menu">
+                <li><a href="">Capacitación</a></li>
+                <li><a href="">¿Quieres ser Instructor?</a></li>
+                <li><a href="">Formación y Convocatorias</a></li>
+            </ul>
         </li>
         <li>
-            <a href="#contactanos">PQRS</a>
+            Empresarios   
+            <ul class="sub-menu">
+                <li><a href="">Mesas Sectoriales</a></li>
+                <li><a href="">Normas de Competencias Laborales</a></li>
+                <li><a href="">Laboratorios para innovar</a></li>
+                <li><a href="">Solicitudes de Empresarios</a></li>
+                <li><a href="">Convocatorias Vigentes</a></li>
+            </ul>
         </li>
         <li>
-            <a href="#contactanos">Contáctanos</a>
+            Entidad   
+            <ul class="sub-menu">
+                <li><a href="">Misión y Visión</a></li>
+                <li><a href="">Estructura Organizacional</a></li>
+                <li><a href="">Planeación Estratégica</a></li>
+            </ul>
+        </li>
+        <li>
+            <a id="go-galeria" href="javascript:void(0)">Ambientes</a>
+        </li>
+        <li>
+            <a id="go-formacion" href="javascript:void(0)">Catálogo Información</a>
+        </li>
+        <li>
+            Plan Estratégico
+            <ul class="sub-menu">
+                <li><a href="../views/site/table.html">Plan de Acción</a></li>
+                <li>Plan de Modernizacion Tecnologica</li> 
+            </ul>
+        </li>
+        <li>
+            Example
+            <ul class="sub-menu">
+                <li><a href="">Contáctanos</a></li>
+                <li><a class="pqrs-link" href="javascript:void(0)">PQRS</a></li>
+            </ul>
         </li>
         <li class="login-link">
             <a href="javascript:void(0)" class="cd-nav-trigger" >Iniciar Sesión</a>
@@ -49,6 +87,7 @@ $this->title = 'Red de Conocimiento SENA';
             </div>
             <div class="container-fluid conocimiento-wrap">
                 <article class="article-conocimiento">
+                    <h1>Redes del conocimiento <span class="hero-title">SENA</span></h1>
                     <!-- <img class="redsena-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/redsena-logo.png"> -->
                     <p><strong>Descripción: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit illo rem id molestiae, quaerat, omnis! Quibusdam, enim, ex veniam, architecto sunt quaerat et saepe distinctio odit id atque aliquid animi ad dicta excepturi possimus ea nisi quia recusandae. Neque, nam.</p>
                 </article>
@@ -86,14 +125,14 @@ $this->title = 'Red de Conocimiento SENA';
                                 </div>
                             </article>
                         </div>
-                        <img class="about-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/red-conocimiento-logo.svg" alt="" width="20%">
+                        <img class="about-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-red-logo.svg" alt="" width="20%">
                     </div>
                 </div>
             </section>
 
             <section class="pformacion">
                 <div class="container-fluid">
-                    <h1 class="text-center ptitle">Programas de <strong class="stitle2">Formación</strong></h1>
+                    <h1 class="text-center ptitle">Programas de <strong>Formación</strong></h1>
                     <i class="splitter-news"></i>
                     <div class="row">
                         <div class="col-md-4">
@@ -253,11 +292,11 @@ $this->title = 'Red de Conocimiento SENA';
                             </div>                      
                         </div>
                          <nav class="col-md-4 cl-effect-16" id="cl-effect-16">
-                            <a href="#cl-effect-16" data-hover="Ambiente Confinado">Ambiente Confinado</a>
-                            <a href="#cl-effect-16" data-hover="Ambientes de Química">Ambientes de Química</a>
+                            <a href="#cl-effect-16" data-hover="Trabajo en Alturas">Trabajo en Alturas</a>
+                            <a href="#cl-effect-16" data-hover="Química">Química</a>
                             <a href="#cl-effect-16" data-hover="Gestión de la Producción">Gestión de la Producción</a>
                             <a href="#cl-effect-16" data-hover="Gestión Integrada de la Calidad">Gestión Integrada de la Calidad</a>
-                            <a href="#cl-effect-16" data-hover="Inventario de Salud Ocupacional">Inventario de Salud Ocupacional</a>
+                            <a href="#cl-effect-16" data-hover="Salud Ocupacional">Salud Ocupacional</a>
                         </nav> 
                         
 
@@ -268,23 +307,34 @@ $this->title = 'Red de Conocimiento SENA';
 
 
     <!-- --Login-- -->
+
     <div class="login cd-primary-nav">
         <a href="javascript:void(0)" class="cd-nav-trigger fa fa-times trigger-times"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <div class="form">
-                        <form action="" method="">
+                        <?php $form = ActiveForm::begin([
+                            'id' => 'login-form',
+                            'layout' => 'horizontal',
+                            'fieldConfig' => [
+                                'template' => "{label}\n<div class=\"\">{input}</div>\n<div class=\"\">{error}</div>",
+                                'labelOptions' => ['class' => 'col-lg-1 control-label'],
+                            ],
+                        ]); ?>
                             <div class="form-wrap">
                                 <div class="login-inputs">
-                                    <input type="email" placeholder="Correo Electrónico">
-                                    <input type="password" placeholder="Contraseña">
+                                    <?= $form->field($model, 'email', ['labelOptions' => [ 'class' => 'your_custom_class_name' ]])->input('email') ?>
+                                    <?= $form->field($model, 'password', ['labelOptions' => [ 'class' => 'your_custom_class_name' ]])->passwordInput() ?>
+                                    <?= $form->field($model, 'rememberMe')->checkbox([
+                                        'template' => "<div class=\"\">{input} {label}</div>\n<div class=\"\">{error}</div>",
+                                    ]) ?>
                                 </div>
                                 <div class="2">
-                                    <button type="submit">Iniciar Sesión</button>
+                                    <?= Html::submitButton('Iniciar Sesión', ['class' => '', 'name' => 'login-button']) ?>
                                 </div>
                             </div>
-                        </form>
+                        <?php ActiveForm::end(); ?>
                     </div>
                 </div>
             </div>          
@@ -301,3 +351,107 @@ $this->title = 'Red de Conocimiento SENA';
 
     </div> <!-- /body-content -->
 </div> <!-- /site-index -->
+
+
+
+    <section class="pqrs">
+        <div class="container">
+            <i class="fa fa-close" style="float: right; font-size: 4rem;"></i>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="" method="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for=""> Nombres y Apellidos</label>
+                                <input type="text" placeholder="Juan Camilo Mojica">
+                                <label for="">Correo ELectronico</label>
+                                <input type="email" placeholder="Example@hotmail.com">
+                                 
+                                <label for=""> Tipo De Documento</label>
+                                <select name="tipo_doc" id="">
+                                    <option value="">seleccione...</option>
+                                    <option value="">cedula de ciudadania(C.C)</option>
+                                    <option value="">cedula de ciudadania(C.C)</option>
+                                    <option value="">cedula de ciudadania(C.C)</option>
+                                    <option value="">tarjeta de identificacion(T.I)</option>
+                                </select>
+                                <label for="">Numero de Documento</label>
+                                <input type="text" placeholder="103010202">
+                                <label for=""> Telefono </label>
+                                <input type="text" placeholder="8919283">
+                                <label for=""> Celular </label>
+                                <input type="text" placeholder="3136975013">
+                                <label for="">Departamento</label>
+                                <select id="estado" name="estado" class="required">
+                                   <option value="">Seleccione...</option>
+                                   <option value="1">ANTIOQUIA</option>
+                                   <option value="2">ATLANTICO</option>
+                                   <option value="3">D.C.</option>
+                                   <option value="4">BOLIVAR</option>
+                                   <option value="5">BOYACA</option>
+                                   <option value="6">CALDAS</option>
+                                   <option value="7">CAQUETA</option>
+                                   <option value="8">CAUCA</option>
+                                   <option value="9">CESAR</option>
+                                   <option value="10">CORDOBA</option>
+                                   <option value="11">CUNDINAMARCA</option>
+                                   <option value="12">CHOCO</option>
+                                   <option value="13">HUILA</option>
+                                   <option value="14">LA GUAJIRA</option>
+                                   <option value="15">MAGDALENA</option>
+                                   <option value="16">META</option>
+                                   <option value="17">NARIÑO</option>
+                                   <option value="18">NORTE DE SANTANDER</option>
+                                   <option value="19">QUINDIO</option>
+                                   <option value="20">RISARALDA</option>
+                                   <option value="21">SANTANDER</option>
+                                   <option value="22">SUCRE</option>
+                                   <option value="23">TOLIMA</option>
+                                   <option value="24">VALLE DEL CAUCA</option>
+                                   <option value="25">ARAUCA</option>
+                                   <option value="26">CASANARE</option>
+                                   <option value="22">PUTUMAYO</option>
+                                   <option value="28">SAN ANDRES</option>
+                                   <option value="29">AMAZONAS</option>
+                                   <option value="30">GUAINIA</option>
+                                   <option value="31">GUAVIARE</option>
+                                   <option value="32">VAUPES</option>
+                                   <option value="33">VICHADA</option>
+                                </select>
+                            </div> 
+                                <i class="splitter"></i>
+                            <div class="login-inputs col-md-6">                              
+                                
+                                <label for="">Municipio</label>
+                                <select id="municipio"></select><br>
+
+                                <label for="">Direccion</label>
+                                <input type="text" placeholder="mzn 30 cs 82">
+                                <label for="">Tipo de peticion</label>
+                                <select name="" id="">
+                                    <option value="">seleccionar...</option>
+                                    <option value="">Consulta</option>
+                                    <option value="">Queja</option>
+                                    <option value="">Queja</option>
+                                    <option value="">Solicitud de Informacion</option>
+                                    <option value="">Sugerencia</option>
+                                </select><br>
+                                <label for="">Autorizo bajo mi responsabilidad que la respuesta sea enviada mediante:</label>
+                                <select name="" id="">
+                                    <option value="">seleccionar...</option>
+                                    <option value="">Direccion de Correo Electronico</option>
+                                    <option value="">Direccion de Correspondencia</option>
+                                </select><br>
+                                <label for=""> Mensaje</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu reclamo/sugerencia/solicitud"></textarea><br>
+                                <div class="2">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>          
+                  
+                    </form>
+                </div>
+            </div>            
+        </div>     
+    </section>
