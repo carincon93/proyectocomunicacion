@@ -129,7 +129,8 @@ $(document).ready(function() {
 	});
 
 	var $sec = $('.sec');
-	var $nlinks = $('.navbar-links li');
+	var $nlinks = $('.navbar-links li a');
+	var $nlinks2 = $('.navbar-links li');
 	function navbarScrollposStyles() {				
 		var st = $(this).scrollTop();
 		// $('.splitter').css('height', (st * 9 / 8)+'px');
@@ -138,10 +139,11 @@ $(document).ready(function() {
 	        $($sec).addClass('navbar-index-scroll animated fadeInDown').removeClass('fadeOutUp');
 	        $('.ltext').css('color', '#90c0b6');
 	        $($nlinks).css('color', '#90c0b6');
+	        $($nlinks2).css('color', '#90c0b6');
 	        $('.login-link').css('color', '#90c0b6');
 	    } else {
 	        $($sec).removeClass('fadeInDown').addClass('fadeOutUp');
-	        $($nlinks).css('color', '#fff');
+	        $($nlinks).css('color', '#90c0b6');
 	        $('.ltext').fadeIn().css('color', '#fff');
 	    }
 	}
