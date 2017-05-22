@@ -21,6 +21,7 @@ class AppAsset extends AssetBundle
         // 'css/site.css',
         'css/font-awesome.min.css',
         'css/owl.carousel.min.css',
+        'css/aos.css',
         'css/component.css',
         'css/animate.css',
         'css/overlay.css',
@@ -30,10 +31,11 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/velocity.min.js',
-        'js/master.js',
+        'js/aos.js',
         'js/modernizr.custom.46884.js',
         'js/jquery.slicebox.js',
         'js/owl.carousel.min.js',
+        'js/master.js',
 
     ];
     public $depends = [
