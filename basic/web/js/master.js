@@ -129,7 +129,7 @@ $(document).ready(function() {
 	});
 
 	var $sec = $('.sec');
-	var $nlinks = $('.navbar-links li a');
+	var $nlinks = $('.navbar-links li');
 	function navbarScrollposStyles() {				
 		var st = $(this).scrollTop();
 		// $('.splitter').css('height', (st * 9 / 8)+'px');
