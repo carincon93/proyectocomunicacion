@@ -26,23 +26,14 @@ class AppAsset extends AssetBundle
         'css/login-effect.css',
         'css/demo.css',
         'css/slicebox.css',
-        'css/paper-dashboard.css',
         'css/master.css',
-
-
     ];
     public $js = [
         'js/velocity.min.js',
         'js/modernizr.custom.46884.js',
         'js/jquery.slicebox.js',
         'js/owl.carousel.min.js',
-        'js/bootstrap-checkbox-radio.js',
-        'js/chartist.min.js',
-        'js/bootstrap-notify.js',
-        'js/paper-dashboard.js',
         'js/master.js',
-        
-
 
     ];
     public $depends = [
