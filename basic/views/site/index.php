@@ -197,6 +197,15 @@ $this->title = 'Red de Conocimiento SENA';
                             <div class="owl-carousel">
                                 <div class="owl-card">
                                     <div class="cover">
+                                        <img class="img img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/C98hpkRXkAICYU9.jpg">                                    
+                                    </div>
+                                    <div class="inner-news">
+                                        <h6>21/04/2017</h6>
+                                        <p>#CumbreAprendicesSENA Gracias Dirección General tu labor construye país, construye paz #senacomunica @JuantxoSanchez  @MAndreaNieto</p>
+                                    </div>
+                                </div>
+                                <div class="owl-card">
+                                    <div class="cover">
                                         <img class="img img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/120150202082049.jpg">
                                     </div>
                                    <div class="inner-news">
@@ -222,10 +231,15 @@ $this->title = 'Red de Conocimiento SENA';
                                         <p>#EstudiaEnElSENA porque además de formarte técnicamente nos interesamos por brindarte #Bienestar @SENAComunica @MAndreaNieto.</p>
                                     </div>
                                 </div>
-                                <div class="owl-card"> Your Content 4</div>
-                                <div class="owl-card"> Your Content 5</div>
-                                <div class="owl-card"> Your Content 6</div>
-                                <div class="owl-card"> Your Content 7</div>
+                                <div class="owl-card">
+                                    <div class="cover">
+                                        <img class="img img-new" src="<?= Yii::$app->request->baseUrl ?>/imgs/DAMyzo9UQAET6cY.jpg">                                    
+                                    </div>
+                                    <div class="inner-news">
+                                        <h6>19/05/2017</h6>
+                                        <p>Consejo Directivo #SENA aprueba entrega de recursos del #FondoEmprenderSENA por más de $38 mil millones. Más empresas y empleos para el país</p>
+                                    </div>
+                                </div>
                             </div>
                             
                             
