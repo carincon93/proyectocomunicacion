@@ -469,3 +469,42 @@ $this->title = 'Red de Conocimiento SENA';
             </div>            
         </div>     
     </section>
+
+    <section id="contactanos">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="row">
+                <div class="text-center">
+                    <form method="post" action=""></form>
+                    <div class="form-group text-center">
+                        <label for=""> Nombres y Apellidos</label>
+                        <input class="form-control" type="text" placeholder="Juan Camilo Mojica">
+                        <label for="">Correo ELectronico</label>
+                        <input class="form-control" type="email" placeholder="Example@hotmail.com">
+                    </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="form-group text-center">
+                        <label for="">Tipo de peticion</label>
+                        <select class="btn dropdown-toggle bs-placeholder btn-default btn-fill btn-block" name="" id="">
+                            <option class="btn btn-default form-control" value="">seleccionar...</option>
+                            <option class="btn btn-default form-control" value="">Consulta</option>
+                            <option class="btn btn-default form-control" value="">Queja</option>
+                            <option class="btn btn-default form-control" value="">Sugerencia</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="form-group text-center">
+                        <label for=""> Mensaje</label>
+                        <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Escribe tu reclamo/sugerencia/solicitud"></textarea>
+                    </div>
+            </div>  
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="btn btn-default text-center">Enviar</button>
+                </div>
+            </div>  
+            </form>
+        </div>
+    </section>
