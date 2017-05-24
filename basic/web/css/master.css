@@ -133,6 +133,37 @@ p { margin: 0; }
   width: 72%;
   z-index: 2;
 }
+
+/*Maicol*/
+.contactanos{
+  z-index: 999;
+  position: absolute;
+  top: 70px;
+  left: 360px;
+}
+.contactclose{
+  position: relative;
+  left: 50px;
+  color: #fff;
+}
+.selectbtn{
+  width: 90%;
+}
+.pqrs{
+  z-index: 999;
+  position: absolute;
+  top: 70px;
+}
+.pqrsclose{
+  position: relative;
+  left: 100px;
+  color: #fff;
+}
+
+
+
+
+
 .triangles
 {
 	position: absolute;
@@ -702,7 +733,7 @@ footer {
 
 
 /*PQRS*/
-.pqrs {
+/*.pqrs {
   background-color: rgb(35,130,118);
   height: 100%;
   width: 100%;
@@ -723,7 +754,7 @@ footer {
   display: block;
   width: 100%;
 }
-.open-pqrs { display: block; }
+.open-pqrs { display: block; }*/
 
 
 table, td {

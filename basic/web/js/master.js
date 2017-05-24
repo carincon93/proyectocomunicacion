@@ -1,10 +1,28 @@
 $(document).ready(function() {
+	// Maicol
+	$('.contactanos').hide();
+	$('.contactanos-link').click(function(event) {
+		$('.contactanos').show('slow/400/fast', function() {});
+	});
+	$('.pqrs').hide();
 	$('.pqrs-link').click(function(event) {
-		$('.pqrs').addClass('open-pqrs');
+		$('.pqrs').show('slow/400/fast', function() {});
 	});
-	$('.fa.fa-close').click(function(event) {
-		$('.pqrs').removeClass('open-pqrs');
+	$('.pqrsclose').click(function(event) {
+		$('.pqrs').hide('slow/400/fast', function() {});
 	});
+	$('.contactclose').click(function(event) {
+		$('.contactanos').hide('slow/400/fast', function() {
+			
+		});	
+	});
+	
+	// $('.pqrs-link').click(function(event) {
+	// 	$('.pqrs').addClass('open-pqrs');
+	// });
+	// $('.fa.fa-close').click(function(event) {
+	// 	$('.pqrs').removeClass('open-pqrs');
+	// });
 
 	// SmoothScroll
 	var $galeria 	= $("#go-galeria"),

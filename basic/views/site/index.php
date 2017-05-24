@@ -71,6 +71,7 @@ $this->title = 'Red de Conocimiento SENA';
         <a href="javascript:void(0)" class="cd-nav-trigger" >Iniciar Sesión</a>
     </div>
 </nav> -->
+
 <div class="site-index">
 
     <div class="body-content">
@@ -101,6 +102,137 @@ $this->title = 'Red de Conocimiento SENA';
                 <div class="triangles-white"></div>
             </div> -->
         </header>
+        <section class="contactanos">
+            <div class="col-md-12">
+                    <i class="fa fa-close trigger-times contactclose" style="float: right;"></i>
+                    <div class="text-center">
+                        <form method="post" action="">
+                        <div class="form-group text-center">
+                            <label for=""> Nombres y Apellidos</label>
+                            <input class="form-control" type="text" placeholder="Juan Camilo Mojica">
+                            <label for="">Correo ELectronico</label>
+                            <input class="form-control" type="email" placeholder="Example@hotmail.com">
+                        </div>
+                </div>
+            <div class="form-group text-center">
+                     <label for="">Tipo de peticion</label>
+                     <select class="btn dropdown-toggle bs-placeholder btn-default btn-fill btn-block selectbtn" name="" id="">
+                         <option class="btn btn-default form-control" value="">seleccionar...</option>
+                         <option class="btn btn-default form-control" value="">Consulta</option>
+                         <option class="btn btn-default form-control" value="">Queja</option>
+                         <option class="btn btn-default form-control" value="">Sugerencia</option>
+                     </select>
+             </div>
+             <div class="form-group text-center">
+                            <label for=""> Mensaje</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Escribe tu reclamo/sugerencia/solicitud"></textarea>
+             </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-default text-center">Enviar</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+     <section class="pqrs">
+        <div class="container">
+            <i class="fa fa-close trigger-times pqrsclose" style="float: right; font-size: 2rem;"></i>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="" method="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for=""> Nombres y Apellidos</label>
+                                <input class="form-control" type="text" placeholder="Juan Camilo Mojica">
+                                <label for="">Correo ELectronico</label>
+                                <input class="form-control" type="email" placeholder="Example@hotmail.com">
+                                 
+                                <label for=""> Tipo De Documento</label>
+                                <select class="form-control" name="tipo_doc" id="">
+                                    <option value="">Seleccione...</option>
+                                    <option value="">cedula de ciudadania(C.C)</option>
+                                    <option value="">cedula de ciudadania(C.C)</option>
+                                    <option value="">cedula de ciudadania(C.C)</option>
+                                    <option value="">tarjeta de identificacion(T.I)</option>
+                                </select>
+                                <label for="">Numero de Documento</label>
+                                <input class="form-control" type="text" placeholder="103010202">
+                                <label for=""> Telefono </label>
+                                <input class="form-control" type="text" placeholder="8919283">
+                                <label for=""> Celular </label>
+                                <input class="form-control" type="text" placeholder="3136975013">
+                                <label for="">Departamento</label>
+                                <select class="form-control" id="estado" name="estado" class="required">
+                                   <option value="">Seleccione...</option>
+                                   <option value="1">ANTIOQUIA</option>
+                                   <option value="2">ATLANTICO</option>
+                                   <option value="3">D.C.</option>
+                                   <option value="4">BOLIVAR</option>
+                                   <option value="5">BOYACA</option>
+                                   <option value="6">CALDAS</option>
+                                   <option value="7">CAQUETA</option>
+                                   <option value="8">CAUCA</option>
+                                   <option value="9">CESAR</option>
+                                   <option value="10">CORDOBA</option>
+                                   <option value="11">CUNDINAMARCA</option>
+                                   <option value="12">CHOCO</option>
+                                   <option value="13">HUILA</option>
+                                   <option value="14">LA GUAJIRA</option>
+                                   <option value="15">MAGDALENA</option>
+                                   <option value="16">META</option>
+                                   <option value="17">NARIÑO</option>
+                                   <option value="18">NORTE DE SANTANDER</option>
+                                   <option value="19">QUINDIO</option>
+                                   <option value="20">RISARALDA</option>
+                                   <option value="21">SANTANDER</option>
+                                   <option value="22">SUCRE</option>
+                                   <option value="23">TOLIMA</option>
+                                   <option value="24">VALLE DEL CAUCA</option>
+                                   <option value="25">ARAUCA</option>
+                                   <option value="26">CASANARE</option>
+                                   <option value="22">PUTUMAYO</option>
+                                   <option value="28">SAN ANDRES</option>
+                                   <option value="29">AMAZONAS</option>
+                                   <option value="30">GUAINIA</option>
+                                   <option value="31">GUAVIARE</option>
+                                   <option value="32">VAUPES</option>
+                                   <option value="33">VICHADA</option>
+                                </select>
+                            </div>
+                            <div class="login-inputs col-md-6">                              
+                                
+                                <label for="">Municipio</label>
+                                <select class="form-control" id="municipio"></select><br>
+
+                                <label for="">Direccion</label>
+                                <input class="form-control" type="text" placeholder="mzn 30 cs 82">
+                                <label for="">Tipo de peticion</label>
+                                <select class="form-control" name="" id="">
+                                    <option value="">seleccionar...</option>
+                                    <option value="">Consulta</option>
+                                    <option value="">Queja</option>
+                                    <option value="">Queja</option>
+                                    <option value="">Solicitud de Informacion</option>
+                                    <option value="">Sugerencia</option>
+                                </select><br>
+                                <label for="">Autorizo bajo mi responsabilidad que la respuesta sea enviada mediante:</label>
+                                <select class="form-control"  name="" id="">
+                                    <option value="">seleccionar...</option>
+                                    <option value="">Direccion de Correo Electronico</option>
+                                    <option value="">Direccion de Correspondencia</option>
+                                </select><br>
+                                <label for=""> Mensaje</label>
+                                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Escribe tu reclamo/sugerencia/solicitud"></textarea><br>
+                                <div class="2">
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>          
+                  
+                    </form>
+                </div>
+            </div>            
+        </div>     
+    </section>
         <section>
             <div class="info-project">
                 <div class="container-fluid">
@@ -366,106 +498,3 @@ $this->title = 'Red de Conocimiento SENA';
 
     </div> <!-- /body-content -->
 </div> <!-- /site-index -->
-
-
-
-    <section class="pqrs">
-        <div class="container">
-            <i class="fa fa-close trigger-times" style="float: right; font-size: 2rem;"></i>
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="" method="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for=""> Nombres y Apellidos</label>
-                                <input type="text" placeholder="Juan Camilo Mojica">
-                                <label for="">Correo ELectronico</label>
-                                <input type="email" placeholder="Example@hotmail.com">
-                                 
-                                <label for=""> Tipo De Documento</label>
-                                <select name="tipo_doc" id="">
-                                    <option value="">Seleccione...</option>
-                                    <option value="">cedula de ciudadania(C.C)</option>
-                                    <option value="">cedula de ciudadania(C.C)</option>
-                                    <option value="">cedula de ciudadania(C.C)</option>
-                                    <option value="">tarjeta de identificacion(T.I)</option>
-                                </select>
-                                <label for="">Numero de Documento</label>
-                                <input type="text" placeholder="103010202">
-                                <label for=""> Telefono </label>
-                                <input type="text" placeholder="8919283">
-                                <label for=""> Celular </label>
-                                <input type="text" placeholder="3136975013">
-                                <label for="">Departamento</label>
-                                <select id="estado" name="estado" class="required">
-                                   <option value="">Seleccione...</option>
-                                   <option value="1">ANTIOQUIA</option>
-                                   <option value="2">ATLANTICO</option>
-                                   <option value="3">D.C.</option>
-                                   <option value="4">BOLIVAR</option>
-                                   <option value="5">BOYACA</option>
-                                   <option value="6">CALDAS</option>
-                                   <option value="7">CAQUETA</option>
-                                   <option value="8">CAUCA</option>
-                                   <option value="9">CESAR</option>
-                                   <option value="10">CORDOBA</option>
-                                   <option value="11">CUNDINAMARCA</option>
-                                   <option value="12">CHOCO</option>
-                                   <option value="13">HUILA</option>
-                                   <option value="14">LA GUAJIRA</option>
-                                   <option value="15">MAGDALENA</option>
-                                   <option value="16">META</option>
-                                   <option value="17">NARIÑO</option>
-                                   <option value="18">NORTE DE SANTANDER</option>
-                                   <option value="19">QUINDIO</option>
-                                   <option value="20">RISARALDA</option>
-                                   <option value="21">SANTANDER</option>
-                                   <option value="22">SUCRE</option>
-                                   <option value="23">TOLIMA</option>
-                                   <option value="24">VALLE DEL CAUCA</option>
-                                   <option value="25">ARAUCA</option>
-                                   <option value="26">CASANARE</option>
-                                   <option value="22">PUTUMAYO</option>
-                                   <option value="28">SAN ANDRES</option>
-                                   <option value="29">AMAZONAS</option>
-                                   <option value="30">GUAINIA</option>
-                                   <option value="31">GUAVIARE</option>
-                                   <option value="32">VAUPES</option>
-                                   <option value="33">VICHADA</option>
-                                </select>
-                            </div>
-                            <div class="login-inputs col-md-6">                              
-                                
-                                <label for="">Municipio</label>
-                                <select id="municipio"></select><br>
-
-                                <label for="">Direccion</label>
-                                <input type="text" placeholder="mzn 30 cs 82">
-                                <label for="">Tipo de peticion</label>
-                                <select name="" id="">
-                                    <option value="">seleccionar...</option>
-                                    <option value="">Consulta</option>
-                                    <option value="">Queja</option>
-                                    <option value="">Queja</option>
-                                    <option value="">Solicitud de Informacion</option>
-                                    <option value="">Sugerencia</option>
-                                </select><br>
-                                <label for="">Autorizo bajo mi responsabilidad que la respuesta sea enviada mediante:</label>
-                                <select name="" id="">
-                                    <option value="">seleccionar...</option>
-                                    <option value="">Direccion de Correo Electronico</option>
-                                    <option value="">Direccion de Correspondencia</option>
-                                </select><br>
-                                <label for=""> Mensaje</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu reclamo/sugerencia/solicitud"></textarea><br>
-                                <div class="2">
-                                    <button type="submit">Enviar</button>
-                                </div>
-                            </div>
-                        </div>          
-                  
-                    </form>
-                </div>
-            </div>            
-        </div>     
-    </section>

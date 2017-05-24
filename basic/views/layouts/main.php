@@ -82,8 +82,8 @@ AppAsset::register($this);
             ['label' => 'Contáctanos',  
             'url' => ['#'],
             'items' => [
-                ['label' => 'Contáctenos', 'url' => '#'],
-                ['label' => 'PQRS', 'url' => '#'],
+                ['label' => 'Contáctenos', 'url' => '#', 'options' => ['class' => 'contactanos-link']],
+                ['label' => 'PQRS', 'url' => '#', 'options' => ['class' => 'pqrs-link']],
                 ],
             ],
 

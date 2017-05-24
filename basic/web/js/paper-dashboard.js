@@ -28,7 +28,7 @@ $(document).ready(function(){
     }
 
     //  Activate the tooltips
-    $('[rel="tooltip"]').tooltip();
+    // $('[rel="tooltip"]').tooltip();
 
 });
 
@@ -67,7 +67,7 @@ pd = {
             sidebar_active_color = $sidebar.data('active-color');
 
             $logo = $sidebar.find('.logo').first();
-            logo_content = $logo[0].outerHTML;
+            
 
             ul_content = '';
 
@@ -89,10 +89,10 @@ pd = {
 
             ul_content = '<ul class="nav navbar-nav">' + ul_content + '</ul>';
 
-            navbar_content = logo_content + ul_content;
-            navbar_content = '<div class="sidebar-wrapper">' + navbar_content + '</div>';
+            // navbar_content = logo_content + ul_content;
+            // navbar_content = '<div class="sidebar-wrapper">' + navbar_content + '</div>';
 
-            $off_canvas_sidebar.html(navbar_content);
+            // $off_canvas_sidebar.html(navbar_content);
 
             $('body').append($off_canvas_sidebar);
 
