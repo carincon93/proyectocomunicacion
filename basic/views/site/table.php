@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<a href="./" class="btn return">regresar</a>
+		<a href="<?= Yii::$app->homeUrl?>/index.php" class="btn return">regresar</a>
 		<div class="row">
 			<div id="t" class="col-md-10 col-md-offset-1">
 				<table>

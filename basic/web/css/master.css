@@ -346,9 +346,9 @@ footer {
 
   .footer-info ul li span { 
     width: 10rem; }
-  .footer-info {
+/*  .footer-info {
     margin-left: 6rem;
-  }
+  }*/
 
     .informacion{
       font-size: 13px;
@@ -527,7 +527,7 @@ footer {
   background: #fff;
   display: none;
   position: fixed;
-  height: 7.5rem;
+  height: 5rem;
   width: 100%;
   z-index: 11;
 }
@@ -762,3 +762,12 @@ td:hover {
   background: rgb(35,130,118);
   color: white;
 }
+
+
+.navbar-inverse { 
+  background-color: transparent;
+  border-color: #fff; }
+  .navbar-inverse .navbar-nav > li > a { color: #fff; }
+  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { 
+  background-color: #fff;
+  color: #333 !important;}

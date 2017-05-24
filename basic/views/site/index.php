@@ -6,7 +6,7 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Red de Conocimiento SENA';
 ?>
 <nav class="sec"></nav>
-<nav class="navbar-index">
+<!-- <nav class="navbar-index">
     <ul class="navbar-links">
         <li>
             <a href="">Formación</a> 
@@ -67,10 +67,10 @@ $this->title = 'Red de Conocimiento SENA';
             <a href="javascript:void(0)" class="cd-nav-trigger" >Iniciar Sesión</a>
         </li>
     </ul>
-    <!-- <div class="login-link">
+    <div class="login-link">
         <a href="javascript:void(0)" class="cd-nav-trigger" >Iniciar Sesión</a>
-    </div> -->
-</nav>
+    </div>
+</nav> -->
 <div class="site-index">
 
     <div class="body-content">
@@ -307,11 +307,11 @@ $this->title = 'Red de Conocimiento SENA';
                             </div>                      
                         </div>
                          <nav class="col-md-4 cl-effect-16" id="cl-effect-16">
-                            <a href="#cl-effect-16" data-hover="Trabajo en Alturas">Trabajo en Alturas</a>
-                            <a href="#cl-effect-16" data-hover="Química">Química</a>
-                            <a href="#cl-effect-16" data-hover="Gestión de la Producción">Gestión de la Producción</a>
-                            <a href="#cl-effect-16" data-hover="Gestión Integrada de la Calidad">Gestión Integrada de la Calidad</a>
-                            <a href="#cl-effect-16" data-hover="Salud Ocupacional">Salud Ocupacional</a>
+                            <li><a href="#cl-effect-16" data-hover="Trabajo en Alturas">Trabajo en Alturas</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Química">Química</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Gestión de la Producción">Gestión de la Producción</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Gestión Integrada de la Calidad">Gestión Integrada de la Calidad</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Salud Ocupacional">Salud Ocupacional</a></li>
                         </nav> 
                         
 
@@ -468,43 +468,4 @@ $this->title = 'Red de Conocimiento SENA';
                 </div>
             </div>            
         </div>     
-    </section>
-
-    <section id="contactanos">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="row">
-                <div class="text-center">
-                    <form method="post" action=""></form>
-                    <div class="form-group text-center">
-                        <label for=""> Nombres y Apellidos</label>
-                        <input class="form-control" type="text" placeholder="Juan Camilo Mojica">
-                        <label for="">Correo ELectronico</label>
-                        <input class="form-control" type="email" placeholder="Example@hotmail.com">
-                    </div>
-            </div>
-        </div>
-            <div class="row">
-                <div class="form-group text-center">
-                        <label for="">Tipo de peticion</label>
-                        <select class="btn dropdown-toggle bs-placeholder btn-default btn-fill btn-block" name="" id="">
-                            <option class="btn btn-default form-control" value="">seleccionar...</option>
-                            <option class="btn btn-default form-control" value="">Consulta</option>
-                            <option class="btn btn-default form-control" value="">Queja</option>
-                            <option class="btn btn-default form-control" value="">Sugerencia</option>
-                        </select>
-                    </div>
-            </div>
-            <div class="row">
-                <div class="form-group text-center">
-                        <label for=""> Mensaje</label>
-                        <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Escribe tu reclamo/sugerencia/solicitud"></textarea>
-                    </div>
-            </div>  
-            <div class="row">
-                <div class="col-md-4">
-                    <button class="btn btn-default text-center">Enviar</button>
-                </div>
-            </div>  
-            </form>
-        </div>
     </section>

@@ -25,7 +25,90 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="wrap">   
+<div class="wrap">
+    <?php
+    NavBar::begin([
+        'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top',
+        ],
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-left'],
+        'items' => [
+            ['label' => 'Formación',  
+            'url' => ['#'],
+            'items' => [
+                ['label' => 'Redes del Conocimiento', 'url' => '#'],
+                ['label' => 'Evaluación y Certificación por Competencias Laborales', 'url' => '#'],
+                ['label' => 'Técnico', 'url' => '#'],
+                ['label' => 'Técnólogo', 'url' => '#'],
+                ],
+            ],
+            ['label' => 'Instructores',  
+            'url' => ['#'],
+            'items' => [
+                ['label' => 'Capacitación', 'url' => '#'],
+                ['label' => '¿Quieres ser Instructor?', 'url' => '#'],
+                ['label' => 'Formación y Convocatorias', 'url' => '#'],
+                ],
+            ],
+            ['label' => 'Empresarios',  
+            'url' => ['#'],
+            'items' => [
+                ['label' => 'Mesas Sectoriales', 'url' => '#'],
+                ['label' => 'Normas de Competencias Laborales', 'url' => '#'],
+                ['label' => 'Laboratorios para innovar', 'url' => '#'],
+                ['label' => 'Solicitudes de Empresarios', 'url' => '#'],
+                ['label' => 'Convocatorias Vigentes', 'url' => '#'],
+                ],
+            ],
+            ['label' => 'Entidad',  
+            'url' => ['#'],
+            'items' => [
+                ['label' => 'Misión y Visión', 'url' => '#', 'options' => ['id' => 'go-mision']],
+                ['label' => 'Estructura Organizacional', 'url' => '#'],
+                ['label' => 'Planeación Estratégica', 'url' => '#'],
+                ],
+            ],
+            ['label' => 'Ambientes', 'options' => ['class' => 'dropdown', 'id' => 'go-galeria']],
+            ['label' => 'Catálogo Información',  'options' => ['class' => 'dropdown', 'id' => 'go-formacion']],
+            ['label' => 'Plan Estratégico',  
+            'url' => ['#'],
+            'items' => [
+                ['label' => 'Plan de Acción', 'url' => ['/site/table']],
+                ['label' => 'Plan de Modernizacion Tecnologica', 'url' => '#'],
+                ],
+            ],
+            ['label' => 'Contáctanos',  
+            'url' => ['#'],
+            'items' => [
+                ['label' => 'Contáctenos', 'url' => '#'],
+                ['label' => 'PQRS', 'url' => '#'],
+                ],
+            ],
+
+        ],
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right'],
+        'items' => [
+            // ['label' => 'Contact', 'url' => ['/site/contact']],
+            Yii::$app->user->isGuest ? (
+                ['label' => 'Iniciar Sesión', 'options' => ['class' => 'dropdown cd-nav-trigger']]
+            ) : (
+                '<li>'
+                . Html::beginForm(['/site/logout'], 'post')
+                . Html::submitButton(
+                    'Logout (' . Yii::$app->user->identity->username . ')',
+                    ['class' => 'btn btn-link logout']
+                )
+                . Html::endForm()
+                . '</li>'
+            )
+        ],
+    ]);
+    NavBar::end();
+    ?>
             
     <div class="content">
         <?= $content ?>        

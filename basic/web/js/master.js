@@ -42,7 +42,7 @@ $(document).ready(function() {
 			finstagram = $('.footer-social-networks').children().first().next().next();
 			fgooglePlus = $('.footer-social-networks').children().first().next().next().next();
 
-		if (scroll >= 3200) {
+		if (scroll >= 3000) {
 			setTimeout(function(){
 				$(facebook).removeClass('slideIn').addClass('slideOutLeft animated');
 				$(ffacebook).removeClass('fadeOut').addClass('fadeIn animated');
@@ -129,7 +129,8 @@ $(document).ready(function() {
 	});
 
 	var $sec = $('.sec');
-	var $navLinks = $('.navbar-links li a');
+	var $navLinks = $('.dropdown a');
+	var $dropdownMenu = $('.dropdown-menu li a');
 	function navbarScrollposStyles() {				
 		var st = $(this).scrollTop();
 		// $('.splitter').css('height', (st * 9 / 8)+'px');
@@ -140,6 +141,7 @@ $(document).ready(function() {
 	    } else {
 	        $($sec).removeClass('fadeInDown').addClass('fadeOutUp');
 	        $($navLinks).css('color', '#ffffff');
+	        $($dropdownMenu).css('color', '#333');
 	    }
 	}
 
