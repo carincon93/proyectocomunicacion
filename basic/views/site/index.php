@@ -9,7 +9,7 @@ $this->title = 'Red de Conocimiento SENA';
 <nav class="navbar-index">
     <ul class="navbar-links">
         <li>
-            Formación   
+            <a href="">Formación</a> 
             <ul class="sub-menu">
                 <li><a href="">Redes del Conocimiento</a></li>
                 <li><a href="">Evaluación y Certificación por Competencias Laborales</a></li>
@@ -18,7 +18,7 @@ $this->title = 'Red de Conocimiento SENA';
             </ul>
         </li>
         <li>
-            Instructores   
+            <a href="">Instructores</a>
             <ul class="sub-menu">
                 <li><a href="">Capacitación</a></li>
                 <li><a href="">¿Quieres ser Instructor?</a></li>
@@ -26,7 +26,7 @@ $this->title = 'Red de Conocimiento SENA';
             </ul>
         </li>
         <li>
-            Empresarios   
+            <a href="">Empresarios</a>
             <ul class="sub-menu">
                 <li><a href="">Mesas Sectoriales</a></li>
                 <li><a href="">Normas de Competencias Laborales</a></li>
@@ -36,9 +36,9 @@ $this->title = 'Red de Conocimiento SENA';
             </ul>
         </li>
         <li>
-            Entidad   
+            <a href="">Entidad</a>
             <ul class="sub-menu">
-                <li><a href="">Misión y Visión</a></li>
+                <li><a id="go-mision" href="javascript:void(0)">Misión y Visión</a></li>
                 <li><a href="">Estructura Organizacional</a></li>
                 <li><a href="">Planeación Estratégica</a></li>
             </ul>
@@ -50,14 +50,14 @@ $this->title = 'Red de Conocimiento SENA';
             <a id="go-formacion" href="javascript:void(0)">Catálogo Información</a>
         </li>
         <li>
-            Plan Estratégico
+            <a href="">Plan Estratégico</a>
             <ul class="sub-menu">
                 <li><a href="../views/site/table.html">Plan de Acción</a></li>
-                <li>Plan de Modernizacion Tecnologica</li> 
+                <li><a href="">Plan de Modernizacion Tecnologica</a></li> 
             </ul>
         </li>
         <li>
-            Example
+            <a href="">Example</a>
             <ul class="sub-menu">
                 <li><a href="">Contáctanos</a></li>
                 <li><a class="pqrs-link" href="javascript:void(0)">PQRS</a></li>
@@ -81,59 +81,63 @@ $this->title = 'Red de Conocimiento SENA';
             <a href=""><i class="fa fa-instagram"></i></a>
             <a href=""><i class="fa fa-google-plus"></i></a>
         </div>
+        <!-- Encabezado -->
         <header class="hero">
-            <div class="overlay">
+            <figure class="overlay">
                 <svg class="img-hero" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 769.59 394.99"><title>asset1</title><circle cx="654" cy="195.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="238" cy="385.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="364" cy="18.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="51" cy="27.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="575" cy="376.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="424" cy="223.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="686" cy="325.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="9" cy="136.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="663" cy="18.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><circle cx="536" cy="103.99" r="9" style="fill:#23b276;opacity:0.10000000149011612;isolation:isolate"/><polyline points="535.5 103.49 662.5 18.49 768.5 179.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.20000000298023224;isolation:isolate"/><polyline points="768.5 179.49 654 195.99 536 103.99 364 18.99 51.5 27.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.20000000298023224;isolation:isolate"/><polyline points="769.5 0.49 8.5 137.49 685.5 326.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.10000000149011612;isolation:isolate"/><polyline points="663.5 19.49 652 195.99 574.5 376.49 238.5 386.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.07000000029802322;isolation:isolate"/><polyline points="652.5 196.49 423.5 224.49 574.5 377.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10;opacity:0.20000000298023224;isolation:isolate"/><line x1="423.5" y1="224.49" x2="536.5" y2="104.49" style="fill:none;stroke:#23b276;stroke-miterlimit:10"/></svg>
-            </div>
-            <div class="container-fluid conocimiento-wrap">
+            </figure>
+            <div class="container-fluid conocimiento-wrap">                
+                    
                 <article class="article-conocimiento">
                     <h1>Redes del conocimiento <span class="hero-title">SENA</span></h1>
                     <!-- <img class="redsena-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/redsena-logo.png"> -->
-                    <p><strong>Descripción: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit illo rem id molestiae, quaerat, omnis! Quibusdam, enim, ex veniam, architecto sunt quaerat et saepe distinctio odit id atque aliquid animi ad dicta excepturi possimus ea nisi quia recusandae. Neque, nam.</p>
+                    <!-- <p><strong>Descripción: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit illo rem id molestiae, quaerat, omnis! Quibusdam, enim, ex veniam, architecto sunt quaerat et saepe distinctio odit id atque aliquid animi ad dicta excepturi possimus ea nisi quia recusandae. Neque, nam.</p> -->
                 </article>
+            
+                <img class="" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-red-logo.svg" alt="" width="20%">
+                
             </div>
-            <div class="triangles">
+<!--             <div class="triangles">
                 <div class="triangles-white"></div>
-            </div>
+            </div> -->
         </header>
-            <section>
-                <div id="about-section" class="info">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <article class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                <div class="about-inner">
-                                    <h1 class=""><strong>MISIÓN</strong></h1>
-                                    <p class="">Articula la respuesta institucional en las áreas temáticas de gestión de operaciones industriales, propendiendo por el logro de estándares internacionales de productividad, garantizando calidad y pertinencia de la formación profesional.
-                                    </p>
-                                </div>
-                            </article>
-                            <article class="col-md-4 objetivos">
-                                <div class="about-inner">
-                                    <h1 class="">OBJETIVOS <strong>ESTRATÉGICOS</strong></h1>
-                                    <ul class="">
-                                        <li>* Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.</li>
-                                        <li>* Fortalecer el relacionamiento con el sector productivo y gubernamental para diseño e implementación de políticas, estrategias y programas que dinamicen la competitividad y productividad empresarial.</li>
-                                        <li>* Establecer alianzas a nivel internacional para fortalecer las capacidades del talento humano de la Red.</li>
-                                        <li>* Desarrollar actividades que permitan definir las líneas temáticas de los semilleros de investigación para incursionar en la estrategia Sennova y el sector externo, apoyando los centros asociados a la red.</li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <article class="col-md-4">                        
-                                <div class="about-inner">
-                                    <h1><strong>VISIÓN</strong></h1>
-                                    <p>Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector productivo.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <img class="about-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-red-logo.svg" alt="" width="20%">
+        <section>
+            <div class="info-project">
+                <div class="container-fluid">
+                    <div class="row">
+                        <article class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                            <div class="about-inner">
+                                <h1 class=""><strong>MISIÓN</strong></h1>
+                                <p class="">Articula la respuesta institucional en las áreas temáticas de gestión de operaciones industriales, propendiendo por el logro de estándares internacionales de productividad, garantizando calidad y pertinencia de la formación profesional.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="col-md-4 objetivos">
+                            <div class="about-inner">
+                                <h1 class="">OBJETIVOS <strong>ESTRATÉGICOS</strong></h1>
+                                <ul class="">
+                                    <li>* Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.</li>
+                                    <li>* Fortalecer el relacionamiento con el sector productivo y gubernamental para diseño e implementación de políticas, estrategias y programas que dinamicen la competitividad y productividad empresarial.</li>
+                                    <li>* Establecer alianzas a nivel internacional para fortalecer las capacidades del talento humano de la Red.</li>
+                                    <li>* Desarrollar actividades que permitan definir las líneas temáticas de los semilleros de investigación para incursionar en la estrategia Sennova y el sector externo, apoyando los centros asociados a la red.</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="col-md-4">                        
+                            <div class="about-inner">
+                                <h1><strong>VISIÓN</strong></h1>
+                                <p>Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector productivo.</p>
+                            </div>
+                        </article>
                     </div>
+                    <img class="about-logo" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-red-logo.svg" alt="" width="20%">
                 </div>
-            </section>
+            </div>
+        </section>
 
             <section class="pformacion">
                 <div class="container-fluid">
-                    <h1 class="text-center ptitle">Programas de <strong>Formación</strong></h1>
-                    <i class="splitter-news"></i>
+                    <h1 class="text-center ">Programas de <strong>Formación</strong></h1>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card card1">
@@ -187,7 +191,6 @@ $this->title = 'Red de Conocimiento SENA';
                 
                 <div class="container">
                     <h1 class="text-center">Noticias <strong>SENA</strong></h1>
-                    <i class="splitter-news"></i>
                     <i class="fa fa-newspaper-o"></i>
                     <div class="row">
                         <div class="col-md-12">
@@ -235,7 +238,6 @@ $this->title = 'Red de Conocimiento SENA';
             <section class="encuestas">
                 <div class="container">
                     <h1 class="text-center">Encuestas <strong>SENA</strong></h1>
-                    <i class="splitter-e"></i>
                     <i class="fa fa-file-text-o"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ex fugiat est laborum commodi blanditiis et officiis qui fuga error quis eaque sed, praesentium alias amet vel at dicta mollitia rem aliquam, voluptas necessitatibus, temporibus sit nihil vero. Alias, provident!</p>
                     <div class="row">
@@ -254,8 +256,7 @@ $this->title = 'Red de Conocimiento SENA';
             </section>
 
             <section class="galeria">
-                <h1 class="text-center gtitle">Galería <strong>SENA</strong></h1>
-                <i class="splitter-news"></i>
+                <h1 class="text-center">Galería <strong>SENA</strong></h1>
                 <div class="container">
 
                     <div class="row">
@@ -342,11 +343,11 @@ $this->title = 'Red de Conocimiento SENA';
     </div>
     <div class="cd-overlay-nav">
         <span></span>
-    </div> <!-- cd-overlay-nav -->
+    </div>
 
     <div class="cd-overlay-content">
         <span></span>
-    </div> <!-- cd-overlay-content -->
+    </div>
     <!-- /Login -->
 
     </div> <!-- /body-content -->
@@ -356,7 +357,7 @@ $this->title = 'Red de Conocimiento SENA';
 
     <section class="pqrs">
         <div class="container">
-            <i class="fa fa-close" style="float: right; font-size: 4rem;"></i>
+            <i class="fa fa-close trigger-times" style="float: right; font-size: 2rem;"></i>
             <div class="row">
                 <div class="col-md-12">
                     <form action="" method="">
@@ -369,7 +370,7 @@ $this->title = 'Red de Conocimiento SENA';
                                  
                                 <label for=""> Tipo De Documento</label>
                                 <select name="tipo_doc" id="">
-                                    <option value="">seleccione...</option>
+                                    <option value="">Seleccione...</option>
                                     <option value="">cedula de ciudadania(C.C)</option>
                                     <option value="">cedula de ciudadania(C.C)</option>
                                     <option value="">cedula de ciudadania(C.C)</option>
@@ -418,8 +419,7 @@ $this->title = 'Red de Conocimiento SENA';
                                    <option value="32">VAUPES</option>
                                    <option value="33">VICHADA</option>
                                 </select>
-                            </div> 
-                                <i class="splitter"></i>
+                            </div>
                             <div class="login-inputs col-md-6">                              
                                 
                                 <label for="">Municipio</label>

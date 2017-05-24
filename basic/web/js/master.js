@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-	// $('.navbar-links li').mouseover(function(event) {		
-	// 	$(this).children().fadeIn();
-	// });
 	$('.pqrs-link').click(function(event) {
 		$('.pqrs').addClass('open-pqrs');
 	});
@@ -10,8 +7,10 @@ $(document).ready(function() {
 		$('.pqrs').removeClass('open-pqrs');
 	});
 
+	// SmoothScroll
 	var $galeria 	= $("#go-galeria"),
-	$formacion 		= $("#go-formacion");
+	$formacion 		= $("#go-formacion"),
+	$mision			= $("#go-mision");
  
 	$galeria.on("click", function() {
 	  $(".galeria").velocity("scroll", { 
@@ -19,14 +18,20 @@ $(document).ready(function() {
 	    easing: "easeInBack"
 	  });
 	});
-
 	$formacion.on("click", function() {
 	  $(".pformacion").velocity("scroll", { 
 	    duration: 2000,
 	    easing: "easeInBack"
 	  });
 	});
-	AOS.init();
+	$mision.on("click", function() {
+	  $(".objetivos").velocity("scroll", { 
+	    duration: 2000,
+	    easing: "easeInBack"
+	  });
+	});
+
+	// Social Networks Effects
 	window.onscroll = function(event) {
 		var scroll = pageYOffset,
 			facebook = $('.social-networks').children().first();
@@ -38,7 +43,7 @@ $(document).ready(function() {
 			finstagram = $('.footer-social-networks').children().first().next().next();
 			fgooglePlus = $('.footer-social-networks').children().first().next().next().next();
 
-		if (scroll >= 3400) {
+		if (scroll >= 3200) {
 			setTimeout(function(){
 				$(facebook).removeClass('slideIn').addClass('slideOutLeft animated');
 				$(ffacebook).removeClass('fadeOut').addClass('fadeIn animated');
@@ -63,11 +68,7 @@ $(document).ready(function() {
 			$(ffacebook).removeClass('fadeIn').addClass('fadeOut');
 			$(ftwitter).removeClass('fadeIn').addClass('fadeOut');
 			$(finstagram).removeClass('fadeIn').addClass('fadeOut');
-			$(fgooglePlus).removeClass('fadeIn').addClass('fadeOut');
-
-
-
-			
+			$(fgooglePlus).removeClass('fadeIn').addClass('fadeOut');			
 		}
 		
 	}
@@ -129,22 +130,17 @@ $(document).ready(function() {
 	});
 
 	var $sec = $('.sec');
-	var $nlinks = $('.navbar-links li a');
-	var $nlinks2 = $('.navbar-links li');
+	var $navLinks = $('.navbar-links li a');
 	function navbarScrollposStyles() {				
 		var st = $(this).scrollTop();
 		// $('.splitter').css('height', (st * 9 / 8)+'px');
 		$('svg.img-hero').css('top', (st * 2 / 4)+'px');
-	    if($(window).scrollTop() > 650) {
+	    if($(window).scrollTop() > 225) {
 	        $($sec).addClass('navbar-index-scroll animated fadeInDown').removeClass('fadeOutUp');
-	        $('.ltext').css('color', '#90c0b6');
-	        $($nlinks).css('color', '#90c0b6');
-	        $($nlinks2).css('color', '#90c0b6');
-	        $('.login-link').css('color', '#90c0b6');
+	        $($navLinks).css('color', '#238276');
 	    } else {
 	        $($sec).removeClass('fadeInDown').addClass('fadeOutUp');
-	        $($nlinks).css('color', '#90c0b6');
-	        $('.ltext').fadeIn().css('color', '#fff');
+	        $($navLinks).css('color', '#ffffff');
 	    }
 	}
 

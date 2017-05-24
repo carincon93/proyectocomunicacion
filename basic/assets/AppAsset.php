@@ -21,17 +21,15 @@ class AppAsset extends AssetBundle
         // 'css/site.css',
         'css/font-awesome.min.css',
         'css/owl.carousel.min.css',
-        'css/aos.css',
         'css/component.css',
         'css/animate.css',
-        'css/overlay.css',
+        'css/login-effect.css',
         'css/demo.css',
         'css/slicebox.css',
         'css/master.css',
     ];
     public $js = [
         'js/velocity.min.js',
-        'js/aos.js',
         'js/modernizr.custom.46884.js',
         'js/jquery.slicebox.js',
         'js/owl.carousel.min.js',
