@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	$('.pqrs-link').click(function(event) {
 		$('.pqrs').addClass('open-pqrs');
 	});
@@ -309,4 +308,5 @@ $(document).ready(function() {
 
 				Page.init();
 			});
+
 	});
