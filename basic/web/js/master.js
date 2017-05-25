@@ -1,9 +1,19 @@
 $(document).ready(function() {
-	// Maicol
-	$('.contactanos').hide();
-	$('.contactanos-link').click(function(event) {
-		$('.contactanos').show('slow/400/fast', function() {});
+	$('.contactenos-link').click(function(event) {
+		$('.contactenos').css('display', 'flex');
+		$('.contact-overlay').css('display', 'block');
+		$('.navbar-inverse').css('display', 'none');
 	});
+	$('.contactclose').click(function(event) {
+		$('.contactenos').css('display', 'none');
+		$('.contact-overlay').css('display', 'none');
+		$('.navbar-inverse').css('display', 'block');
+	});
+	// Maicol
+	// $('.contactanos').hide();
+	// $('.contactanos-link').click(function(event) {
+	// 	$('.contactanos').show('slow/400/fast', function() {});
+	// });
 	$('.pqrs').hide();
 	$('.pqrs-link').click(function(event) {
 		$('.pqrs').show('slow/400/fast', function() {});
@@ -11,12 +21,6 @@ $(document).ready(function() {
 	$('.pqrsclose').click(function(event) {
 		$('.pqrs').hide('slow/400/fast', function() {});
 	});
-	$('.contactclose').click(function(event) {
-		$('.contactanos').hide('slow/400/fast', function() {
-			
-		});	
-	});
-	
 	// $('.pqrs-link').click(function(event) {
 	// 	$('.pqrs').addClass('open-pqrs');
 	// });
@@ -179,7 +183,8 @@ $(document).ready(function() {
 
 	//open/close the menu and cover layers
 	toggleNav.on('click', function(){
-		$('.navbar-index').toggleClass('hide');
+		$('.navbar-inverse').toggleClass('hide');
+		$('.sec').toggleClass('hide');
 		if(!toggleNav.hasClass('close-nav')) {
 			//it means navigation is not visible yet - open it and animate navigation layer
 			toggleNav.addClass('close-nav');
