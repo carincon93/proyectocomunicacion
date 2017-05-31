@@ -48,6 +48,11 @@
   visibility: visible;
   opacity: 1;
 }
+.cd-primary-nav.fade-out {
+  /* navigation visible at the end of the circle animation */
+  visibility: hidden;
+  opacity: 0;
+}
 @media only screen and (min-width: 768px) {
   .cd-primary-nav li {
     margin: 2em 0;

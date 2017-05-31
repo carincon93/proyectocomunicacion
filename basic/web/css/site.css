@@ -200,7 +200,9 @@ a.desc:after {
     color: inherit;
  }
 .section {
+    overflow: hidden;
     padding: 4rem 0;
+    position: relative;
 }
     .section div h1 {
         margin: 0 0 4rem;
@@ -226,7 +228,7 @@ a.desc:after {
 
 /* Hero */
 .hero {
-    background: linear-gradient(135deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0.2) 120%);
+    background: linear-gradient(135deg, rgba(60, 118, 61, 0.66) 25%, rgba(255,255,255,0.2) 120%);
     height: 100vh;
 }
 .hero-img {
@@ -254,8 +256,9 @@ a.desc:after {
     /*z-index: 10;*/
 }
     .hero-title {
+        color: #fff;
         font-size: 4rem;
-        margin-left: 1rem;
+        margin-left: 4rem;
     }
     .hero-span {
         color: #fc7323;
@@ -263,8 +266,8 @@ a.desc:after {
 
 /* Project */
 .project-info-section {
-    /*background-color: #f7f7f7;*/
-    background: linear-gradient(180deg, #f7f7f7 0%, #fff 80%);
+    background-color: #30A0AC;
+    /*background: linear-gradient(180deg, #f7f7f7 0%, #fff 80%);*/
     overflow: hidden;
     position: relative;
 }
@@ -279,10 +282,24 @@ a.desc:after {
     }
     .card-project {
         background-color: #fff;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
-        height: 35rem;
+        box-shadow: 0 52px 65px 0 rgba(0, 0, 0, 0.28);
         padding: 0.5rem 2rem;
+
     }
+    .card-project1, .card-project3 {
+        background-color: #fff;
+        width: 27rem;
+    }
+    .card-project1 {
+        height: 16rem;
+    }
+    .card-project2 {
+        margin-top: 7rem;
+    }
+     .card-project3 {
+        height: 18rem;
+        margin-top: 8rem;
+     }
     .card-project1-border:hover {
         border-bottom: 1px solid #fc7323;
     }
@@ -300,7 +317,17 @@ a.desc:after {
         position: absolute;
         bottom: -8rem;
     }
-
+    .plus-b {
+        color: #fff;
+    }
+    
+    .asset-informacion {
+        position: absolute;
+        right: 0;
+        opacity: 0.5;
+        bottom: 0;
+        width: 60%;
+    }
 /* Programas de Formación */
 .programas-formacion-section {
     background: linear-gradient(135deg, rgba(252,115,35,1) 0%, rgba(237, 187, 17, 0.73) 130%);
@@ -318,6 +345,11 @@ a.desc:after {
     }
     .card3 {
         border-left: 0.8rem solid #238276;
+    }
+    .plus-formacion-section {
+        position: absolute;
+        bottom: -8rem;
+        right: 4rem;
     }
 
 /* Noticias */

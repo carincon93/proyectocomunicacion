@@ -115,7 +115,7 @@ $(document).ready(function() {
 				scaleX: 1,
 				scaleY: 1,
 			}, 600, 'easeInOutCubic', function(){
-				navigation.addClass('fade-in');
+				navigation.addClass('fade-in').removeClass('fade-out');
 			});
 		} else {
 			//navigation is open - close it and remove navigation layer
@@ -126,7 +126,7 @@ $(document).ready(function() {
 				scaleX: 1,
 				scaleY: 1,
 			}, 600, 'easeInCubic', function(){
-				navigation.removeClass('fade-in');
+				navigation.removeClass('fade-in').addClass('fade-out');
 				
 				overlayNav.children('span').velocity({
 					translateZ: 0,

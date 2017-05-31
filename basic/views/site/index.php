@@ -35,21 +35,25 @@ $this->title = 'My Yii Application';
 
         <!--  -->
         <section class="section project-info-section">
+            <img class="asset-informacion" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-1.svg" alt="">
             <figure class="plus-a plus-info-section" style="">+</figure>
-            <figure class="plus-b plus-info-section" style="font-size: 8rem;">+</figure>
             <figure class="plus-c plus-info-section" style="font-size: 2rem;">+</figure>
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card-project card-project1-border">
+                    <div class="col-md-6">
+                        <div class="card-project card-project1 card-project1-border">
                             <h2>MISIÓN</h2>
-
                             <p>Articula la respuesta institucional en las áreas temáticas de gestión de operaciones industriales, propendiendo por el logro de estándares internacionales de productividad, garantizando calidad y pertinencia de la formación profesional.</p>                            
                         </div>
+                        <div class="card-project card-project3 card-project2-border">
+                            <h2>VISIÓN</h2>
+                            <p>Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector productivo.</p>                            
+                        </div>
+                        
                     </div>
-                    <div class="col-md-4">
-                        <div class="card-project card-project2-border">
+                    <div class="col-md-6">
+                        <div class="card-project card-project2 card-project2-border">
                             <h2>OBJETIVOS <strong>ESTRATÉGICOS</strong></h2>
                             <ul class="">
                                 <li>Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.</li>
@@ -57,24 +61,18 @@ $this->title = 'My Yii Application';
                                 <li>Establecer alianzas a nivel internacional para fortalecer las capacidades del talento humano de la Red.</li>
                                 <li>Desarrollar actividades que permitan definir las líneas temáticas de los semilleros de investigación para incursionar en la estrategia Sennova y el sector externo, apoyando los centros asociados a la red.</li>
                             </ul>                            
-                        </div>
+                        </div>                        
                     </div>
-                    <div class="col-md-4">
-                        <div class="card-project card-project2-border">
-                            <h2>VISIÓN</h2>
-                            <p>Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector productivo.</p>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="project-logos">
+<!--                 <div class="project-logos">
                     <img <img src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-logos-svg.svg" alt="" width="30%">                    
-                </div>
+                </div> -->
 
             </div>            
         </section>
 
         <!--  -->
         <section class="programas-formacion-section section">
+            <figure class="plus-b plus-formacion-section" style="font-size: 8rem;">+</figure>
             <div class="container">
 
                 <h1 class="text-center title-white">Programas de <strong>Formación</strong></h1>
