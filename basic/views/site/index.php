@@ -170,6 +170,75 @@ $this->title = 'My Yii Application';
 
             </div>
         </section>
+        <section class="encuestas">
+                <div class="container">
+                    <h1 class="text-center">Encuestas <strong>SENA</strong></h1>
+                    <i class="fa fa-file-text-o"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ex fugiat est laborum commodi blanditiis et officiis qui fuga error quis eaque sed, praesentium alias amet vel at dicta mollitia rem aliquam, voluptas necessitatibus, temporibus sit nihil vero. Alias, provident!</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <a href="" class="btn btn-5 btn-5b icon-cart elink"><span>Link Encuesta 1</span></a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <a href="" class="btn btn-5 btn-5b icon-cart elink"><span>Link Encuesta 2</span></a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <a href="" class="btn btn-5 btn-5b icon-cart elink"><span>Link Encuesta 3</span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+        <section class="galeria">
+                <h1 class="text-center">Galería <strong>SENA</strong></h1>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul id="sb-slider" class="sb-slider">
+                                <li>
+                                    <a target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/1.jpg" alt="image1"/></a>                          
+                                </li>
+                                <li>
+                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/2.jpg" alt="image2"/></a>                         
+                                </li>
+                                <li>
+                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/3.jpg" alt="image1"/></a>                         
+                                </li>
+                                <li>
+                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/4.jpg" alt="image1"/></a>                         
+                                </li>
+                                <li>
+                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/5.jpg" alt="image1"/></a>
+                                </li>
+                                </li>
+                            </ul>
+
+                            <div id="shadow" class="shadow"></div>
+
+                            <div id="nav-arrows" class="nav-arrows">
+                                <a href="#">Next</a>
+                                <a href="#">Previous</a>
+                            </div>
+
+                            <div id="nav-options" class="nav-options">
+                                <span id="navPlay">Play</span>
+                                <span id="navPause">Pause</span>
+                            </div>                      
+                        </div>
+                         <nav class="col-md-4 cl-effect-16" id="cl-effect-16">
+                            <li><a href="#cl-effect-16" data-hover="Trabajo en Alturas">Trabajo en Alturas</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Química">Química</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Gestión de la Producción">Gestión de la Producción</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Gestión Integrada de la Calidad">Gestión Integrada de la Calidad</a></li>
+                            <li><a href="#cl-effect-16" data-hover="Salud Ocupacional">Salud Ocupacional</a></li>
+                        </nav> 
+                        
+
+                    </div>
+                
+                </div>
+            </section>
 
     </div>
 </div>
