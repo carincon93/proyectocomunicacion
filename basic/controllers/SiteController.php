@@ -60,7 +60,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-       $model = new LoginForm();
+        // return $this->render('index');
+        $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         }
@@ -108,6 +109,7 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        $this->layout = 'base';
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
@@ -129,7 +131,7 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionTabla()
+    public function actionTable()
     {
         return $this->render('table');
     }

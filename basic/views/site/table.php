@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Tabla</title>
-	<link rel="stylesheet" href="../../web/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../web/css/master.css">
-	<link rel="stylesheet" href="../../web/css/animate.css">
-</head>
-<body>
+<?php
+
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model app\models\ContactForm */
+
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
+
+$this->title = 'Plan de acción';
+// $this->params['breadcrumbs'][] = $this->title;
+?>
+<section class="plan-accion-tabla section">
 	<div class="container-fluid">
-		<a href="<?= Yii::$app->homeUrl?>/index.php" class="btn return">regresar</a>
+
+		<!-- <?= Html::a('return', ['/'], ['class'=>'']) ?> -->
 		<div class="row">
 			<div id="t" class="col-md-10 col-md-offset-1">
-				<table>
+				<table class="table-plan-accion">
 					<thead>
 						<tr>
 							<th colspan="5">PLAN DE ACCIÓN DE LA RED DE GESTIÓN DE PRODUCCIÓN INDUSTRIAL</th>
@@ -228,7 +233,9 @@
 				</table>
 			</div>
 		</div>
+
 	</div>
+</section>
 	
 </body>
 </html>

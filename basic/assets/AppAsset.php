@@ -18,23 +18,17 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        // 'css/site.css',
-        'css/font-awesome.min.css',
         'css/owl.carousel.min.css',
-        'css/component.css',
-        'css/animate.css',
+        'css/owl.theme.default.min.css',
+        'css/font-awesome.min.css',
         'css/login-effect.css',
-        'css/demo.css',
-        'css/slicebox.css',
-        'css/master.css',
+        'css/animate.css',
+        'css/site.css',
     ];
     public $js = [
         'js/velocity.min.js',
-        'js/modernizr.custom.46884.js',
-        'js/jquery.slicebox.js',
         'js/owl.carousel.min.js',
-        'js/master.js',
-
+        'js/site.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

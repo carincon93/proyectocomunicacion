@@ -3,13 +3,12 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-
+use yii\bootstrap\ActiveForm;
 
 AppAsset::register($this);
 ?>
@@ -25,11 +24,14 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+
 <div class="wrap">
     <?php
     NavBar::begin([
+        // 'brandLabel' => Html::img('/imgs/asset-logos-svg.svg'),
+        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top animated',
+            'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     echo Nav::widget([
@@ -65,13 +67,13 @@ AppAsset::register($this);
             ['label' => 'Entidad',  
             'url' => ['#'],
             'items' => [
-                ['label' => 'Misión y Visión', 'url' => '#', 'options' => ['id' => 'go-mision']],
+                ['label' => 'Misión y Visión', 'url' => 'javascript:void(0)', 'options' => ['id' => 'go-mision']],
                 ['label' => 'Estructura Organizacional', 'url' => '#'],
                 ['label' => 'Planeación Estratégica', 'url' => '#'],
                 ],
             ],
-            ['label' => 'Ambientes', 'options' => ['class' => 'dropdown', 'id' => 'go-galeria']],
-            ['label' => 'Catálogo Información',  'options' => ['class' => 'dropdown', 'id' => 'go-formacion']],
+            ['label' => 'Ambientes', 'url' => 'javascript:void(0)','options' => ['class' => 'dropdown-toggle', 'id' => 'go-galeria']],
+            ['label' => 'Catálogo Información',  'url' => 'javascript:void(0)', 'options' => ['class' => 'dropdown', 'id' => 'go-formacion']],
             ['label' => 'Plan Estratégico',  
             'url' => ['#'],
             'items' => [
@@ -82,19 +84,12 @@ AppAsset::register($this);
             ['label' => 'Contáctanos',  
             'url' => ['#'],
             'items' => [
-                ['label' => 'Contáctenos', 'url' => '#', 'options' => ['class' => 'contactenos-link']],
+                ['label' => 'Contáctenos', 'url' => ['/site/contact'], 'options' => ['class' => 'contactenos-link']],
                 ['label' => 'PQRS', 'url' => '#', 'options' => ['class' => 'pqrs-link']],
                 ],
             ],
-
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            // ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Iniciar Sesión', 'options' => ['class' => 'dropdown cd-nav-trigger']]
+                ['label' => 'Iniciar Sesión', 'url' => 'javascript:void(0)', 'options' => ['class' => 'login-navbar cd-nav-trigger'],]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')
@@ -105,86 +100,90 @@ AppAsset::register($this);
                 . Html::endForm()
                 . '</li>'
             )
+
         ],
     ]);
     NavBar::end();
     ?>
-            
-    <div class="content">
-        <?= $content ?>        
-    </div>
-    
+    <?php if (isset($this->blocks['block1'])): ?>
+        <?= $this->blocks['block1'] ?>
+    <?php endif; ?>
+
+    <!-- <div class="container-fluid"> -->
+        <?= $content ?>
+    <!-- </div> -->
 </div>
-<footer>
-    <figure class="plus-a plus" style="">+</figure>
-    <figure class="plus-b plus" style="font-size: 8rem;">+</figure>
-    <figure class="plus-c plus" style="font-size: 2rem;">+</figure>
+
+<footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <nav class="footer-info">
-                    
-                    <ul class="informacion"> 
-                        <h4 > INFORMACIÓN </h4>
-                        <ul class="footer-social-networks">
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                        <li>Servicio Nacional de Aprendizaje SENA</li>
-                        <li>Regional Distrito Capital</li>
-                        <li>
-                            <span>Centro de Gestión Industrial</span>
-                        </li>
-                        <li>
-                            <span>Dirección: </span> Calle 15 No 31 - 42 
-                        </li>
-                        <li>
-                            <span>Ciudad: </span> Bogotá – Colombia
-                        </li>
-                        <li>
-                            <span>Correo Electrónico: </span>redproduccionsena@gmail.com
-                        </li>
-                        <li>
-                            <span>Líneas Gratuitas Atención al Ciudadano: </span> Bogotá (57 1) 5925555
-                        </li>
-                        <li>
-                            <span>Resto del país: </span> 018000 910270
-                        </li>
-                        <li>
-                            <span>Líneas Gratuitas Atención al Empresario: </span>Bogotá (57 1) 4049494 
-                        </li>
-                        <li>
-                            <span>Resto del país:</span>  018000 910682
-                        </li>
-                    </ul>
-                </nav>                  
-            </div>
-            <div class="col-md-5">
-                <nav class="icontec">
-                    <ul>
-                        <li>
-                            <img src="imgs/icontecA.png" alt="">
-                        </li>
-                        <li>
-                            <img src="imgs/icontecB.png" alt="">
-                        </li>
-                        <li>
-                            <img src="imgs/icontecC.png" alt="">
-                        </li>
-                        <li>
-                            <img src="imgs/icontecD.png" alt="">
-                        </li>
-                    </ul>
 
-                </nav>
-            </div>
-        </div>          
-    </div> <!-- cerro div container -->
-    <p class="text-center">&copy; Todos los derechos reservados <?= date('Y') ?></p>
+        <div class="col-md-7">
+            <nav class="footer-info">
+                
+                <ul class="informacion"> 
+                    <h4 > INFORMACIÓN </h4>
+                    <ul class="footer-social-networks">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <li>Servicio Nacional de Aprendizaje SENA</li>
+                    <li>Regional Distrito Capital</li>
+                    <li>
+                        <span>Centro de Gestión Industrial</span>
+                    </li>
+                    <li>
+                        <span>Dirección: </span> Calle 15 No 31 - 42 
+                    </li>
+                    <li>
+                        <span>Ciudad: </span> Bogotá – Colombia
+                    </li>
+                    <li>
+                        <span>Correo Electrónico: </span>redproduccionsena@gmail.com
+                    </li>
+                    <li>
+                        <span>Líneas Gratuitas Atención al Ciudadano: </span> Bogotá (57 1) 592 55 55
+                    </li>
+                    <li>
+                        <span>Resto del país: </span> 018000 910270
+                    </li>
+                    <li>
+                        <span>Líneas Gratuitas Atención al Empresario: </span>Bogotá (57 1) 404 94 94 
+                    </li>
+                    <li>
+                        <span>Resto del país:</span>  018000 910682
+                    </li>
+                </ul>
+            </nav>                  
+        </div>
+        <div class="col-md-5">
+            <nav class="certificados">
+                <ul>
+                    <li>
+                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecA.png" alt="">
+                    </li>
+                    <li>
+                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecB.png" alt="">
+                    </li>
+                    <li>
+                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecC.png" alt="">
+                    </li>
+                    <li>
+                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecD.png" alt="">
+                    </li>
+                </ul>
+
+            </nav>
+        </div>    
+        <p class="text-center">&copy; Todos los derechos reservados <?= date('Y') ?></p>
+
+        <!-- <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-right"><?= Yii::powered() ?></p> -->
+
+    </div>
 </footer>
-
+    
 
 <?php $this->endBody() ?>
 </body>
