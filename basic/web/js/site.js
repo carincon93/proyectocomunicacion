@@ -40,11 +40,24 @@ $(document).ready(function() {
 				nav: false
 			},
 			1024: {
-				items: 4,
-				nav: true
+				items: 4
 			}
 		}
 	});
+
+	$iconPrev = $('.owl-prev');
+	$iconNext = $('.owl-next');
+	$iconPrev.velocity({
+	  translateX: "10px"
+	}, {
+	  loop: true
+	}).velocity("reverse");
+
+	$iconNext.velocity({
+	  translateX: "10px"
+	}, {
+	  loop: true
+	}).velocity("reverse");
 
 	// SmoothScroll
 	var $galeria 			= $("#go-galeria"),

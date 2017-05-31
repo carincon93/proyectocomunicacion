@@ -166,6 +166,15 @@ $this->title = 'My Yii Application';
                             <p>Consejo Directivo #SENA aprueba entrega de recursos del #FondoEmprenderSENA por más de $38 mil millones. Más empresas y empleos para el país</p>
                         </div>
                     </div>
+                    <div class="owl-card">
+                        <header class="header-card">
+                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/DAMyzo9UQAET6cY.jpg" alt="">
+                        </header>
+                        <div>
+                            <h6>19/05/2017</h6>
+                            <p>Consejo Directivo #SENA aprueba entrega de recursos del #FondoEmprenderSENA por más de $38 mil millones. Más empresas y empleos para el país</p>
+                        </div>
+                    </div>
                 </div><!-- /owl-carousel -->
 
             </div>

@@ -714,3 +714,18 @@ td:hover {
     background-color: #F16310;
     color: #fff;
 }
+
+/* Owl Carousel */
+.owl-prev, .owl-next {
+    color: #238276;
+    font-size: 4rem;
+    position: absolute;
+}
+.owl-prev {    
+    left: -42px;
+    top: 40%;
+}
+.owl-next {    
+    right: -42px;
+    top: 40%;
+}
