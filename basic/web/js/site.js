@@ -256,4 +256,21 @@ $(document).ready(function() {
 				Page.init();
 
 			});
+
+
+
+	// $(window).load(function() {
+
+	// 	var windowHeight 	= $(window).height(),
+	// 		heightDocument 	= (windowHeight) + ($('.site-index').height());
+
+	// 		$('.site-index').css({'height': heightDocument + 'px'});
+
+
+	// 		window.onscroll = function() {
+	// 			var scroll = window.scrollY;
+
+	// 			$('.site-index').css({'top' : '-' + scroll + 'px'});
+	// 		}
+	// });
 });
