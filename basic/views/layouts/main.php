@@ -141,11 +141,11 @@ AppAsset::register($this);
 
                 </nav>
             </div>    
-            <p class="text-center">&copy; Todos los derechos reservados <?= date('Y') ?></p>
 
-            <!-- <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p> -->
         </div>
+        <p class="text-center">&copy; Todos los derechos reservados <?= date('Y') ?></p>
+        <!-- <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-right"><?= Yii::powered() ?></p> -->
     </div>
 </footer>
     
