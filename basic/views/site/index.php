@@ -36,7 +36,7 @@ $this->title = 'My Yii Application';
     <div class="body-content">
 
         <!--  -->
-        <section class="section project-info-section">
+        <section class="section project-info-section objetivos">
             <!-- <img class="asset-informacion" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-1.svg" alt=""> -->
             <figure class="plus-a plus-info-section" style="">+</figure>
             <figure class="plus-c plus-info-section" style="font-size: 2rem;">+</figure>
