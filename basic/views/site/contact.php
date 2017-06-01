@@ -34,8 +34,8 @@ $this->title = 'Contáctanos';
             <div>
                 <h1 class="contact-title aniT delay">Mensaje</h1>
                 <p>
-                    If you have business inquiries or other questions, please fill out the following form to contact us.
-                    Thank you.
+                    Si tiene preguntas de negocios u otras preguntas, rellene el siguiente formulario para ponerse en contacto con nosotros.
+                    Gracias.
                 </p>
 
             <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>

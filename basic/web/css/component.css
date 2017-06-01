@@ -10,7 +10,7 @@
 }
 
 /* General button style (reset) */
-.btn {
+.btne {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
@@ -30,7 +30,7 @@
 	transition: all 0.3s;
 }
 
-.btn:after {
+.btne:after {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -40,7 +40,7 @@
 }
 
 /* Pseudo elements for icons */
-.btn:before,
+.btne:before,
 .icon-heart:after,
 .icon-star:after,
 .icon-plus:after,
@@ -1331,28 +1331,16 @@
 
 /* Success and error */
 
-.btn-success,
 .btn-error {
 	color: transparent;
 }
 
-.btn-success:after,
 .btn-error:after {
 	z-index: 1;
 	color: #fff;
 	left: 40%;
 }
 
-.btn-success:before {
-	content: "\e001";
-}
-
-.btn-success:after {
-	content: "Success!";
-	-webkit-animation: moveUp 0.5s;
-	-moz-animation: moveUp 0.5s;
-	animation: moveUp 0.5s;
-}
 
 @-webkit-keyframes moveUp {
 	0% {

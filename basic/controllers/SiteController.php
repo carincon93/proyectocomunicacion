@@ -136,4 +136,9 @@ class SiteController extends Controller
         $this->layout = 'base';
         return $this->render('table');
     }
+    public function actionPqrs()
+    {
+        $this->layout = 'base';
+        return $this->render('pqrs');
+    }
 }
