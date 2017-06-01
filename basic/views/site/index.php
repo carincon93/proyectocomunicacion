@@ -10,7 +10,10 @@ $this->title = 'My Yii Application';
 <header>
     <section class="hero">
         <img class="hero-img" src="<?= Yii::$app->request->baseUrl ?>/imgs/background.jpg" alt="" width="100%">
-        <img class="svg-hero" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-hero.svg" alt="">
+        <!-- <img class="svg-hero" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-hero.svg" alt=""> -->
+        <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg>
+        <!-- <svg class="big-plus-b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg> -->
+
         <div class="hero-content">
             <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
             <!-- <img class="" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-red-logo.svg" alt="" width="20%"> -->
@@ -32,10 +35,9 @@ $this->title = 'My Yii Application';
  -->
     <div class="body-content">
 
-
         <!--  -->
         <section class="section project-info-section">
-            <img class="asset-informacion" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-1.svg" alt="">
+            <!-- <img class="asset-informacion" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-1.svg" alt=""> -->
             <figure class="plus-a plus-info-section" style="">+</figure>
             <figure class="plus-c plus-info-section" style="font-size: 2rem;">+</figure>
             <div class="container-fluid">
@@ -180,10 +182,9 @@ $this->title = 'My Yii Application';
 
             </div>
         </section>
-        <section class="encuestas">
+        <section class="encuestas section">
                 <div class="container">
                     <h1 class="text-center">Encuestas <strong>SENA</strong></h1>
-                    <i class="fa fa-file-text-o"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ex fugiat est laborum commodi blanditiis et officiis qui fuga error quis eaque sed, praesentium alias amet vel at dicta mollitia rem aliquam, voluptas necessitatibus, temporibus sit nihil vero. Alias, provident!</p>
                     <div class="row">
                         <div class="col-md-4 col-sm-12 col-xs-12">
@@ -199,59 +200,99 @@ $this->title = 'My Yii Application';
                     
                 </div>
         </section>
-        <section class="galeria">
-                <h1 class="text-center">Galería <strong>SENA</strong></h1>
+        <section class="galeria section">
                 <div class="container">
-
+                    <h1 class="text-center">Galería <strong>SENA</strong></h1>
                     <div class="row">
-                        <div class="col-md-8">
-                            <ul id="sb-slider" class="sb-slider">
-                                <li>
-                                    <a target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/1.jpg" alt="image1"/></a>                          
-                                </li>
-                                <li>
-                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/2.jpg" alt="image2"/></a>                         
-                                </li>
-                                <li>
-                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/3.jpg" alt="image1"/></a>                         
-                                </li>
-                                <li>
-                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/4.jpg" alt="image1"/></a>                         
-                                </li>
-                                <li>
-                                    <a  target="_blank"><img src="<?= Yii::$app->request->baseUrl ?>/imgs/5.jpg" alt="image1"/></a>
-                                </li>
-                                </li>
-                            </ul>
+                        <div class="col-md-12">
 
-                            <div id="shadow" class="shadow"></div>
-
-                            <div id="nav-arrows" class="nav-arrows">
-                                <a href="#">Next</a>
-                                <a href="#">Previous</a>
-                            </div>
-
-                            <div id="nav-options" class="nav-options">
-                                <span id="navPlay">Play</span>
-                                <span id="navPause">Pause</span>
+                            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
+                                <!-- Loading Screen -->
+                                <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('imgs/galeria/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+                                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/01.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/01-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/02.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/02-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/03.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/03-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/04.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/04-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/05.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/05-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/06.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/06-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/07.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/07-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/08.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/08-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/09.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/09-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/10.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/10-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/11.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/11-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/12.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/12-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/13.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/13-s99x66.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/14.jpg" />
+                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/14-s99x66.jpg" />
+                                    </div>
+                                    <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
+                                </div>
+                                <!-- Thumbnail Navigator -->
+                                <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
+                                    <!-- Thumbnail Item Skin Begin -->
+                                    <div data-u="slides" style="cursor: default;">
+                                        <div data-u="prototype" class="p">
+                                            <div class="w">
+                                                <div data-u="thumbnailtemplate" class="t"></div>
+                                            </div>
+                                            <div class="c"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Thumbnail Item Skin End -->
+                                </div>
+                                <!-- Arrow Navigator -->
+                                <span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
+                                <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
                             </div>                      
-                        </div>
-                         <nav class="col-md-4 cl-effect-16" id="cl-effect-16">
-                            <li><a href="#cl-effect-16" data-hover="Trabajo en Alturas">Trabajo en Alturas</a></li>
-                            <li><a href="#cl-effect-16" data-hover="Química">Química</a></li>
-                            <li><a href="#cl-effect-16" data-hover="Gestión de la Producción">Gestión de la Producción</a></li>
-                            <li><a href="#cl-effect-16" data-hover="Gestión Integrada de la Calidad">Gestión Integrada de la Calidad</a></li>
-                            <li><a href="#cl-effect-16" data-hover="Salud Ocupacional">Salud Ocupacional</a></li>
-                        </nav> 
-                        
 
+                        </div>                
                     </div>
-                
                 </div>
             </section>
 
-    </div>
-</div>
+    </div> <!-- /body-content -->
+</div> <!-- /site-index -->
 
 
     <!-- Login -->

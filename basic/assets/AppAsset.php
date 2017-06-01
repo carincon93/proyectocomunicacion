@@ -25,15 +25,13 @@ class AppAsset extends AssetBundle
         'css/login-effect.css',
         'css/animate.css',
         'css/site.css',
-        'css/demo.css',
-        'css/slicebox.css',
     ];
     public $js = [
         'js/velocity.min.js',
         'js/owl.carousel.min.js',
-        'js/modernizr.custom.46884.js',
-        'js/jquery.slicebox.js',
         'js/site.js',
+        'js/jssor.slider-24.0.2.min.js',
+        
     ];
     public $depends = [
         'yii\web\YiiAsset',

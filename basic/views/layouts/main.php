@@ -31,7 +31,7 @@ AppAsset::register($this);
         // 'brandLabel' => Html::img('/imgs/asset-logos-svg.svg'),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse',
         ],
     ]);
     echo Nav::widget([
@@ -80,71 +80,72 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-
-        <div class="col-md-7">
-            <nav class="footer-info">
-                
-                <ul class="informacion"> 
-                    <h4 > INFORMACIÓN </h4>
-                    <ul class="footer-social-networks">
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+        <div class="row">
+            
+            <div class="col-md-7">
+                <nav class="footer-info">
+                    
+                    <ul class="informacion"> 
+                        <h4 > INFORMACIÓN </h4>
+                        <ul class="footer-social-networks">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                        <li>Servicio Nacional de Aprendizaje SENA</li>
+                        <li>Regional Distrito Capital</li>
+                        <li>
+                            <span>Centro de Gestión Industrial</span>
+                        </li>
+                        <li>
+                            <span>Dirección: </span> Calle 15 No 31 - 42 
+                        </li>
+                        <li>
+                            <span>Ciudad: </span> Bogotá – Colombia
+                        </li>
+                        <li>
+                            <span>Correo Electrónico: </span>redproduccionsena@gmail.com
+                        </li>
+                        <li>
+                            <span>Líneas Gratuitas Atención al Ciudadano: </span> Bogotá (57 1) 592 55 55
+                        </li>
+                        <li>
+                            <span>Resto del país: </span> 018000 910270
+                        </li>
+                        <li>
+                            <span>Líneas Gratuitas Atención al Empresario: </span>Bogotá (57 1) 404 94 94 
+                        </li>
+                        <li>
+                            <span>Resto del país:</span>  018000 910682
+                        </li>
                     </ul>
-                    <li>Servicio Nacional de Aprendizaje SENA</li>
-                    <li>Regional Distrito Capital</li>
-                    <li>
-                        <span>Centro de Gestión Industrial</span>
-                    </li>
-                    <li>
-                        <span>Dirección: </span> Calle 15 No 31 - 42 
-                    </li>
-                    <li>
-                        <span>Ciudad: </span> Bogotá – Colombia
-                    </li>
-                    <li>
-                        <span>Correo Electrónico: </span>redproduccionsena@gmail.com
-                    </li>
-                    <li>
-                        <span>Líneas Gratuitas Atención al Ciudadano: </span> Bogotá (57 1) 592 55 55
-                    </li>
-                    <li>
-                        <span>Resto del país: </span> 018000 910270
-                    </li>
-                    <li>
-                        <span>Líneas Gratuitas Atención al Empresario: </span>Bogotá (57 1) 404 94 94 
-                    </li>
-                    <li>
-                        <span>Resto del país:</span>  018000 910682
-                    </li>
-                </ul>
-            </nav>                  
+                </nav>                  
+            </div>
+            <div class="col-md-5">
+                <nav class="certificados">
+                    <ul>
+                        <li>
+                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecA.png" alt="">
+                        </li>
+                        <li>
+                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecB.png" alt="">
+                        </li>
+                        <li>
+                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecC.png" alt="">
+                        </li>
+                        <li>
+                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecD.png" alt="">
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>    
+            <p class="text-center">&copy; Todos los derechos reservados <?= date('Y') ?></p>
+
+            <!-- <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+            <p class="pull-right"><?= Yii::powered() ?></p> -->
         </div>
-        <div class="col-md-5">
-            <nav class="certificados">
-                <ul>
-                    <li>
-                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecA.png" alt="">
-                    </li>
-                    <li>
-                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecB.png" alt="">
-                    </li>
-                    <li>
-                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecC.png" alt="">
-                    </li>
-                    <li>
-                        <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecD.png" alt="">
-                    </li>
-                </ul>
-
-            </nav>
-        </div>    
-        <p class="text-center">&copy; Todos los derechos reservados <?= date('Y') ?></p>
-
-        <!-- <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p> -->
-
     </div>
 </footer>
     
