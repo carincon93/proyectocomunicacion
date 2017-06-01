@@ -137,8 +137,8 @@ $this->title = 'My Yii Application';
                         <header class="header-card">
                             <img src="<?= Yii::$app->request->baseUrl ?>/imgs/120150202082049.jpg" alt="">
                         </header>
-                        <div>
-                            <h6>11/05/2017</h6>
+                        <div class="inner-news">
+                            <h6><i class="fa fa-calendar"></i> 11/05/2017</h6>
                             <p>Desde el #SENA apostamos a la competitividad de la economía, por eso realizamos taller con mesas productivas para revisar su alcance.</p>
                         </div>
                     </div>
@@ -146,8 +146,8 @@ $this->title = 'My Yii Application';
                         <header class="header-card">
                             <img src="<?= Yii::$app->request->baseUrl ?>/imgs/C_pbYxRXoAA5Jo2.jpg" alt="">
                         </header>
-                        <div>
-                            <h6>12/05/2017</h6>
+                        <div class="inner-news">
+                            <h6><i class="fa fa-calendar"></i> 12/05/2017</h6>
                             <p>En el #SENA estamos conectados con las necesidades del sector empresarial en #SanAndrés y con la realidad de los ciudadanos: @MAndreaNieto.</p>
                         </div>
                     </div>
@@ -155,8 +155,8 @@ $this->title = 'My Yii Application';
                         <header class="header-card">
                             <img src="<?= Yii::$app->request->baseUrl ?>/imgs/C98hpkRXkAICYU9.jpg" alt="">
                         </header>
-                        <div>
-                            <h6>21/04/2017</h6>
+                        <div class="inner-news">
+                            <h6><i class="fa fa-calendar"></i> 21/04/2017</h6>
                             <p>#CumbreAprendicesSENA Gracias Dirección General tu labor construye país, construye paz #senacomunica @JuantxoSanchez  @MAndreaNieto</p>
                         </div>
                     </div>
@@ -164,8 +164,8 @@ $this->title = 'My Yii Application';
                         <header class="header-card">
                             <img src="<?= Yii::$app->request->baseUrl ?>/imgs/DAMyzo9UQAET6cY.jpg" alt="">
                         </header>
-                        <div>
-                            <h6>19/05/2017</h6>
+                        <div class="inner-news">
+                            <h6><i class="fa fa-calendar"></i> 19/05/2017</h6>
                             <p>Consejo Directivo #SENA aprueba entrega de recursos del #FondoEmprenderSENA por más de $38 mil millones. Más empresas y empleos para el país</p>
                         </div>
                     </div>
@@ -173,8 +173,8 @@ $this->title = 'My Yii Application';
                         <header class="header-card">
                             <img src="<?= Yii::$app->request->baseUrl ?>/imgs/DAMyzo9UQAET6cY.jpg" alt="">
                         </header>
-                        <div>
-                            <h6>19/05/2017</h6>
+                        <div class="inner-news">
+                            <h6><i class="fa fa-calendar"></i> 19/05/2017</h6>
                             <p>Consejo Directivo #SENA aprueba entrega de recursos del #FondoEmprenderSENA por más de $38 mil millones. Más empresas y empleos para el país</p>
                         </div>
                     </div>
