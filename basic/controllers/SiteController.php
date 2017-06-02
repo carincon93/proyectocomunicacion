@@ -50,7 +50,18 @@ class SiteController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            'errorHandler' => [
+                'errorAction' => 'site/error',
+            ],
         ];
+    }
+
+    public function beforeAction($action)
+    {
+        if ($action->id == 'error')
+            $this->layout = 'base';
+
+        return parent::beforeAction($action);
     }
 
     /**

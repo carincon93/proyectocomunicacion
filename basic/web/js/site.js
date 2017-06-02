@@ -12,6 +12,19 @@ $(document).ready(function() {
 		
 	// }
 
+	// Inputs Effects 
+    $(window).load(function(){
+		$(".form-group .effect-16").val("");
+		
+		$(".form-group .effect-16").focusout(function(){
+			if($(this).val() != ""){
+				$(this).addClass("has-content");
+			}else{
+				$(this).removeClass("has-content");
+			}
+		})
+	});
+
 	var toggleNav = $('.trigger-menu'),
 		overlayContact = $('.overlay-contact'),
 		overlayBackground = $('.overlay-background'),
@@ -282,4 +295,8 @@ $(document).ready(function() {
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
             /*responsive code end*/
+
+
+
+            
 });

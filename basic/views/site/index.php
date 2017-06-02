@@ -9,14 +9,13 @@ $this->title = 'My Yii Application';
 
 <header>
     <section class="hero">
-        <img class="hero-img" src="<?= Yii::$app->request->baseUrl ?>/imgs/background.jpg" alt="" width="100%">
-        <!-- <img class="svg-hero" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-hero.svg" alt=""> -->
-        <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg>
-        <!-- <svg class="big-plus-b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg> -->
-
-        <div class="hero-content">
-            <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
-            <!-- <img class="" src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-red-logo.svg" alt="" width="20%"> -->
+        <?= Html::img('@web/images/background.jpg', ['class' => 'hero-img'], ['alt' => 'Background header']) ?>
+        <div class="container">
+            <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg>
+            <div class="hero-content">
+                <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
+            </div>
+            
         </div>
     </section>    
 </header>
@@ -68,7 +67,8 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
                 <div class="project-logos">
-                    <img <img src="<?= Yii::$app->request->baseUrl ?>/imgs/asset-logos-svg.svg" alt="" width="30%">                    
+                    <?= Html::img('@web/images/asset-logos-svg.svg', ['class' => ''], ['alt' => 'Sena Logo - Project Logo']) ?>
+
                 </div>
             </div>
         </section>
@@ -135,7 +135,7 @@ $this->title = 'My Yii Application';
                 <div class="owl-carousel">
                     <div class="owl-card">
                         <header class="header-card">
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/120150202082049.jpg" alt="">
+                            <?= Html::img('@web/images/120150202082049.jpg', ['class' => ''], ['alt' => 'News']) ?>
                         </header>
                         <div class="inner-news">
                             <h6><i class="fa fa-calendar"></i> 11/05/2017</h6>
@@ -144,7 +144,7 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="owl-card">
                         <header class="header-card">
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/C_pbYxRXoAA5Jo2.jpg" alt="">
+                            <?= Html::img('@web/images/C_pbYxRXoAA5Jo2.jpg', ['class' => ''], ['alt' => 'News']) ?>
                         </header>
                         <div class="inner-news">
                             <h6><i class="fa fa-calendar"></i> 12/05/2017</h6>
@@ -153,7 +153,7 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="owl-card">
                         <header class="header-card">
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/C98hpkRXkAICYU9.jpg" alt="">
+                            <?= Html::img('@web/images/C98hpkRXkAICYU9.jpg', ['class' => ''], ['alt' => 'News']) ?>
                         </header>
                         <div class="inner-news">
                             <h6><i class="fa fa-calendar"></i> 21/04/2017</h6>
@@ -162,7 +162,7 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="owl-card">
                         <header class="header-card">
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/DAMyzo9UQAET6cY.jpg" alt="">
+                            <?= Html::img('@web/images/DAMyzo9UQAET6cY.jpg', ['class' => ''], ['alt' => 'News']) ?>
                         </header>
                         <div class="inner-news">
                             <h6><i class="fa fa-calendar"></i> 19/05/2017</h6>
@@ -171,7 +171,7 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="owl-card">
                         <header class="header-card">
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/DAMyzo9UQAET6cY.jpg" alt="">
+                            <?= Html::img('@web/images/DAMyzo9UQAET6cY.jpg', ['class' => ''], ['alt' => 'News']) ?>
                         </header>
                         <div class="inner-news">
                             <h6><i class="fa fa-calendar"></i> 19/05/2017</h6>
@@ -208,64 +208,64 @@ $this->title = 'My Yii Application';
 
                             <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
                                 <!-- Loading Screen -->
-                                <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('imgs/galeria/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+                                <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('images/galeria/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
                                 <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/01.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/01-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/01.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/01-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/02.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/02-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/02.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/02-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/03.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/03-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/03.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/03-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/04.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/04-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/04.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/04-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/05.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/05-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/05.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/05-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/06.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/06-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/06.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/06-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/07.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/07-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/07.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/07-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/08.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/08-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/08.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/08-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/09.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/09-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/09.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/09-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/10.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/10-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/10.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/10-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/11.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/11-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/11.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/11-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/12.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/12-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/12.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/12-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/13.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/13-s99x66.jpg" />
+                                        <?= Html::img('@web/images/galeria/13.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/13-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
                                     </div>
                                     <div>
-                                        <img data-u="image" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/14.jpg" />
-                                        <img data-u="thumb" src="<?= Yii::$app->request->baseUrl ?>/imgs/galeria/14-s99x66.jpg" />
-                                    </div>
+                                        <?= Html::img('@web/images/galeria/14.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/14-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>                                    
                                     <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
                                 </div>
                                 <!-- Thumbnail Navigator -->
@@ -313,8 +313,8 @@ $this->title = 'My Yii Application';
                         ]); ?>
                             <div class="form-wrap">
                                 <div class="login-inputs">
-                                    <?= $form->field($model, 'email', ['template' => '{beginLabel}Correo Electrónico{endLabel}{input}<span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-1']) ?>
-                                    <?= $form->field($model, 'password', ['template' => '{beginLabel}Contraseña{endLabel}{input}<span class="focus-border"></span>'])->input('password', ['class' => 'form-control effect-1']) ?>
+                                    <?= $form->field($model, 'email', ['template' => '{input}{beginLabel}Correo Electrónico{endLabel}<span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-16']) ?>
+                                    <?= $form->field($model, 'password', ['template' => '{input}{beginLabel}Contraseña{endLabel}<span class="focus-border"></span>'])->input('password', ['class' => 'form-control effect-16']) ?>
                                     <?= $form->field($model, 'rememberMe')->checkbox([
                                         'template' => "<div class=\"\">{input} {label}</div>\n<div class=\"\">{error}</div>",
                                     ])->label('Recuérdame') ?>

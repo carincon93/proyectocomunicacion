@@ -58,13 +58,13 @@ $this->title = 'Contáctanos';
             <?php else: ?>
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                    <?= $form->field($model, 'name', ['template' => '{beginLabel}Nombre{endLabel}{input}<span class="focus-border"></span>'])->input('text', ['class' => 'form-control effect-1']) ?>
+                    <?= $form->field($model, 'name', ['template' => '{input}{beginLabel}Nombre{endLabel}<span class="focus-border"></span>'])->input('text', ['class' => 'form-control effect-16']) ?>
 
-                    <?= $form->field($model, 'email', ['template' => '{beginLabel}Correo Electrónico{endLabel}{input}<span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-1']) ?>
+                    <?= $form->field($model, 'email', ['template' => '{input}{beginLabel}Correo Electrónico{endLabel}<span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-16']) ?>
 
-                    <?= $form->field($model, 'subject', ['template' => '{beginLabel}Asunto{endLabel}{input}<span class="focus-border"></span>'])->dropDownList(['consulta' => 'Consulta', 'queja' => 'Queja', 'sugerencia' => 'Sugerencia'], ['prompt'=>'Seleccione una opción', 'class' => 'form-control effect-1'])->label('Asunto')  ?>
+                    <?= $form->field($model, 'subject', ['template' => '{beginLabel}Asunto{endLabel}{input}<span class="focus-border"></span>'])->dropDownList(['consulta' => 'Consulta', 'queja' => 'Queja', 'sugerencia' => 'Sugerencia'], ['prompt'=>'Seleccione una opción', 'class' => 'form-control effect-16'])->label('Asunto')  ?>
                         
-                    <?= $form->field($model, 'body', ['template' => '{beginLabel}Mensaje{endLabel}{input}<span class="focus-border"></span>'])->textarea(['rows' => 3, 'class' => 'form-control effect-1'])  ?>
+                    <?= $form->field($model, 'body', ['template' => '{input}{beginLabel}Mensaje{endLabel}<span class="focus-border"></span>'])->textarea(['rows' => 3, 'class' => 'form-control effect-16'])  ?>
 
                     <!-- <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
                         'template' => '<div>{image}</div><div>{input}</div>',
@@ -105,7 +105,8 @@ $this->title = 'Contáctanos';
             </div>
 
             <div class="row">
-                <img src="<?= Yii::$app->request->baseUrl ?>/imgs/map.png" width="100%" alt="">
+                <?= Html::img('@web/images/map.png', ['class' => '', 'width'=>'100%', 'alt' => 'Map']) ?>
+
             </div>
         </div>
 

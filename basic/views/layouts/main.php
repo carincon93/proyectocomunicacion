@@ -126,16 +126,16 @@ AppAsset::register($this);
                 <nav class="certificados">
                     <ul>
                         <li>
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecA.png" alt="">
+                            <?= Html::img('@web/images/icontecA.png', ['alt' => 'img-footer']) ?>
                         </li>
                         <li>
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecB.png" alt="">
+                            <?= Html::img('@web/images/icontecB.png', ['alt' => 'img-footer']) ?>
                         </li>
                         <li>
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecC.png" alt="">
+                            <?= Html::img('@web/images/icontecC.png', ['alt' => 'img-footer']) ?>
                         </li>
                         <li>
-                            <img src="<?= Yii::$app->request->baseUrl ?>/imgs/icontecD.png" alt="">
+                            <?= Html::img('@web/images/icontecD.png', ['alt' => 'img-footer']) ?>
                         </li>
                     </ul>
 
