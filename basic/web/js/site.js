@@ -295,15 +295,9 @@ $(document).ready(function() {
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
             /*responsive code end*/
-<<<<<<< HEAD
+
 
 
 
             
 });
-=======
-});
-
-
-//pqrs
->>>>>>> 599ba41b13348792428f8d6e9ecfb1ad6c20bb5a
