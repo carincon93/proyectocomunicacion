@@ -188,13 +188,13 @@ $this->title = 'My Yii Application';
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ex fugiat est laborum commodi blanditiis et officiis qui fuga error quis eaque sed, praesentium alias amet vel at dicta mollitia rem aliquam, voluptas necessitatibus, temporibus sit nihil vero. Alias, provident!</p>
                     <div class="row">
                         <div class="col-md-4 col-sm-12 col-xs-12">
-                            <a href="" class="btn btn-5 btn-5b icon-cart elink"><span>Link Encuesta 1</span></a>
+                            <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 1</span></a>
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12">
-                            <a href="" class="btn btn-5 btn-5b icon-cart elink"><span>Link Encuesta 2</span></a>
+                            <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 2</span></a>
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12">
-                            <a href="" class="btn btn-5 btn-5b icon-cart elink"><span>Link Encuesta 3</span></a>
+                            <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 3</span></a>
                         </div>
                     </div>
                     
@@ -336,3 +336,4 @@ $this->title = 'My Yii Application';
     <div class="cd-overlay-content">
         <span></span>
     </div>
+    

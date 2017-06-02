@@ -46,7 +46,7 @@ AppAsset::register($this);
             'url' => ['#'],
             'items' => [
                 ['label' => 'Contáctenos', 'url' => ['/site/contact'], 'options' => ['class' => 'contactenos-link']],
-                ['label' => 'PQRS', 'url' => '#', 'options' => ['class' => 'pqrs-link']],
+                ['label' => 'PQRS', 'url' => ['/site/pqrs'], 'options' => ['class' => 'pqrs-link']],
                 ],
             ],
             Yii::$app->user->isGuest ? (
