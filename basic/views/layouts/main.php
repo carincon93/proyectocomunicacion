@@ -116,10 +116,10 @@ AppAsset::register($this);
                     </ul>
                 </div>
                 <nav class="footer-social-networks">
-                    <a href="" class="facebook-link"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="" class="twitter-link"><i class="fa fa-twitter fa-2x"></i></a>
-                    <a href="" class="instagram-link"><i class="fa fa-instagram fa-2x"></i></a>
-                    <a href="" class="google-plus-link"><i class="fa fa-google-plus fa-2x"></i></a>
+                    <a href="" data-toggle="tooltip" title="Facebook" class="facebook-link"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="" data-toggle="tooltip" title="Twitter" class="twitter-link"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="" data-toggle="tooltip" title="Instagram" class="instagram-link"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="" data-toggle="tooltip" title="Google +" class="google-plus-link"><i class="fa fa-google-plus fa-2x"></i></a>
                 </nav>                  
             </div>
             <div class="col-md-5">

@@ -310,7 +310,8 @@ $(window).bind("orientationchange", ScaleSlider);
 /*responsive code end*/
 
 
-
-
+/*toltip peguelo*/
+$('[data-toggle="tooltip"]').tooltip();
             
 });
+

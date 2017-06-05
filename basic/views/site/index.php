@@ -200,11 +200,11 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="owl-card">
                         <header class="header-card">
-                            <?= Html::img('@web/images/DAMyzo9UQAET6cY.jpg', ['class' => ''], ['alt' => 'News']) ?>
+                            <?= Html::img('@web/images/DBkU7QJXcAA4lUI.jpg', ['class' => ''], ['alt' => 'News']) ?>
                         </header>
                         <div class="inner-news">
-                            <h6><i class="fa fa-calendar"></i> 19/05/2017</h6>
-                            <p>Consejo Directivo #SENA aprueba entrega de recursos del #FondoEmprenderSENA por más de $38 mil millones. Más empresas y empleos para el país</p>
+                            <h6><i class="fa fa-calendar"></i> 05/06/2017</h6>
+                            <p>#AEstaHora Aprendices #CineAlSENA de #Chocó comparten conocimiento en un taller práctico con Simón Mesa ganador de la Palma de Oro en Cannes</p>
                         </div>
                     </div>
                 </div><!-- /owl-carousel -->
