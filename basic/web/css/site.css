@@ -643,28 +643,28 @@ a.desc:after {
   transition: all 0.2s ease-in;
   width: 2.5rem;
 }
-.footer-social-networks .facebook-link:hover {
+.facebook-link:hover {
   background-color: #E2EAFD;
 }
-.footer-social-networks .facebook-link:hover .fa-facebook {
+.facebook-link:hover .fa-facebook {
   color: #39579A;
 }
-.footer-social-networks .twitter-link:hover {
+.twitter-link:hover {
   background-color: #E8F2FF;
 }
-.footer-social-networks .twitter-link:hover .fa-twitter {
+.twitter-link:hover .fa-twitter {
   color: #76A9EA;
 }
-.footer-social-networks .instagram-link:hover {
+.instagram-link:hover {
   background-color: #ffd3f0;
 }
-.footer-social-networks .instagram-link:hover .fa-instagram {
+.instagram-link:hover .fa-instagram {
   color: #ce19b9;
 }
-.footer-social-networks .google-plus-link:hover {
+.google-plus-link:hover {
   background-color: #ff988b;
 }
-.footer-social-networks .google-plus-link:hover .fa-google-plus {
+.google-plus-link:hover .fa-google-plus {
   color: #dc4a38;
 }
 .certificados ul {

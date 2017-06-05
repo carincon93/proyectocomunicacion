@@ -26,7 +26,15 @@ $(document).ready(function() {
 	});
 
 	// 
-	
+	$(window).on('scroll', function () {
+	    if ($(this).scrollTop() > 3370) {
+	        $('.aside-social-networks').addClass('animated fadeOut');
+			// $('.facebook-link').addClass('animated fadeIn delay');
+	    } else {
+			$('.aside-social-networks').removeClass('fadeOut').addClass('fadeIn');
+			// $('.footer-social-networks').fadeOut('slow/400/fast');
+	    }
+	});
 
 	// Owl Carousel
 	$(".owl-carousel-news").owlCarousel({
