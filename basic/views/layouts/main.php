@@ -53,13 +53,13 @@ AppAsset::register($this);
                 ],
             ],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Iniciar Sesión', 'url' => 'javascript:void(0)', 'options' => ['class' => 'login-navbar cd-nav-trigger'],]
+                ['label' => 'Iniciar Sesión', 'url' => '/site/login', 'options' => ['class' => 'login-navbar'],]
             ) : (
-                '<li>'
+                '<li class="login-navbar">'
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
+                    ['class' => 'logout-link']
                 )
                 . Html::endForm()
                 . '</li>'
@@ -83,16 +83,10 @@ AppAsset::register($this);
         <div class="row">
             
             <div class="col-md-7">
-                <nav class="footer-info">
+                <div class="footer-info">
                     
                     <ul class="informacion"> 
                         <h4 > INFORMACIÓN </h4>
-                        <ul class="footer-social-networks">
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
                         <li>Servicio Nacional de Aprendizaje SENA</li>
                         <li>Regional Distrito Capital</li>
                         <li>
@@ -111,15 +105,21 @@ AppAsset::register($this);
                             <span>Líneas Gratuitas Atención al Ciudadano: </span> Bogotá (57 1) 592 55 55
                         </li>
                         <li>
-                            <span>Resto del país: </span> 018000 910270
+                            <span>Resto del país: </span> 01 8000 910270
                         </li>
                         <li>
                             <span>Líneas Gratuitas Atención al Empresario: </span>Bogotá (57 1) 404 94 94 
                         </li>
                         <li>
-                            <span>Resto del país:</span>  018000 910682
+                            <span>Resto del país:</span>  01 8000 910682
                         </li>
                     </ul>
+                </div>
+                <nav class="footer-social-networks">
+                    <a href="" class="facebook-link"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="" class="twitter-link"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="" class="instagram-link"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="" class="google-plus-link"><i class="fa fa-google-plus fa-2x"></i></a>
                 </nav>                  
             </div>
             <div class="col-md-5">
@@ -143,7 +143,8 @@ AppAsset::register($this);
             </div>    
 
         </div>
-        <p class="text-center">&copy; Todos los derechos reservados <?= date('Y') ?></p>
+        <hr>
+        <p class="">&copy; Todos los derechos reservados <?= date('Y') ?></p>
         <!-- <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
         <p class="pull-right"><?= Yii::powered() ?></p> -->
     </div>

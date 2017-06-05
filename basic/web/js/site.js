@@ -25,31 +25,10 @@ $(document).ready(function() {
 		})
 	});
 
-	var toggleNav = $('.trigger-menu'),
-		overlayContact = $('.overlay-contact'),
-		overlayBackground = $('.overlay-background'),
-		contactNavigation = $('.overlay-contact');
-
-	toggleNav.on('click', function(event) {
-		event.preventDefault();
-		if(!toggleNav.hasClass('close-nav')) {
-			//it means navigation is not visible yet - open it and animate navigation layer
-			toggleNav.addClass('close-nav');
-			overlayBackground.addClass('open');
-			setTimeout(function(){
-				overlayContact.addClass('open');
-			},600);
-		} else {
-			//navigation is open - close it and remove navigation layer
-			toggleNav.removeClass('close-nav');
-			
-		}	
-	});
-
 	// Owl Carousel
-	$(".owl-carousel").owlCarousel({
+	$(".owl-carousel-news").owlCarousel({
 		nav: true,
-		margin: 30,
+		margin: 100,
 		autoplay: true,
 		loop: true,
 		dots: false,
@@ -66,7 +45,34 @@ $(document).ready(function() {
 				nav: false
 			},
 			1024: {
-				items: 4
+				items: 3
+			}
+		}
+	});
+
+
+	// Owl Carousel
+	$(".owl-carousel-header").owlCarousel({
+		nav: true,
+		autoplay: true,
+		loop: true,
+		dots: false,
+		// smartSpeed: 1000,
+		autoplaySpeed: 1000,
+		navText: [""],
+		responsive: {
+			0: {
+				items: 1,
+				dots: true,
+				nav: false
+			},
+			768: {
+				items: 1,
+				dots: true,
+				nav: false
+			},
+			1024: {
+				items: 1
 			}
 		}
 	});
@@ -142,54 +148,50 @@ $(document).ready(function() {
 	});
 
 	//open/close the menu and cover layers
-	toggleNav.on('click', function(){
-		$('.navbar-inverse').toggleClass('hide');
-		$('.sec').toggleClass('hide');
-		if(!toggleNav.hasClass('close-nav')) {
-			//it means navigation is not visible yet - open it and animate navigation layer
-			toggleNav.addClass('close-nav');
+	if(!toggleNav.hasClass('close-nav')) {
+		//it means navigation is not visible yet - open it and animate navigation layer
+		toggleNav.addClass('close-nav');
+		
+		overlayNav.children('span').velocity({
+			translateZ: 0,
+			scaleX: 1,
+			scaleY: 1,
+		}, 600, 'easeInOutCubic', function(){
+			navigation.addClass('fade-in').removeClass('fade-out');
+		});
+	} else {
+		//navigation is open - close it and remove navigation layer
+		toggleNav.removeClass('close-nav');
+		
+		overlayContent.children('span').velocity({
+			translateZ: 0,
+			scaleX: 1,
+			scaleY: 1,
+		}, 600, 'easeInCubic', function(){
+			navigation.removeClass('fade-in').addClass('fade-out');
 			
 			overlayNav.children('span').velocity({
 				translateZ: 0,
-				scaleX: 1,
-				scaleY: 1,
-			}, 600, 'easeInOutCubic', function(){
-				navigation.addClass('fade-in').removeClass('fade-out');
-			});
-		} else {
-			//navigation is open - close it and remove navigation layer
-			toggleNav.removeClass('close-nav');
+				scaleX: 0,
+				scaleY: 0,
+			}, 0);
 			
-			overlayContent.children('span').velocity({
-				translateZ: 0,
-				scaleX: 1,
-				scaleY: 1,
-			}, 600, 'easeInCubic', function(){
-				navigation.removeClass('fade-in').addClass('fade-out');
-				
-				overlayNav.children('span').velocity({
+			overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+				overlayContent.children('span').velocity({
 					translateZ: 0,
 					scaleX: 0,
 					scaleY: 0,
-				}, 0);
-				
-				overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-					overlayContent.children('span').velocity({
-						translateZ: 0,
-						scaleX: 0,
-						scaleY: 0,
-					}, 0, function(){overlayContent.removeClass('is-hidden')});
-				});
-				if($('html').hasClass('no-csstransitions')) {
-					overlayContent.children('span').velocity({
-						translateZ: 0,
-						scaleX: 0,
-						scaleY: 0,
-					}, 0, function(){overlayContent.removeClass('is-hidden')});
-				}
+				}, 0, function(){overlayContent.removeClass('is-hidden')});
 			});
-		}
-	});
+			if($('html').hasClass('no-csstransitions')) {
+				overlayContent.children('span').velocity({
+					translateZ: 0,
+					scaleX: 0,
+					scaleY: 0,
+				}, 0, function(){overlayContent.removeClass('is-hidden')});
+			}
+		});
+	}
 
 	function layerInit(){
 		var diameterValue = (Math.sqrt( Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2))*2);

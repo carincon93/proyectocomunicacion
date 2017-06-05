@@ -9,15 +9,30 @@ $this->title = 'My Yii Application';
 
 <header>
     <section class="hero">
-        <?= Html::img('@web/images/background.jpg', ['class' => 'hero-img'], ['alt' => 'Background header']) ?>
+    <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg>
+<!--         <?= Html::img('@web/images/background.jpg', ['class' => 'hero-img'], ['alt' => 'Background header']) ?>
+
         <div class="container">
             <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg>
             <div class="hero-content">
                 <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
-            </div>
-            
-        </div>
-    </section>    
+            </div>            
+        </div> -->
+
+            <div class="owl-carousel-header owl-carousel">
+                <div class="owl-header-content">
+                    <?= Html::img('@web/images/background.jpg', ['class' => 'hero-img'], ['alt' => 'Background header']) ?>
+                    <div class="hero-content">
+                        <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
+                    </div> 
+                </div>
+                <div class="owl-header-content">
+                    <?= Html::img('@web/images/header-photo2.jpg', ['class' => 'hero-img'], ['alt' => 'Background header']) ?>
+                </div>
+            </div><!-- /owl-carousel --> 
+    </section>   
+
+
 </header>
 
 
@@ -67,7 +82,7 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
                 <div class="project-logos">
-                    <?= Html::img('@web/images/asset-logos-svg.svg', ['class' => ''], ['alt' => 'Sena Logo - Project Logo']) ?>
+                    <?= Html::img('@web/images/asset-logos-svg.svg', ['class' => '', 'alt' => 'Sena Logo - Project Logo', 'width' => '30%']) ?>
 
                 </div>
             </div>
@@ -132,7 +147,7 @@ $this->title = 'My Yii Application';
             <div class="container">
                 
                 <h1 class="text-center ">Noticias <strong>SENA</strong></h1>
-                <div class="owl-carousel">
+                <div class="owl-carousel owl-carousel-news">
                     <div class="owl-card">
                         <header class="header-card">
                             <?= Html::img('@web/images/120150202082049.jpg', ['class' => ''], ['alt' => 'News']) ?>
@@ -186,17 +201,21 @@ $this->title = 'My Yii Application';
                 <div class="container">
                     <h1 class="text-center">Encuestas <strong>SENA</strong></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ex fugiat est laborum commodi blanditiis et officiis qui fuga error quis eaque sed, praesentium alias amet vel at dicta mollitia rem aliquam, voluptas necessitatibus, temporibus sit nihil vero. Alias, provident!</p>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 1</span></a>
+                
+                        
+                    <div class="encuesta-card1">
+                        <div class="encuesta-inner">
+                            <?= Html::img('@web/images/survery-icon.svg', ['class' => '', 'alt' => 'survery-icon', 'width' => '60%']) ?>
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolore necessitatibus tenetur exercitationem esse, officiis ex sunt magnam adipisci unde velit tempore voluptas voluptates iusto enim, labore impedit. Assumenda fuga rem sapiente accusantium, culpa id, pariatur eum corporis temporibus quas doloremque voluptatibus? Maiores, accusantium incidunt dolor odit quasi nemo facere.</p> -->
                         </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 2</span></a>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 3</span></a>
-                        </div>
+                        <!-- <a href="" class=""><span>Link Encuesta 1</span></a> -->
                     </div>
+              
+                
+                    <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 2</span></a>
+                
+                    <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 3</span></a>
+                    
                     
                 </div>
         </section>
@@ -292,48 +311,4 @@ $this->title = 'My Yii Application';
             </section>
 
     </div> <!-- /body-content -->
-</div> <!-- /site-index -->
-
-
-    <!-- Login -->
-
-    <div class="login cd-primary-nav">
-        <i class="cd-nav-trigger fa fa-times trigger-times"></i>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    <div class="form">
-                        <?php $form = ActiveForm::begin([
-                            'id' => 'login-form',
-                            'layout' => 'horizontal',
-                            'fieldConfig' => [
-                                'template' => "{label}\n<div class=\"\">{input}</div>\n<div class=\"\">{error}</div>",
-                                'labelOptions' => ['class' => 'col-lg-1 control-label'],
-                            ],
-                        ]); ?>
-                            <div class="form-wrap">
-                                <div class="login-inputs">
-                                    <?= $form->field($model, 'email', ['template' => '{input}{beginLabel}Correo Electrónico{endLabel}<span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-16']) ?>
-                                    <?= $form->field($model, 'password', ['template' => '{input}{beginLabel}Contraseña{endLabel}<span class="focus-border"></span>'])->input('password', ['class' => 'form-control effect-16']) ?>
-                                    <?= $form->field($model, 'rememberMe')->checkbox([
-                                        'template' => "<div class=\"\">{input} {label}</div>\n<div class=\"\">{error}</div>",
-                                    ])->label('Recuérdame') ?>
-                                </div>
-                                <div class="2">
-                                    <?= Html::submitButton('Iniciar Sesión', ['class' => 'login-button', 'name' => 'login-button']) ?>
-                                </div>
-                            </div>
-                        <?php ActiveForm::end(); ?>
-                    </div>
-                </div>
-            </div>          
-        </div>
-    </div><!-- /login -->
-    <!-- Overlay -->
-    <div class="cd-overlay-nav">
-        <span></span>
-    </div>
-    <div class="cd-overlay-content">
-        <span></span>
-    </div>
-    
+</div> <!-- /site-index -->    

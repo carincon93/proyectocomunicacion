@@ -36,10 +36,6 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Inicio', 'url' => '/',
             ],
-            ['label' => 'Misión y Visión', 'url' => 'javascript:void(0)', 'options' => ['id' => 'go-mision'],
-            ],
-            ['label' => 'Ambientes', 'url' => 'javascript:void(0)','options' => ['class' => 'dropdown-toggle', 'id' => 'go-galeria']],
-            ['label' => 'Catálogo Información',  'url' => 'javascript:void(0)', 'options' => ['class' => 'dropdown', 'id' => 'go-formacion']],
             ['label' => 'Plan de Acción', 'url' => ['/site/table'],
             ],
             ['label' => 'Contáctanos',  
@@ -50,13 +46,13 @@ AppAsset::register($this);
                 ],
             ],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Iniciar Sesión', 'url' => 'javascript:void(0)', 'options' => ['class' => 'login-navbar cd-nav-trigger'],]
+                ['label' => 'Iniciar Sesión', 'url' => ['/site/login'], 'options' => ['class' => 'login-navbar cd-nav-trigger'],]
             ) : (
-                '<li>'
+                '<li class="login-navbar">'
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
+                    ['class' => 'logout-link']
                 )
                 . Html::endForm()
                 . '</li>'

@@ -98,7 +98,7 @@ $this->title = 'Contáctanos';
                 </div>
                 <div class="col-md-6">
                     <p class="">Línea Gratuita Nacional <span>01 8000 910 682</span></p>
-                    <p class="">Línea Bogotá, D.C. <span>(57 1) 404 94  94</span></p>
+                    <p class="">Línea Bogotá, D.C. <a href="tel:">(57 1) 404 94  94</a></p>
                 </div>
                 <p>Días hábiles de lunes a viernes de 7:00 a.m. - 7:00 p.m. y sábados de 8:00 a.m. - 1:00 p.m. en jornada continua.</p>
 
