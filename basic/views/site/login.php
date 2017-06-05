@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'labelOptions' => ['class' => 'col-lg-1 control-label'],
                             ],
                         ]); ?>
-                        <h3>Iniciar Sesión</h3>
+                        <h3 class="login-title">Iniciar Sesión</h3>
             
                         <?= $form->field($model, 'email', ['template' => '{input}{beginLabel}Correo Electrónico{endLabel}<span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-16']) ?>
                         <?= $form->field($model, 'password', ['template' => '{input}{beginLabel}Contraseña{endLabel}<span class="focus-border"></span>'])->input('password', ['class' => 'form-control effect-16']) ?>

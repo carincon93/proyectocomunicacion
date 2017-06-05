@@ -27,6 +27,7 @@ button {
   border: none;
 }
 .form-group {
+  margin-bottom: 2rem;
   position: relative;
 }
 .has-error .control-label,
@@ -265,17 +266,30 @@ a.desc:after {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, rgb(18, 245, 213) 20%, rgba(255,255,255,0) 80%);
+  background: linear-gradient(135deg, rgb(57, 105, 98) 0%, rgba(255,255,255,0) 80%);
   height: 100vh;
 }
-.owl-carousel-header {
+/*.overlay-hero {
+  background: linear-gradient(135deg, rgb(18, 245, 213) 0%, rgba(255,255,255,0) 80%);
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}*/
+/*.owl-carousel-header {
   z-index: -1;
 }
 .owl-header-content {
   height: 100vh;
+}*/
+.hero .container {
+  height: 100%;
 }
 .hero-img {
-  /*height: 100vh;*/
+  height: 100vh;
+/*  height: 100%;*/
   left: 0;
   object-fit: cover;
   position: fixed;
@@ -310,9 +324,9 @@ a.desc:after {
 }
 
 .big-plus-a {
+  bottom: 11rem;
   position: absolute;
-  right: 47rem;
-  bottom: 2rem;
+  right: 58rem;
   width: 66%;
 }
 .big-plus-b {
@@ -328,6 +342,7 @@ a.desc:after {
   /*background: linear-gradient(180deg, #f7f7f7 0%, #fff 80%);*/
   overflow: hidden;
   position: relative;
+  padding: 9rem 0;
 }
 .project-logos {
   display: -webkit-flex;
@@ -341,14 +356,30 @@ a.desc:after {
 .card-project {
   background-color: #fff;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1), 0px 30px 20px -10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #fc7323;
   padding: 0.5rem 2rem;
 }
 .card-project1, .card-project3 {
   background-color: #fff;
-  height: 20rem;
-  margin-top: 4rem;
+  height: 15rem;
 }
-.card-project1-border:hover {
+.card-project3 {
+  margin-top: 4rem;  
+}
+.card-project2 {
+  height: 34.05rem;
+}
+.objetivos-title {
+  color: #238276;
+  margin: 3rem 0;
+}
+.mision-title {
+  color: #238276;
+}
+.objetivos-title strong {
+  color: #fc7323;
+}
+/*.card-project1-border:hover {
   border-bottom: 1px solid #fc7323;
 }
 .card-project2-border:hover {
@@ -356,7 +387,7 @@ a.desc:after {
 }
 .card-project3-border:hover {
   border-bottom: 1px solid #fc7323;
-}
+}*/
 .lista-objetivos li {
   margin-bottom: 2rem; 
 }
@@ -690,6 +721,36 @@ a.desc:after {
   margin-top: 5rem;
 }
 
+
+
+.aside-social-networks {
+  position: fixed;
+  right: 0;
+  top: 32%;
+  z-index: 9999;
+}
+.aside-social-networks nav a {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+    align-items: center;
+  /*border: 1px solid;*/
+  border-radius: 0.56rem;
+  background-color: #f2f2f2;
+  color: #4e4e4e;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  height: 2.5rem;
+  margin-right: 1rem;
+  padding: 1.4rem;
+  transition: all 0.2s ease-in;
+  width: 2.5rem;
+}
+
             
 
 
@@ -780,6 +841,10 @@ th {
   color: #fff;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.login-title {
+  margin: 3rem 0 4rem;
 }
 .form-wrap {
   padding: 6rem;
@@ -876,3 +941,36 @@ th {
 
 
 /*PQRS*/
+
+
+
+/*Encuestas*/
+.encuestas {
+  background: linear-gradient(135deg, rgb(77, 134, 127) 0%, rgb(87, 224, 207) 100%);
+  color: #fff;
+}
+.elink {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: initial;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%; }
+  .elink:hover {
+    background-color: #238276;
+    color: #fff;
+    text-decoration: none; }
+    .elink:active { background-color: #238276; }
+
+    .btn-5:active {
+      background: transparent;
+      top: 0px; }
+      .btn-5:active:before {
+        color: #fff;
+      }
+      .icon-cart:before {
+        content: "Ir a la encuesta";
+        font-family: inherit;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+      }
