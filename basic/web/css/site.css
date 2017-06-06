@@ -175,16 +175,25 @@ a.desc:after {
   padding-bottom: 10px;
 }
 .navbar-inverse {
-  background-color: transparent;
+  background-color: #3a3a3a;
   border: none;
+  margin: 0;
+  border-radius: inherit;
   padding: 0.4rem;
-  padding-top: 2rem;
+  /*padding-top: 1rem;*/
   transition: all 0.2s ease-in;
-  position: absolute;
-  left: 0;
+  /*position: absolute;*/
+  /*left: 0;
   top: 0;
-  right: 0;
+  right: 0;*/
   z-index: 9999;
+}
+.navbar-header {
+  width: 12rem;
+}
+.navbar-brand {
+  height: inherit;
+  padding: 0;
 }
 .small-navbar {
   background-color: #fff;
@@ -193,6 +202,9 @@ a.desc:after {
 .small-navbar .navbar-nav > li > a {
   color: rgba(252, 114, 35, 0.61);
   /*padding-bottom: 0px;*/
+}
+.navbar-nav.navbar-right.nav {
+  margin-top: 0.5rem;
 }
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: transparent;
@@ -266,8 +278,8 @@ a.desc:after {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, rgb(57, 105, 98) 0%, rgba(255,255,255,0) 80%);
-  height: 100vh;
+  background-image: url(../images/HtmlCssBG.svg),linear-gradient(180deg,hsla(0,0%,100%,.25),hsla(0,0%,100%,0)),linear-gradient(180deg,#0ea59c,#238276);
+  height: 60vh;
 }
 /*.overlay-hero {
   background: linear-gradient(135deg, rgb(18, 245, 213) 0%, rgba(255,255,255,0) 80%);
@@ -342,7 +354,7 @@ a.desc:after {
   /*background: linear-gradient(180deg, #f7f7f7 0%, #fff 80%);*/
   overflow: hidden;
   position: relative;
-  padding: 9rem 0;
+  padding: 6rem 0;
 }
 .project-logos {
   display: -webkit-flex;
@@ -422,9 +434,9 @@ a.desc:after {
 }
 .plus-formacion-section {
   position: absolute;
-  background-image: linear-gradient(to right,  #FF9679, #FF8AEF 100%);
+  /*background-image: linear-gradient(to right,  #FF9679, #FF8AEF 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;        
+  -webkit-text-fill-color: transparent;    */
   bottom: -8rem;
   right: 4rem;
 }
@@ -847,6 +859,7 @@ th {
   margin: 3rem 0 4rem;
 }
 .form-wrap {
+  margin-top: 4rem;
   padding: 6rem;
 }
 #login-form {

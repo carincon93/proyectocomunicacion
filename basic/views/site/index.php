@@ -10,15 +10,15 @@ $this->title = 'My Yii Application';
 <header>
     <section class="hero">
 <!--         <div class="overlay-hero"></div> -->
-        <?= Html::img('@web/images/background.jpg', ['class' => 'hero-img'], ['alt' => 'Background header']) ?>
-        <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg>
+        <!-- <?= Html::img('@web/images/background.jpg', ['class' => 'hero-img'], ['alt' => 'Background header']) ?> -->
+        <!-- <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg> -->
     
         <div class="container">
-            <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg>
+            <!-- <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg> -->
             <div class="hero-content">
                 <div>
                     <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
-                    <?= Html::img('@web/images/asset-logos-svg.svg', ['class' => '', 'alt' => 'Sena Logo - Project Logo', 'width' => '45%']) ?>                    
+                                        
                 </div>
                 <div class="project-logos">
                 </div>

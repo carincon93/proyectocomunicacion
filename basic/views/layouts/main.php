@@ -28,14 +28,14 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        // 'brandLabel' => Html::img('/imgs/asset-logos-svg.svg'),
+        'brandLabel' => Html::img('@web/images/asset-logos-svg.svg', ['class' => '', 'alt' => '', 'width' => '62%']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-left'],
+        'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Inicio', 'url' => '/',
             ],

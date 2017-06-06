@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 	// 
 	$(window).on('scroll', function () {
-	    if ($(this).scrollTop() > 3370) {
+	    if ($(this).scrollTop() > 3000) {
 	        $('.aside-social-networks').addClass('animated fadeOut');
 			// $('.facebook-link').addClass('animated fadeIn delay');
 	    } else {
