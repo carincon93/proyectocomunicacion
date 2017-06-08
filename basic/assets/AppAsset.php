@@ -30,7 +30,7 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/velocity.min.js',
         'js/owl.carousel.min.js',
-        'js/jquery.gallerybox.js',
+        'js/jssor.slider-24.0.2.min.js',
         'js/site.js',
         
     ];

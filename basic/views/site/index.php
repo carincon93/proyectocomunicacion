@@ -294,99 +294,38 @@ $this->title = 'My Yii Application';
                 <h1 class="text-center">Galería <strong>SENA</strong></h1>
                 <div class="row">
                     <div class="col-md-12">
-                        <ul id="rig">
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/01.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Lorem Ipsum Dolor</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/02.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/03.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/04.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/05.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/06.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/07.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/08.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/09.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/10.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/11.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/12.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/13.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
-                                    <span class="rig-overlay"></span>
-                                    <span class="rig-text">Consectetur Adipiscing</span>
-                                </figure>
-                            </li>
-                        </ul>
+                        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('../images/galeria/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
+            <div>
+                <?= Html::img('@web/images/galeria/01.jpg', ['class' => 'image', 'alt' => '', 'data-u' => 'image']) ?>
+                <?= Html::img('@web/images/galeria/01-s99x66.jpg', ['class' => '', 'alt' => '', 'data-u' => 'thumb']) ?>
+            </div>
+            <div>
+                <?= Html::img('@web/images/galeria/02.jpg', ['class' => 'image', 'alt' => '', 'data-u' => 'image']) ?>
+                <?= Html::img('@web/images/galeria/02-s99x66.jpg', ['class' => '', 'alt' => '', 'data-u' => 'thumb']) ?>
+            </div>
+            <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+    </div>
+
                     </div>                
                 </div>
             </div>
