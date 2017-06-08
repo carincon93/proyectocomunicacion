@@ -25,15 +25,17 @@ AppAsset::register($this);
 <div class="wrap-contact">
 <?php
     NavBar::begin([
-        'brandLabel' => Html::img('@web/images/asset-logos-svg.svg', ['class' => 'redConocimientoLogo', 'alt' => 'red-conocimiento-logo']),
+        // 'brandLabel' => Html::img('/imgs/asset-logos-svg.svg'),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-left'],
         'items' => [
+            ['label' => 'Inicio', 'url' => '/',
+            ],
             ['label' => 'Plan de Acción', 'url' => ['/site/table'],
             ],
             ['label' => 'Contáctanos',  
@@ -44,7 +46,7 @@ AppAsset::register($this);
                 ],
             ],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Iniciar Sesión', 'url' => '/site/login', 'options' => ['class' => 'login-navbar'],]
+                ['label' => 'Iniciar Sesión', 'url' => ['/site/login'], 'options' => ['class' => 'login-navbar cd-nav-trigger'],]
             ) : (
                 '<li class="login-navbar">'
                 . Html::beginForm(['/site/logout'], 'post')

@@ -289,47 +289,95 @@ $this->title = 'My Yii Application';
 
         </section>
         <section class="galeria section">
-            <!-- <div class="galeria-background"></div> -->
-            <div class="container">
-                <h1 class="text-center">Galería <strong>SENA</strong></h1>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('../images/galeria/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
-            <div>
-                <?= Html::img('@web/images/galeria/01.jpg', ['class' => 'image', 'alt' => '', 'data-u' => 'image']) ?>
-                <?= Html::img('@web/images/galeria/01-s99x66.jpg', ['class' => '', 'alt' => '', 'data-u' => 'thumb']) ?>
-            </div>
-            <div>
-                <?= Html::img('@web/images/galeria/02.jpg', ['class' => 'image', 'alt' => '', 'data-u' => 'image']) ?>
-                <?= Html::img('@web/images/galeria/02-s99x66.jpg', ['class' => '', 'alt' => '', 'data-u' => 'thumb']) ?>
-            </div>
-            <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
-        </div>
-        <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
-            <!-- Thumbnail Item Skin Begin -->
-            <div data-u="slides" style="cursor: default;">
-                <div data-u="prototype" class="p">
-                    <div class="w">
-                        <div data-u="thumbnailtemplate" class="t"></div>
-                    </div>
-                    <div class="c"></div>
-                </div>
-            </div>
-            <!-- Thumbnail Item Skin End -->
-        </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
-    </div>
+                <div class="container">
+                    <h1 class="text-center">Galería <strong>SENA</strong></h1>
+                    <div class="row">
+                        <div class="col-md-12">
 
-                    </div>                
+                            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
+                                <!-- Loading Screen -->
+                                <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('images/galeria/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+                                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/01.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/01-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/02.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/02-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/03.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/03-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/04.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/04-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/05.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/05-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/06.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/06-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/07.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/07-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/08.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/08-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/09.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/09-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/10.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/10-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/11.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/11-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/12.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/12-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/13.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/13-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>
+                                    <div>
+                                        <?= Html::img('@web/images/galeria/14.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
+                                        <?= Html::img('@web/images/galeria/14-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
+                                    </div>                                    
+                                    <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
+                                </div>
+                                <!-- Thumbnail Navigator -->
+                                <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
+                                    <!-- Thumbnail Item Skin Begin -->
+                                    <div data-u="slides" style="cursor: default;">
+                                        <div data-u="prototype" class="p">
+                                            <div class="w">
+                                                <div data-u="thumbnailtemplate" class="t"></div>
+                                            </div>
+                                            <div class="c"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Thumbnail Item Skin End -->
+                                </div>
+                                <!-- Arrow Navigator -->
+                                <span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
+                                <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+                            </div>                      
+
+                        </div>                
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <div class="logos section"></div>
 
