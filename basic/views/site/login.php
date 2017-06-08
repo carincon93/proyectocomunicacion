@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <i class="cd-nav-trigger fa fa-times trigger-times"></i>
             <div class="row">
                 
-                <div class="col-md-6 col-md-offset-3 form-wrap">
+                <div class="col-md-8 col-md-offset-2 form-wrap">
                     <div class="form">
                         <!-- <p>Please fill out the following fields to login:</p> -->
                         <?php $form = ActiveForm::begin([

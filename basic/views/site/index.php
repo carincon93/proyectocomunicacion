@@ -17,13 +17,9 @@ $this->title = 'My Yii Application';
             <!-- <svg class="big-plus-a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.45 577.58"><title>big-plus</title><text transform="translate(129.83 474.39) rotate(-19.33)" style="opacity:0.2;font-size:429.3069763183594px;fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:12px;font-family:ZurichBT-Roman, Zurich BT">+</text></svg> -->
             <div class="hero-content">
                 <div>
-<<<<<<< HEAD
                     <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
-                    <p class="animated fadeInUp delay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto veritatis ducimus corrupti quaerat repudiandae nesciunt repellat sint earum magnam doloribus nam dolorum porro labore omnis fugit ea, iure provident! Nostrum doloremque odit distinctio aspernatur dolorem aliquam cumque beatae enim rerum amet ullam architecto sint, magni, delectus optio, consequatur eos!</p>                                        
-=======
-                    <h1 class="hero-title animated fadeInUp delay">Red de Conocimiento <br> Gestión de la <span class="hero-span">Producción</span></h1>
+                    <p class="animated fadeInUp delay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto veritatis ducimus corrupti quaerat repudiandae nesciunt repellat sint earum magnam doloribus nam dolorum porro labore omnis fugit ea, iure provident! Nostrum doloremque odit distinctio aspernatur dolorem aliquam cumque beatae enim rerum amet ullam architecto sint, magni, delectus optio, consequatur eos!</p>
                                         
->>>>>>> a4cb252a54cd83c607f2d2ae770927861350d4f5
                 </div>
                 <div class="project-logos">
                 </div>

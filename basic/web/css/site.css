@@ -784,7 +784,6 @@ th {
 }
 .form-wrap {
   margin-top: 4rem;
-  padding: 6rem;
 }
 #login-form {
   overflow: hidden;
@@ -976,42 +975,4 @@ th {
   .hero {
     height: 70vh;
   } 
-}
-@media (max-width: 550px) {
-  .hero-content {
-    height: 75%;
-    margin-top: 2.5rem;
-  }
-  #rig li {
-      width: 50%;
-  } 
-  .hero {
-    height: 90vh;
-  }  
-}
-@media (max-width: 1100px) {
-  .navbar-header {
-    float: left;
-  }
-  .navbar-collapse {
-    width: auto;
-    border-top: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-  .navbar-collapse.in {
-    overflow-y: visible;
-  }
-  .navbar-fixed-top .navbar-collapse,
-  .navbar-static-top .navbar-collapse,
-  .navbar-fixed-bottom .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
