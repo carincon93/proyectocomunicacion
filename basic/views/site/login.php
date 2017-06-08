@@ -14,8 +14,8 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <div class="login cd-primary-nav">
         <i class="cd-nav-trigger fa fa-times trigger-times"></i>
-        <div class="container">
             <div class="row">
+                
                 <div class="col-md-6 col-md-offset-3 form-wrap">
                     <div class="form">
                         <!-- <p>Please fill out the following fields to login:</p> -->
@@ -43,8 +43,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                 </div>
-            </div>          
-        </div>
+            </div>
+
     </div><!-- /login -->
     <!-- Overlay -->
     <div class="cd-overlay-nav">

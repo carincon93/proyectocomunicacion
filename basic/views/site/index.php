@@ -18,7 +18,7 @@ $this->title = 'My Yii Application';
             <div class="hero-content">
                 <div>
                     <h1 class="hero-title animated fadeInUp delay">Redes del conocimiento <span class="hero-span">SENA</span></h1>
-                                        
+                    <p class="animated fadeInUp delay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto veritatis ducimus corrupti quaerat repudiandae nesciunt repellat sint earum magnam doloribus nam dolorum porro labore omnis fugit ea, iure provident! Nostrum doloremque odit distinctio aspernatur dolorem aliquam cumque beatae enim rerum amet ullam architecto sint, magni, delectus optio, consequatur eos!</p>                                        
                 </div>
                 <div class="project-logos">
                 </div>
@@ -235,113 +235,97 @@ $this->title = 'My Yii Application';
         </section> -->
 
         <section class="encuestas section">
-                <div class="container">
+                <div class="container encuestas-wrap">
                     <h1 class="text-center">Encuestas <strong>SENA</strong></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ex fugiat est laborum commodi blanditiis et officiis qui fuga error quis eaque sed, praesentium alias amet vel at dicta mollitia rem aliquam, voluptas necessitatibus, temporibus sit nihil vero. Alias, provident!</p>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                    <!-- <div class="row">
+                        <div class="col-md-4">
                             <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 1</span></a>
                         </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4">
                             <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 2</span></a>
                         </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4">
                             <a href="" class="btn btne btn-5 btn-5b icon-cart elink"><span>Link Encuesta 3</span></a>
                         </div>
+                    </div> -->
+                    <div>
+                        <a href="" class="encuesta-card">
+                            <div class="icon-survery-content">
+                                <?= Html::img('@web/images/survery-icon.svg', ['class' => 'icon-survery', 'alt' => 'survery-icon']) ?>                            
+                            </div>
+                            <div>
+                                <h3 class="encuesta-title">Titulo de encuesta</h3>
+                                <p class="encuesta-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non rem neque assumenda ex expedita eveniet dolorem illo repellendus sit, odit dicta voluptate soluta, debitis aperiam.</p>                                
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="encuesta-card">
+                            <div class="icon-survery-content">
+                                <?= Html::img('@web/images/survery-icon.svg', ['class' => 'icon-survery', 'alt' => 'survery-icon']) ?>                            
+                            </div>
+                            <div>
+                                <h3 class="encuesta-title">Titulo de encuesta</h3>
+                                <p class="encuesta-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non rem neque assumenda ex expedita eveniet dolorem illo repellendus sit, odit dicta voluptate soluta, debitis aperiam.</p>                                
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="encuesta-card">
+                            <div class="icon-survery-content">
+                                <?= Html::img('@web/images/survery-icon.svg', ['class' => 'icon-survery', 'alt' => 'survery-icon']) ?>                            
+                            </div>
+                            <div>
+                                <h3 class="encuesta-title">Titulo de encuesta</h3>
+                                <p class="encuesta-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non rem neque assumenda ex expedita eveniet dolorem illo repellendus sit, odit dicta voluptate soluta, debitis aperiam.</p>                                
+                            </div>
+                        </a>
                     </div>
                     
                 </div>
+                <?= Html::img('@web/images/triangle-img.svg', ['class' => 'encuesta-triangle', 'alt' => '']) ?>                         
+
         </section>
         <section class="galeria section">
-                <div class="container">
-                    <h1 class="text-center">Galería <strong>SENA</strong></h1>
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
-                                <!-- Loading Screen -->
-                                <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('images/galeria/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
-                                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/01.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/01-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/02.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/02-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/03.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/03-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/04.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/04-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/05.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/05-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/06.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/06-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/07.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/07-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/08.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/08-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/09.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/09-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/10.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/10-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/11.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/11-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/12.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/12-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/13.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/13-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/galeria/14.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/galeria/14-s99x66.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>                                    
-                                    <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
-                                </div>
-                                <!-- Thumbnail Navigator -->
-                                <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
-                                    <!-- Thumbnail Item Skin Begin -->
-                                    <div data-u="slides" style="cursor: default;">
-                                        <div data-u="prototype" class="p">
-                                            <div class="w">
-                                                <div data-u="thumbnailtemplate" class="t"></div>
-                                            </div>
-                                            <div class="c"></div>
-                                        </div>
-                                    </div>
-                                    <!-- Thumbnail Item Skin End -->
-                                </div>
-                                <!-- Arrow Navigator -->
-                                <span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
-                                <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
-                            </div>                      
-
-                        </div>                
-                    </div>
+            <!-- <div class="galeria-background"></div> -->
+            <div class="container">
+                <h1 class="text-center">Galería <strong>SENA</strong></h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul id="rig">
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/01.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
+                                </figure>                                
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/02.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
+                                </figure>                                
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/03.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
+                                </figure>                                
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/04.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
+                                </figure>                                
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/05.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
+                                </figure>                                
+                            </li>
+                        </ul>
+                    </div>                
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <div class="logos section"></div>
 
     </div> <!-- /body-content -->
 </div> <!-- /site-index -->    

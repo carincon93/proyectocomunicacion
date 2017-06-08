@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('@web/images/asset-logos-svg.svg', ['class' => '', 'alt' => '', 'width' => '62%']),
+        'brandLabel' => Html::img('@web/images/asset-logos-svg.svg', ['class' => 'redConocimientoLogo', 'alt' => 'red-conocimiento-logo']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse',
@@ -37,8 +37,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Inicio', 'url' => '/',
-            ],
+            // ['label' => 'Inicio', 'url' => '/'],
             ['label' => 'Misión y Visión', 'url' => 'javascript:void(0)', 'options' => ['id' => 'go-mision'],
             ],
             ['label' => 'Ambientes', 'url' => 'javascript:void(0)','options' => ['class' => 'dropdown-toggle', 'id' => 'go-galeria']],

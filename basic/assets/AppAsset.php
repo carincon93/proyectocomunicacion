@@ -21,6 +21,7 @@ class AppAsset extends AssetBundle
         'css/owl.carousel.min.css',
         'css/owl.theme.default.min.css',
         'css/font-awesome.min.css',
+        'css/gallerybox.css',
         'css/component.css',
         'css/login-effect.css',
         'css/animate.css',
@@ -29,8 +30,8 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/velocity.min.js',
         'js/owl.carousel.min.js',
+        'js/jquery.gallerybox.js',
         'js/site.js',
-        'js/jssor.slider-24.0.2.min.js',
         
     ];
     public $depends = [
