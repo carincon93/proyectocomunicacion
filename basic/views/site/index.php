@@ -297,28 +297,94 @@ $this->title = 'My Yii Application';
                         <ul id="rig">
                             <li>
                                 <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/01.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
-                                </figure>                                
+                                    <?= Html::img('@web/images/galeria/01.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Lorem Ipsum Dolor</span>
+                                </figure>
                             </li>
                             <li>
                                 <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/02.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
-                                </figure>                                
+                                    <?= Html::img('@web/images/galeria/02.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
                             </li>
                             <li>
                                 <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/03.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
-                                </figure>                                
+                                    <?= Html::img('@web/images/galeria/03.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
                             </li>
                             <li>
                                 <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/04.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
-                                </figure>                                
+                                    <?= Html::img('@web/images/galeria/04.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
                             </li>
                             <li>
                                 <figure class="rig-cell">
-                                    <?= Html::img('@web/images/galeria/05.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => '']) ?>                            
-                                </figure>                                
+                                    <?= Html::img('@web/images/galeria/05.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/06.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/07.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/08.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/09.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/10.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/11.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/12.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="rig-cell">
+                                    <?= Html::img('@web/images/galeria/13.jpg', ['class' => 'rig-img thumbnail gallerybox', 'alt' => 'photo-gallery']) ?>
+                                    <span class="rig-overlay"></span>
+                                    <span class="rig-text">Consectetur Adipiscing</span>
+                                </figure>
                             </li>
                         </ul>
                     </div>                
