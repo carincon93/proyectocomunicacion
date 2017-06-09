@@ -168,7 +168,10 @@ a.desc:after {
     padding: 10px 15px;
   }
 }
-
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #a5ffb9;
+}
 .nav > li > form > button.logout:focus,
 .nav > li > form > button.logout:hover {
   text-decoration: none;
@@ -227,12 +230,12 @@ a.desc:after {
 .login-navbar {
   float: right !important;
 }
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  /* color: #fc7323; */
+/*.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fc7323; 
   background-color: transparent;
   border-bottom: 2px solid #fc7323;
-  /* border-radius: 3px; */
-}
+   border-radius: 3px;
+}*/
 .cd-nav-trigger > a:hover {
   color: #fc7323 !important;
 }
@@ -767,6 +770,9 @@ a.desc:after {
 
 
 /*Tabla*/
+div ~ table {
+  overflow-x: auto; 
+}
 .hero-table {
   background: linear-gradient(135deg, #00E9D9 0%, #BFFFC5 80%);
   height: 50vh;
@@ -1057,8 +1063,14 @@ th {
   }
 }
 @media (max-width: 768px) {
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fc7323;
+  }
   .navbar-inverse {
-    background-color: #4e4e4e;
+    background-color: #fff;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #4e4e4e;
   }
   .login-navbar {
     float: none !important;
