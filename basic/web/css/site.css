@@ -201,7 +201,9 @@ a.desc:after {
 }
 .navbar-brand {
   height: inherit;
-  padding: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .small-navbar {
   background-color: #fff;
@@ -234,10 +236,6 @@ a.desc:after {
 .cd-nav-trigger > a:hover {
   color: #fc7323 !important;
 }
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; // remove the gap so it doesn't close
-}
 .dropdown-menu > li > a {
   outline: none;
   padding: 8px 20px;
@@ -259,18 +257,6 @@ a.desc:after {
   border-radius: 3px;
   color: #fff !important;
 }
-.dropdown-menu:after {
-  content: '';
-  position: absolute;
-  border-color: transparent transparent #fff;
-  border-style: solid;
-  border-width: 0 10px 10px;
-  height: 0;
-  left: 70px;
-  top: -10px;
-  width: 0;
-  z-index: 3;
-}
 .section {
   overflow: hidden;
   padding: 4rem 0;
@@ -289,8 +275,8 @@ a.desc:after {
   width: 12rem;
 }
 .hero {
-  background-image: url(../images/network-img.svg),linear-gradient(90deg,hsla(0,0%,100%,.25),hsla(0,0%,100%,0)),linear-gradient(90deg,#fc7323,#ef8d24);
-  height: 60vh;
+  background-image: url(../images/network-img_animated.svg),linear-gradient(90deg,hsla(0,0%,100%,.25),hsla(0,0%,100%,0)),linear-gradient(90deg,#fc7323,#ef8d24);
+  height: 65vh;
 }
 /*.overlay-hero {
   background: linear-gradient(135deg, rgb(18, 245, 213) 0%, rgba(255,255,255,0) 80%);
@@ -327,6 +313,7 @@ a.desc:after {
 }
 .hero-content {
   align-items: center;
+  color: #fff;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -336,10 +323,12 @@ a.desc:after {
   position: relative;
   /*z-index: 10;*/
 }
-
+.hero-content div {
+  margin-top: 4rem;
+}
 .hero-title {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.5rem;
   width: 100%;
 }
 /*.hero-span {
@@ -393,7 +382,6 @@ a.desc:after {
   height: 34.05rem;
 }
 .objetivos-title {
-  color: #238276;
   margin: 3rem 0;
 }
 /*.mision-title {
@@ -518,7 +506,6 @@ a.desc:after {
         padding: 0.5rem;
       }*/
 
-/*Galeria*/
 /*Galeria*/
 /* jssor slider arrow navigator skin 05 css */
 /*
@@ -699,6 +686,7 @@ a.desc:after {
   display: -o-flex;
   display: flex;
   justify-content: space-around;
+  padding: 0;
 }
 
 
@@ -1033,10 +1021,33 @@ th {
         padding: 0.5rem;
       }*/
 
-
+/* Media Queries */
+@media(min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .dropdown-menu:after {
+    content: '';
+    position: absolute;
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    height: 0;
+    left: 70px;
+    top: -10px;
+    width: 0;
+    z-index: 3;
+  }
+}
+@media(max-width:1204px) {
+  #go-mision {
+    display: none;
+  }
+}
 @media(max-width:991px) {
   .navbar-header {
-    width: inherit;
+    display: none;
   }
   .redConocimientoLogo {
     width: 8rem;
@@ -1045,22 +1056,59 @@ th {
     height: 12rem;
   }
 }
-@media (max-width: 9000px) {
-  #rig li {
-      width: 25%;
-  }  
-}
 @media (max-width: 768px) {
+  .navbar-inverse {
+    background-color: #4e4e4e;
+  }
+  .login-navbar {
+    float: none !important;
+  }
+  .navbar-header {
+    border-bottom: 1px solid #fc7323;
+    display: block;
+    margin: 0 !important;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .dropdown.open {
+    background-color: #3e3e3e;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent;    
+  }
+  .navbar-collapse {
+    box-shadow: none;
+  }
   .aside-social-networks { 
     display: none; 
-  }
-  #rig li {
-      width: 33.33%;
   }
   .hero-title {
     font-size: 2.4rem;
   } 
   .hero {
     height: 70vh;
-  } 
+  }
+  .certificados {
+    margin-top: 2rem;
+  }
+}
+
+
+
+.carousel {
+  margin-top: 20px;
+}
+.item .thumb {
+  cursor: pointer;
+  float: left;
+  margin-right: 4px;
+  width: calc(33.33% - 4px);
+}
+.item .thumb img {
+  filter: grayscale(60%);
+  margin: 2px;
+  width: 100%;
+}
+.item img {
+  width: 100%;  
 }

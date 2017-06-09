@@ -12,7 +12,7 @@ $(document).ready(function() {
 		
 	// }
 
-
+	$('.carousel').carousel();
 	// Gallery Box
     $('.gallerybox').gallerybox();
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
 		autoplay: true,
 		loop: true,
 		dots: false,
-		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+		navText: ["<i class='glyphicon glyphicon-chevron-left'></i>", "<i class='glyphicon glyphicon-chevron-right'></i>"],
 		responsive: {
 			0: {
 				items: 1,
@@ -68,7 +68,7 @@ $(document).ready(function() {
 				nav: false
 			},
 			768: {
-				items: 3,
+				items: 2,
 				dots: true,
 				nav: false
 			},

@@ -289,10 +289,10 @@ $this->title = 'My Yii Application';
 
         </section>
         <section class="galeria section">
-                <div class="container">
-                    <h1 class="text-center">Galería <strong>SENA</strong></h1>
-                    <div class="row">
-                        <div class="col-md-12">
+            <div class="container">
+                <h1 class="text-center">Galería <strong>SENA</strong></h1>
+                <div class="row">
+                    <div class="col-md-12">
 
                             <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
                                 <!-- Loading Screen -->
@@ -372,14 +372,15 @@ $this->title = 'My Yii Application';
                                 <!-- Arrow Navigator -->
                                 <span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
                                 <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
-                            </div>                      
-
-                        </div>                
-                    </div>
+                            </div>
+                            
+                        
+                    </div>                                      
                 </div>
-            </section>
+            </div>
+        </section>
 
         <div class="logos section"></div>
 
     </div> <!-- /body-content -->
-</div> <!-- /site-index -->    
+</div> <!-- /site-index -->

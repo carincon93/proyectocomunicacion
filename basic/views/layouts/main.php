@@ -81,8 +81,8 @@ AppAsset::register($this);
     <div class="container">
         <div class="row">
             
-            <div class="col-md-7">
-                <div class="footer-info">
+            <div class="col-md-7 footer-info">
+                <div class="">
                     
                     <ul class="informacion"> 
                         <h4 > INFORMACIÓN </h4>
