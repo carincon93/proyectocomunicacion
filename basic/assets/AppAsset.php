@@ -19,21 +19,20 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/owl.carousel.min.css',
-        'css/owl.theme.default.min.css',
         'css/font-awesome.min.css',
-        'css/gallerybox.css',
-        'css/component.css',
-        'css/login-effect.css',
         'css/animate.css',
-        'css/site.css',
+        'css/gallerybox.css',
+        'css/site.css'
     ];
     public $js = [
-        'js/velocity.min.js',
-        'js/owl.carousel.min.js',
-        'js/jquery.gallerybox.js',
         'js/jssor.slider-24.0.2.min.js',
-        'js/site.js',
-        
+        'js/owl.carousel.min.js',
+        'js/owl.carousel2.thumbs.min.js',
+        'js/velocity.min.js',
+        'js/jquery.gallerybox.js',
+        'js/googlemaps.js',
+        'https://maps.googleapis.com/maps/api/js?key=AIzaSyACzvbJ4E9TUEi6FmtHuwn1EMKXLvGQtZw&callback=myMap',
+        'js/site.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

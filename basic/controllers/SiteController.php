@@ -5,9 +5,11 @@ namespace app\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
+use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use yii\helpers\Html;
 
 class SiteController extends Controller
 {
@@ -50,18 +52,7 @@ class SiteController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
-            'errorHandler' => [
-                'errorAction' => 'site/error',
-            ],
         ];
-    }
-
-    public function beforeAction($action)
-    {
-        if ($action->id == 'error')
-            $this->layout = 'base';
-
-        return parent::beforeAction($action);
     }
 
     /**
@@ -71,27 +62,19 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        // return $this->render('index');
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-        return $this->render('index', [
-            'model' => $model,
-        ]);
+        return $this->render('index');
     }
 
     /**
      * Login action.
      *
-     * @return string
+     * @return Response|string
      */
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-
         $this->layout = 'base';
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
@@ -105,7 +88,7 @@ class SiteController extends Controller
     /**
      * Logout action.
      *
-     * @return string
+     * @return Response
      */
     public function actionLogout()
     {
@@ -117,7 +100,7 @@ class SiteController extends Controller
     /**
      * Displays contact page.
      *
-     * @return string
+     * @return Response|string
      */
     public function actionContact()
     {
@@ -140,17 +123,14 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
-    }
-
-    public function actionTable()
-    {
         $this->layout = 'base';
-        return $this->render('table');
+        return $this->render('about');
     }
     public function actionPqrs()
     {
+        // $model = new PqrsForm();
         $this->layout = 'base';
         return $this->render('pqrs');
+        // return $this->render('pqrs', ['model' => $model]);
     }
 }

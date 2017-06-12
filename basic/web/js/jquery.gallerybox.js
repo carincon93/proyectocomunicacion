@@ -59,7 +59,7 @@
         });
 
         // Create scrollbuttons
-        $('<div class="left"><i class="fa fa-angle-left"></i></div><div class="right"><i class="fa fa-angle-right"></i></div>')
+        $('<div class="left">&lt;</div><div class="right">&gt;</div>')
           .hide()
           .delay('slow')
           .fadeIn()

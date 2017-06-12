@@ -2,9 +2,11 @@
 
 /* @var $this \yii\web\View */
 /* @var $content string */
+
+use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
@@ -14,6 +16,7 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -22,54 +25,53 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap-contact">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Html::img('@web/images/asset-logos-svg.svg', ['class' => 'redConocimientoLogo', 'alt' => 'red-conocimiento-logo']),
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Plan de Acción', 'url' => ['/site/table'],
-            ],
-            ['label' => 'Contáctanos',  
-            'url' => ['#'],
-            'items' => [
-                ['label' => 'Contáctenos', 'url' => ['/site/contact'], 'options' => ['class' => 'contactenos-link']],
-                ['label' => 'PQRS', 'url' => ['/site/pqrs'], 'options' => ['class' => 'pqrs-link']],
-                ],
-            ],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Iniciar Sesión', 'url' => '/site/login', 'options' => ['class' => 'login-navbar'],]
-            ) : (
-                '<li class="login-navbar">'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'logout-link']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
 
-        ],
-    ]);
-    NavBar::end();
-    ?>
-	<?php if (isset($this->blocks['block2'])): ?>
-        <?= $this->blocks['block2'] ?>
-    <?php endif; ?>
-    <?php if (isset($this->blocks['block-contact'])): ?>
-        <?= $this->blocks['block-contact'] ?>
-    <?php endif; ?>
-    <div class="container-fluid">
-        <?= $content ?>
+<?php
+NavBar::begin([
+    'brandLabel' => Html::img('@web/images/logoProyecto.svg', ['class' => 'nav-logo', 'alt' => 'Logo Red Conocimiento']),
+    'brandUrl' => Yii::$app->homeUrl,
+    'options' => [
+        'class' => 'navbar-default',
+    ],
+]);
+echo Nav::widget([
+    'options' => ['class' => 'navbar-nav navbar-right'],
+    'items' => [
+        ['label' => 'Inicio', 'url' => ['/site/index']],
+        // ['label' => 'About', 'url' => ['/site/about']],
+        ['label' => 'Plan de Acción', 'url' => ['/site/about']],
+        ['label' => 'Contáctenos', 'url' => ['/site/contact']],
+        ['label' => 'PQRS', 'url' => ['/site/pqrs']],
+        Yii::$app->user->isGuest ? (
+            ['label' => 'Iniciar Sesión', 'url' => ['/site/login']]
+        ) : (
+            '<li>'
+            . Html::beginForm(['/site/logout'], 'post')
+            . Html::submitButton(
+                'Logout (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>'
+        )
+    ],
+]);
+NavBar::end();
+?>
+<?php if (isset($this->blocks['jumbotron-contact'])): ?>
+    <?= $this->blocks['jumbotron-contact'] ?>
+<?php endif; ?>
+
+<?= $content ?>
+
+<!-- <footer class="footer">
+    <div class="container">
+        <p class="">&copy; Todos los derechos reservados <?= date('Y') ?></p>
     </div>
-</div>
+</footer> -->
+<a href="javascript:void(0)" class="back-to-top animated">
+    <i class="fa fa-angle-up"></i>
+</a>
 <?php $this->endBody() ?>
 </body>
 </html>
