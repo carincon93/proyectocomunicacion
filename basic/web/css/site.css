@@ -535,7 +535,7 @@ a.desc:after {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background: url('../images/galeria/a17.jpg') no-repeat;
+  background: url('../images/gallery/a17.jpg') no-repeat;
   overflow: hidden;
 }
 .jssora05l { 
@@ -599,7 +599,7 @@ a.desc:after {
       height: 62px;    
       border: #000 2px solid;    
       box-sizing: content-box;    
-      background: url('images/galeria/t01.png') -800px -800px no-repeat;    
+      background: url('../images/gallery/t01.png') -800px -800px no-repeat;    
       background: none;
     }
     .jssort01-99-66 .pav .c {    

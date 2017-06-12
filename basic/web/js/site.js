@@ -59,8 +59,8 @@ $(document).ready(function() {
         var scrollHeight = $(document).height();
         var scrollPosition = $(window).height() + $(window).scrollTop();
 
-        console.log(scrollHeight);
-        console.log(scrollPosition);
+        // console.log(scrollHeight);
+        // console.log(scrollPosition);
 
         if ((scrollHeight - scrollPosition) / scrollHeight > 0.12) {
             $('.back-to-top').addClass('show fadeOut');
