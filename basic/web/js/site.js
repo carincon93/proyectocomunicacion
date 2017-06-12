@@ -7,6 +7,7 @@ $(document).ready(function() {
         autoplay:true,
         autoplayTimeout:10000,
         autoplayHoverPause:true,
+        navText: ["<i class='glyphicon glyphicon-chevron-left'></i>", "<i class='glyphicon glyphicon-chevron-right'></i>"],
         nav: true,
         responsive: {
             0: {
@@ -29,7 +30,9 @@ $(document).ready(function() {
     
     // SmoothScroll
     var programasFormacion = $("#go-formacion"),
+        galeria = $("#go-galeria"),
         backToTop = $('.back-to-top');
+
     programasFormacion.on("click", function() {
       $(".programas-formacion").velocity("scroll", { 
         duration: 2000,
@@ -38,6 +41,12 @@ $(document).ready(function() {
     });
     backToTop.on("click", function() {
       $("body").velocity("scroll", { 
+        duration: 2000,
+        easing: "easeInBack"
+      });
+    });
+    galeria.on("click", function() {
+      $(".gallery-section").velocity("scroll", { 
         duration: 2000,
         easing: "easeInBack"
       });
@@ -63,9 +72,12 @@ $(document).ready(function() {
         // console.log(scrollPosition);
 
         if ((scrollHeight - scrollPosition) / scrollHeight > 0.12) {
+            $('.social-networks-right').removeClass('fadeOut').addClass('fadeIn');
             $('.back-to-top').addClass('show fadeOut');
         } else {
             $('.back-to-top').removeClass('show fadeOut').addClass('fadeIn');
+            $('.social-networks-right').addClass('animated fadeOut');
+
             // $('.footer-social-networks').fadeOut('slow/400/fast');
         }
     });

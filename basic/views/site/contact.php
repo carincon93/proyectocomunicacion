@@ -71,12 +71,53 @@ $this->title = 'Contact';
                 <?php ActiveForm::end(); ?>
 
             </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>
+                            Teléfonos Línea Ciudadano
+                        </p>
+                        <p>
+                            Teléfonos Línea Empresarial
+                        </p>
+                    </div>
+                    <div class="col-lg-8">
+                        
+                        <ul class="list-unstyled">
+                            <li>
+                                Línea Gratuita Nacional 01 8000 910 270                    
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                Línea Bogotá, D.C. (57 1) 592 55 55                    
+                            </li>
+                            <li>
+                                Línea Gratuita Nacional 01 8000 910 682                    
+                            </li>
+                            <li>
+                                Línea Bogotá, D.C. (57 1) 404 94 94                    
+                            </li>
+                        </ul>
+                    </div>
+                    <p style="padding-left: 1rem;  ">
+                        Días hábiles de lunes a viernes de 7:00 a.m. - 7:00 p.m. y sábados de 8:00 a.m. - 1:00 p.m. en jornada continua.
+                    </p>
+                    <div class="container-map">
+                        <div id="googleMap" style="height: 250px;"></div>        
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
         </div>
         <?php endif; ?>
 
 
     </div>    
-    <div class="container-map">
-        <div id="googleMap" style="height: 250px;"></div>        
-    </div>
+    
 </section>

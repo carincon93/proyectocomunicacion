@@ -28,7 +28,7 @@ AppAsset::register($this);
 
 <?php
 NavBar::begin([
-    'brandLabel' => Html::img('@web/images/logoProyecto.svg', ['class' => 'nav-logo', 'alt' => 'Logo Red Conocimiento']),
+    'brandLabel' => Html::img('@web/images/logoProyecto.svg', ['class' => 'redConocimientoLogo', 'alt' => 'Logo Red Conocimiento']),
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
         'class' => 'navbar-default',
@@ -116,6 +116,12 @@ NavBar::end();
         <a href="javascript:void(0)" class="back-to-top animated">
             <i class="fa fa-angle-up"></i>
         </a>
+        <nav class="footer-social-networks">
+            <a href="" data-toggle="tooltip" title="Facebook" class="facebook-link"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="" data-toggle="tooltip" title="Twitter" class="twitter-link"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="" data-toggle="tooltip" title="Instagram" class="instagram-link"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="" data-toggle="tooltip" title="Google +" class="google-plus-link"><i class="fa fa-google-plus fa-2x"></i></a>
+        </nav>  
         <p class="">&copy; Todos los derechos reservados <?= date('Y') ?></p>
 
     </div>

@@ -19,7 +19,7 @@ $this->title = 'My Yii Application';
 
             <!-- <p class="lead">You have successfully created your Yii-powered application.</p> -->
             <div class="jumbotron-anchors">
-                <a href="javascript:void(0)"  id="go-ambientes"><i class="fa fa-picture-o fa-2x"></i> Ir a la galería ambientes</a>
+                <a href="javascript:void(0)"  id="go-galeria"><i class="fa fa-picture-o fa-2x"></i> Ir a la galería ambientes</a>
                 <a href="javascript:void(0)" id="go-formacion"><i class="fa fa-list-alt fa-2x"></i> Ir al catálogo de información</a>
             </div>
 
@@ -52,7 +52,7 @@ $this->title = 'My Yii Application';
                     </div>
                     <div class="col-lg-7 text-justify">
                         <div class="objetivos-wrap lista-objetivos-section">
-                            <h2>Objetivos Estratégicos</h2>
+                            <h2>Objetivos <span style="color: #fc7323">Estratégicos</span></h2>
 
                             <ul class="text-justify">
                                 <li>Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.</li>

@@ -28,7 +28,7 @@ AppAsset::register($this);
 
 <?php
 NavBar::begin([
-    'brandLabel' => Html::img('@web/images/logoProyecto.svg', ['class' => 'nav-logo', 'alt' => 'Logo Red Conocimiento']),
+    'brandLabel' => Html::img('@web/images/logoProyecto.svg', ['class' => 'redConocimientoLogo', 'alt' => 'Logo Red Conocimiento']),
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
         'class' => 'navbar-default',

@@ -169,6 +169,7 @@ a.desc:after {
 }
 .jumbotron-index {
     background: url(../images/figure-red-jumbotron.svg), linear-gradient(45deg, #fc7323 0%,#FFC107 100%);
+    padding-top: 6rem; 
 }
 .jumbotron-anchors {
     margin-top: 2rem;
@@ -193,11 +194,12 @@ a.desc:after {
     padding: 4rem 0;
 }
 .objetivos-wrap {
-    box-shadow: 0px 7px 10px -5px rgba(0,0,0,0.2), 0px 7px 10px -5px rgba(255,255,255,0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1), 0px 30px 20px -10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #fc7323;
     /*height: 6rem;*/
     /*margin: 0 auto;*/
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     /*width: 20rem;*/
 }
 .lista-objetivos-section {
@@ -213,8 +215,37 @@ a.desc:after {
     margin-bottom: 1rem;
 }
 /*===== Noticias =====*/
+.noticias {
+    position: relative;
+}
 .caption-news {
     height: 14rem;
+}
+.noticias .owl-prev, .noticias .owl-next {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    line-height: 1.8;
+    text-align: center;
+}
+.noticias .owl-prev i, .noticias .owl-next i {
+    color: #fc7323;
+}
+.noticias .owl-prev {
+    position: absolute;
+    top: 28%;
+    left: -5rem;
+}
+.noticias .owl-next {
+    position: absolute;
+    top: 28%;
+    right: -5rem;
+}
+.noticias .thumbnail {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.04), 0px 40px 54px -10px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-bottom: 2px solid #fc7323;    
 }
 /*===== Programas Formación ======*/
 .programas-card {
@@ -237,7 +268,7 @@ a.desc:after {
 }
 /*===== Encuestas =====*/
 .encuestas-section, .programas-formacion {
-    background: -webkit-linear-gradient(358deg, rgb(107, 117, 212) 0%, rgba(107, 117, 212, 1) 31.26%, rgb(69, 102, 255) 72.49%, rgba(69, 102, 255, 1) 100%);
+    background: -webkit-linear-gradient(358deg, #238276 0%, #238276 31.26%, #2fc1af 72.49%, #2fc1af 100%);
     color: #fff;
     padding: 6rem 0;
     text-align: center;
@@ -249,7 +280,7 @@ a.desc:after {
     display: inline-block;
     padding: 3px 7px;
     line-height: 1;
-    color: #6b75d4;    
+    color: #2fc1af;    
     white-space: nowrap;
     vertical-align: middle;
     background-color: #fff;
@@ -342,18 +373,66 @@ a.desc:after {
     display: flex;
     justify-content: space-around;
 }
+.footer-social-networks {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+.footer-social-networks a {
+    align-items: center;
+    background-color: rgb(255, 128, 55);
+    color: rgb(254, 208, 181);
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    margin-right: 1rem;
+    width: 2.5rem;
+    border-radius: 0.56rem;
+    transition: all 0.2s ease-in;
+}
+.facebook-link:hover {
+  background-color: #E2EAFD;
+}
+.facebook-link:hover .fa-facebook {
+  color: #39579A;
+}
+.twitter-link:hover {
+  background-color: #E8F2FF;
+}
+.twitter-link:hover .fa-twitter {
+  color: #76A9EA;
+}
+.instagram-link:hover {
+  background-color: #ffd3f0;
+}
+.instagram-link:hover .fa-instagram {
+  color: #ce19b9;
+}
+.google-plus-link:hover {
+  background-color: #ff988b;
+}
+.google-plus-link:hover .fa-google-plus {
+  color: #dc4a38;
+}
+
 /*===== Plan de Acción */
 .table-plan-accion {
-    
 }
 .table-plan-accion, .table-plan-accion td {
-    border: 1px solid #DEDEDE;
+    border: 1px solid #2fc1af;
 }
 .table-plan-accion td {
     padding: 1rem;
 }
 .table-plan-accion thead tr th {
     text-align: center;
+    color: #2fc1af;
+    font-weight: normal;
 }
 .table-plan-accion thead tr:nth-child(1) th {
     padding: 4rem;
@@ -362,8 +441,9 @@ a.desc:after {
     padding: 1rem;
 }
 .table-plan-accion td:hover {
-    background: #ccc;
-    transform: scale(1.02);
+    background: #2fc1af;
+    color: #fff;
+    transform: scale(1.01);
 }
 /*===== Contact =====*/
 /*.container-map {
@@ -466,15 +546,23 @@ a.desc:after {
             color: #fff;
             background-color: #fdb95a;
         }
+        .navbar-default .btn-link:hover,
         .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
             color: #fff;
             text-decoration: underline;
         }
         .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+            height: inherit;
             margin-left: 0px;
             padding: 0;
         }
         .navbar-default .navbar-nav > li > a {
+            color: #fff;
+        }
+        .navbar-right {
+            padding: 1rem 0;
+        }
+        .navbar-default .btn-link {
             color: #fff;
         }
         .figure-encuestas {
@@ -500,6 +588,9 @@ a.desc:after {
             margin-right: 0.5rem;
             padding: 7%;
             text-align: center;
+        }
+        .redConocimientoLogo {
+            width: 12rem
         }
 }
 
