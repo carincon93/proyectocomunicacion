@@ -3,69 +3,88 @@
 namespace app\models;
 
 use Yii;
-use yii\base\Model;
 
 /**
- * ContactForm is the model behind the contact form.
+ * This is the model class for table "pqrsform".
+ *
+ * @property integer $id
+ * @property string $nombre
+ * @property string $email
+ * @property string $tipoDocumento
+ * @property string $numeroDocumento
+ * @property integer $teleNumero
+ * @property string $celNumero
+ * @property integer $id_departamento
+ * @property integer $id_municipio
+ * @property string $direccion
+ * @property string $tipoPeticion
+ * @property string $autorizacion
+ * @property string $mensaje
+ *
+ * @property Departamentos $idDepartamento
+ * @property Municipios $idMunicipio
  */
-class PqrsForm extends Model
+class PqrsForm extends \yii\db\ActiveRecord
 {
-    public $name;
-    public $email;
-    public $tipoDoc;
-    public $numDoc;
-    public $numTel;
-    public $numCelular;
-    public $departamento;
-    public $municipio;
-    public $direccion;
-    public $tipoPeticion;
-    public $tipoRespuesta;
-    public $mensaje;
-    public $verifyCode;
-
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return 'pqrsform';
+    }
 
     /**
-     * @return array the validation rules.
+     * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['name', 'email', 'tipoDoc', 'numDoc', 'numTel', 'numCelular', 'departamento', 'municipio', 'direccion', 'tipoPeticion', 'tipoRespuesta', 'mensaje'], 'required'],
-            // email has to be a valid email address
-            ['email', 'email'],
-            // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
+            [['nombre', 'email', 'tipoDocumento', 'numeroDocumento', 'teleNumero', 'celNumero', 'id_departamento', 'id_municipio', 'direccion', 'tipoPeticion', 'autorizacion', 'mensaje'], 'required'],
+            [['numeroDocumento', 'teleNumero', 'celNumero', 'id_departamento', 'id_municipio'], 'integer'],
+            [['nombre', 'email', 'direccion'], 'string', 'max' => 64],
+            [['tipoDocumento', 'tipoPeticion', 'autorizacion'], 'string', 'max' => 32],
+            [['mensaje'], 'string', 'max' => 255],
+            [['id_departamento'], 'exist', 'skipOnError' => true, 'targetClass' => Departamentos::className(), 'targetAttribute' => ['id_departamento' => 'id_departamento']],
+            [['id_municipio'], 'exist', 'skipOnError' => true, 'targetClass' => Municipios::className(), 'targetAttribute' => ['id_municipio' => 'id_municipio']],
         ];
     }
 
     /**
-     * @return array customized attribute labels
+     * @inheritdoc
      */
     public function attributeLabels()
     {
         return [
-            'verifyCode' => 'Verification Code',
+            'id' => 'ID',
+            'nombre' => 'Nombre',
+            'email' => 'Email',
+            'tipoDocumento' => 'Tipo Documento',
+            'numeroDocumento' => 'Numero Documento',
+            'teleNumero' => 'Tele Numero',
+            'celNumero' => 'Cel Numero',
+            'id_departamento' => 'Id Departamento',
+            'id_municipio' => 'Id Municipio',
+            'direccion' => 'Direccion',
+            'tipoPeticion' => 'Tipo Peticion',
+            'autorizacion' => 'Autorizacion',
+            'mensaje' => 'Mensaje',
         ];
     }
 
     /**
-     * Sends an email to the specified email address using the information collected by this model.
-     * @param string $email the target email address
-     * @return bool whether the model passes validation
+     * @return \yii\db\ActiveQuery
      */
-    public function contact($email)
+    public function getIdDepartamento()
     {
-        if ($this->validate()) {
-            Yii::$app->mailer->compose()
-                ->setTo($email)
-                ->setFrom([$this->email => $this->name])
-                ->setSubject($this->subject)
-                ->setTextBody($this->body)
-                ->send();
+        return $this->hasOne(Departamentos::className(), ['id_departamento' => 'id_departamento']);
+    }
 
-            return true;
-        }
-        return false;
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getIdMunicipio()
+    {
+        return $this->hasOne(Municipios::className(), ['id_municipio' => 'id_municipio']);
     }
 }

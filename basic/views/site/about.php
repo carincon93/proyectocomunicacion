@@ -7,8 +7,8 @@ use yii\helpers\Html;
 $this->title = 'About';
 // $this->params['breadcrumbs'][] = $this->title;
 ?>
-<?php $this->beginBlock('jumbotron-contact'); ?>
-<header class="jumbotron contact">
+<?php $this->beginBlock('jumbotron-pages'); ?>
+<header class="jumbotron pages">
     <div class="container">
 
         <h1 class="text-center">Plan de Acción</h1>

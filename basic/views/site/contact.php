@@ -11,7 +11,7 @@ use yii\captcha\Captcha;
 $this->title = 'Contact';
 // $this->params['breadcrumbs'][] = $this->title;
 ?>
-<?php $this->beginBlock('jumbotron-contact'); ?>
+<?php $this->beginBlock('jumbotron-pages'); ?>
 <header class="jumbotron contact">
     <div class="container">
 
@@ -121,3 +121,11 @@ $this->title = 'Contact';
     </div>    
     
 </section>
+
+
+<?php 
+    $this->registerJsFile(
+        '@web/js/googlemaps.js',
+        ['depends' => [\yii\web\JqueryAsset::className()]]
+    );
+?>

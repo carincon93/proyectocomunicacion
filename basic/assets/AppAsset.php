@@ -25,12 +25,12 @@ class AppAsset extends AssetBundle
         'css/site.css'
     ];
     public $js = [
-        'js/jssor.slider-24.0.2.min.js',
+        // 'js/jssor.slider-24.0.2.min.js',
         'js/owl.carousel.min.js',
         'js/owl.carousel2.thumbs.min.js',
         'js/velocity.min.js',
         'js/jquery.gallerybox.js',
-        'js/googlemaps.js',
+        // 'js/googlemaps.js',
         'https://maps.googleapis.com/maps/api/js?key=AIzaSyACzvbJ4E9TUEi6FmtHuwn1EMKXLvGQtZw&callback=myMap',
         'js/site.js'
     ];

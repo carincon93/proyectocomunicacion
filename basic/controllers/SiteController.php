@@ -9,7 +9,11 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\PqrsForm;
+use app\models\DepartamentosSearch;
+use app\models\Municipios;
 use yii\helpers\Html;
+use yii\helpers\Json;
 
 class SiteController extends Controller
 {
@@ -75,7 +79,7 @@ class SiteController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-        $this->layout = 'base';
+        // $this->layout = 'base';
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
@@ -104,7 +108,7 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        $this->layout = 'base';
+        // $this->layout = 'base';
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
@@ -123,14 +127,37 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        $this->layout = 'base';
+        // $this->layout = 'base';
         return $this->render('about');
     }
+
+
     public function actionPqrs()
     {
-        // $model = new PqrsForm();
-        $this->layout = 'base';
-        return $this->render('pqrs');
-        // return $this->render('pqrs', ['model' => $model]);
+        $model = new PqrsForm();
+        $searchModel = new DepartamentosSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        if ($model->load(Yii::$app->request->post())) {
+
+            if ($model->validate()) {
+                // form inputs are valid, do something here
+                return;
+            }
+        }
+        return $this->render('pqrs', [
+            'model' => $model,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+    public function actionGetmunicipio($dselectId)
+    {
+        $this->layout = false;
+        $municipios = Municipios::find()->where(['id_departamento' => $dselectId])->orderBy('nombre', 'ASC')->all();
+
+        return $this->render('ajax', [
+            'municipios' => $municipios,
+        ]);
     }
 }
