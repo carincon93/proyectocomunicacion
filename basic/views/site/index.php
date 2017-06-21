@@ -149,9 +149,11 @@ $this->title = 'My Yii Application';
                             <h3>Técnicos</h3>
                             <div class="listas-programas-container">
                                 <ul class="listas-programas">
-                                    <li>Seguridad ocupacional.</li>
-                                    <li>Alistamiento y operación de maquinaria para la producción industrial.</li>
-                                    <li>Procesos de manufactura.</li>
+                                    <?php foreach ($pformacion as $dataFormacion): ?>
+                                        <?php if ($dataFormacion['tipoFormacion'] == 'Técnico'): ?>
+                                            <li><?= $dataFormacion['nombrePrograma'] ?></li>                                            
+                                        <?php endif ?>                                        
+                                    <?php endforeach ?>
                                 </ul>                                
                             </div>
                         </div>                        
@@ -164,10 +166,11 @@ $this->title = 'My Yii Application';
                             <h3>Tecnólogos</h3>
                             <div class="listas-programas-container">
                                 <ul class="listas-programas">
-                                    <li>Gestión integrada de la calidad, medio ambiente, seguridad y salud ocupacional.</li>
-                                    <li>Gestión de la producción industrial.</li>
-                                    <li>Gestión de recursos en plantas de producción.</li>
-                                    <li>Salud ocupacional.</li>
+                                    <?php foreach ($pformacion as $dataFormacion): ?>
+                                        <?php if ($dataFormacion['tipoFormacion'] == 'Tecnólogo'): ?>
+                                            <li><?= $dataFormacion['nombrePrograma'] ?></li>
+                                        <?php endif ?>
+                                    <?php endforeach ?>
                                 </ul>                                
                             </div>                            
                         </div>                        
@@ -180,8 +183,11 @@ $this->title = 'My Yii Application';
                             <h3>Especialización Tecnológica</h3>
                             <div class="listas-programas-container">
                                 <ul class="listas-programas">
-                                    <li>Gestión en laboratorios de ensayo y calibración - Norma ISO/IEC 17025.</li>
-                                    <li>Supervisión de buenas prácticas de manufactura.</li>
+                                    <?php foreach ($pformacion as $dataFormacion): ?>
+                                        <?php if ($dataFormacion['tipoFormacion'] == 'Tecnólogo'): ?>
+                                            <li><?= $dataFormacion['nombrePrograma'] ?></li>
+                                        <?php endif ?>
+                                    <?php endforeach ?>
                                 </ul>                                
                             </div>
                         </div>                        

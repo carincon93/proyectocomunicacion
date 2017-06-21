@@ -4,13 +4,13 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\models\PqrsForm */
+/* @var $model app\models\ProgramasFormacion */
 
-$this->title = 'Create Pqrs Form';
-$this->params['breadcrumbs'][] = ['label' => 'Pqrs Forms', 'url' => ['index']];
+$this->title = 'Create Programas Formacion';
+$this->params['breadcrumbs'][] = ['label' => 'Programas Formacions', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="pqrs-form-create">
+<div class="programas-formacion-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

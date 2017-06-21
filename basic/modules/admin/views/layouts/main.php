@@ -4,10 +4,9 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -24,20 +23,22 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<?php if (isset($this->blocks['jumbotron-contact'])): ?>
-    <?= $this->blocks['jumbotron-contact'] ?>
-<?php endif; ?>
 
-<?= $content ?>
 
-<!-- <footer class="footer">
-    <div class="container">
-        <p class="">&copy; Todos los derechos reservados <?= date('Y') ?></p>
-    </div>
-</footer> -->
-<a href="javascript:void(0)" class="back-to-top animated">
-    <i class="fa fa-angle-up"></i>
-</a>
+<aside class="dashboard-menu">
+    <header></header>
+    <nav>
+        <ul class="list-unstyled">
+            <li>
+                <?= Html::a('Programas de formación', Url::to(['programasformacion/index'])) ?>
+            </li>
+        </ul>
+    </nav>
+</aside>
+<div class="programas-formacion-index">
+	<?= $content ?>	
+</div>
+
 <?php $this->endBody() ?>
 </body>
 </html>

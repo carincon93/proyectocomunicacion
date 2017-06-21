@@ -12,8 +12,9 @@ use app\models\ContactForm;
 use app\models\PqrsForm;
 use app\models\DepartamentosSearch;
 use app\models\Municipios;
+use app\models\ProgramasFormacion;
 use yii\helpers\Html;
-use yii\helpers\Json;
+
 
 class SiteController extends Controller
 {
@@ -66,7 +67,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $pformacion = ProgramasFormacion::find()->all();
+        return $this->render('index', [
+            'pformacion' => $pformacion,
+        ]);
     }
 
     /**
@@ -79,10 +83,12 @@ class SiteController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
+        $this->layout = 'base';
         // $this->layout = 'base';
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            // return $this->goBack();
+            return $this->redirect('/admin');
         }
         return $this->render('login', [
             'model' => $model,

@@ -469,21 +469,45 @@ a.desc:after {
 }
 /*===== Login =====*/
 .site-login {
-    background: #f2f2f2;
+    background: #EFEDE3 url(../images/red-sena-pattern.png) repeat 0 0;
     height: 100vh;
-    padding: 5rem 0;
+    padding: 15vh 0;
 }
-.form-wrap {
+.form-container {
+    padding: 0 5rem; 
+    /*background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
+}
+.form-header {
+    margin-bottom: 5rem;
+}
+.login-button {
+    border-radius: 0;
+    float: right;
+}
+.redConocimientoLogo-login {
+    margin-top: 5rem;
+    width: 12rem;
+}
+ {
+    position: absolute;
+    top: -2px;
+    font-size: 1.7rem !important;
+}
+/*.form-wrap {
     padding: 0px 11rem;
 }
-.form-wrap .form-container {
-    background: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+.form-wrap .form-inner {
     padding: 5rem 3rem;
 }
 #loginform-rememberme {
     margin-right: 1rem;
-}
+}*/
+
+
+
+
 
 
 .back-to-top {
@@ -722,3 +746,32 @@ a.desc:after {
       width /**/: 99px;    
       height /**/: 66px;
     }
+
+
+
+
+
+
+/*===== Dashboard ======
+========================*/
+.dashboard-menu { 
+    display: none;
+}
+@media (min-width: 768px) {
+    .dashboard-menu {
+        background: #f7f7f7;
+        display: block;
+        height: 100%;
+        left: 0;
+        padding: 2rem;
+        position: fixed;
+        top: 0;
+        width: 18rem;
+    }    
+    .programas-formacion-index {        
+        margin: auto;
+        padding-left: 18rem;
+        /*width: 1270px;*/
+        width: 90%;
+    }
+}
