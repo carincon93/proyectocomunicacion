@@ -7,6 +7,8 @@ $this->title = 'My Yii Application';
 
 
     <header class="jumbotron jumbotron-index">
+        <?= Html::img('@web/images/plus-figure.svg', ['class' => 'figure-plus-section']) ?>
+
         <nav class="social-networks-right">
             <a href="" class="facebook-link"><i class="fa fa-facebook fa-2x"></i></a>
             <a href="" class="twitter-link"><i class="fa fa-twitter fa-2x"></i></a>
@@ -15,21 +17,60 @@ $this->title = 'My Yii Application';
         </nav>
         <div class="container">
 
-            <h1>Red de Conocimiento <br>Gestión de la Producción</h1>
-
-            <!-- <p class="lead">You have successfully created your Yii-powered application.</p> -->
-            <div class="jumbotron-anchors">
-                <a href="javascript:void(0)"  id="go-galeria"><i class="fa fa-picture-o fa-2x"></i> Ir a la galería ambientes</a>
-                <a href="javascript:void(0)" id="go-formacion"><i class="fa fa-list-alt fa-2x"></i> Ir al catálogo de información</a>
+            <h1 class="text-center jumbotron-title" style="margin-top: 5rem;">Red de Conocimiento <br>Gestión de la Producción</h1>
+            <div class="mouse center-block">
+                <span class="scroll-figure"></span>
             </div>
 
+            <!-- <p class="lead">You have successfully created your Yii-powered application.</p> -->
+            <!-- <div class="jumbotron-anchors">
+                <a href="javascript:void(0)"  id="go-galeria"><i class="fa fa-picture-o fa-2x"></i> Ir a la galería ambientes</a>
+                <a href="javascript:void(0)" id="go-formacion"><i class="fa fa-list-alt fa-2x"></i> Ir al catálogo de información</a>
+            </div> -->
+            <div class="info" style="margin-top: 20rem;">
+                
+                <div class="row">
+                    <div class="col-lg-10 col-md-offset-1">
+                        <div class="block-center" style="margin-bottom: 8rem;">
+                            <h1 class="text-center" style="color: #f99e26; margin-bottom: 3rem; background: #fff; width: 30rem; margin: auto; font-size: 2.5rem; padding: 0.5rem;">Misión</h1>
+
+                            <p class="text-center" style="color: #fff; font-size: 1rem; margin-top: 3rem;">Articula la respuesta institucional en las áreas temáticas de gestión de operaciones industriales, 
+                               propendiendo por el logro de estándares internacionales de productividad, garantizando calidad y pertinencia 
+                               de la formación profesional.</p>
+
+                        </div>
+                        <div class="block-center" style="margin-bottom: 8rem;">
+                            <h1 class="text-center" style="color: #f99e26; margin-bottom: 3rem; background: #fff; width: 30rem; margin: auto; font-size: 2.5rem; padding: 0.5rem;">Visión</h1>
+
+                            <p class="text-center" style="color: #fff; font-size: 1rem; margin-top: 3rem;">Para el año 2020 la Red de Conocimiento de Gestión de la Producción será referente a nivel nacional y en el 
+                            Sena, en la actualización de diseños curriculares, nuevos programas de formación, capacitación, transferencia 
+                            tecnológica, innovación y modernización de ambientes. Para el beneficio de la población colombiana y el sector 
+                            productivo.</p>
+
+                        </div>
+                        <div class="block-center" style="margin-bottom: 8rem;">
+                            <h1 class="text-center" style="color: #f99e26; margin-bottom: 3rem; background: #fff; width: 30rem; margin: auto; font-size: 2.5rem; padding: 0.5rem;">Objetivos Estratégicos</h1>
+
+                            <ul class="text-justify" style="color: #fff; margin-top: 3rem;">
+                                <li>Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.</li>
+                                <li>Fortalecer el relacionamiento con el sector productivo y gubernamental para diseño e implementación de políticas, estrategias y programas que dinamicen la competitividad y productividad empresarial.</li>
+                                <li>Establecer alianzas a nivel internacional para fortalecer las capacidades del talento humano de la Red.</li>
+                                <li>Desarrollar actividades que permitan definir las líneas temáticas de los semilleros de investigación para incursionar en la estrategia Sennova y el sector externo, apoyando los centros asociados a la red.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <div class="body-content">
 
-        <section class="objetivos-section">
+        <!-- <section class="objetivos-section">
             <div class="container">
+                
+
                 <div class="row">
                     <div class="col-lg-5 text-justify">
                         <div class="objetivos-wrap">
@@ -64,26 +105,10 @@ $this->title = 'My Yii Application';
                     </div>
 
                 </div>
-                <!-- <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <div class="objetivos-wrap">
-                            <h2>Objetivos Estratégicos</h2>
-
-                            <ul class="text-justify">
-                                <li>Estandarizar los elementos necesarios cambiantes, perfil de instructores, materiales y diseños que garanticen la calidad de la Formación Profesional Integral.</li>
-                                <li>Fortalecer el relacionamiento con el sector productivo y gubernamental para diseño e implementación de políticas, estrategias y programas que dinamicen la competitividad y productividad empresarial.</li>
-                                <li>Establecer alianzas a nivel internacional para fortalecer las capacidades del talento humano de la Red.</li>
-                                <li>Desarrollar actividades que permitan definir las líneas temáticas de los semilleros de investigación para incursionar en la estrategia Sennova y el sector externo, apoyando los centros asociados a la red.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-            
             </div>
-        </section>
+        </section> -->
         <section class="noticias">
             <div class="container">
-                <hr>
                 <h2 class="text-center section-title">Noticias de la <strong>Red</strong></h2>
                 <p class="text-center encuestas-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe sit numquam, facere excepturi pariatur 
                 esse nostrum, at architecto. Rem, quod molestias. Doloribus nulla animi itaque suscipit, ipsa minima iusto quaerat 
@@ -148,7 +173,7 @@ $this->title = 'My Yii Application';
                             </div>
                             <h3>Técnicos</h3>
                             <div class="listas-programas-container">
-                                <ul class="listas-programas">
+                                <ul class="listas-programas list-unstyled">
                                     <?php foreach ($pformacion as $dataFormacion): ?>
                                         <?php if ($dataFormacion['tipoFormacion'] == 'Técnico'): ?>
                                             <li><?= $dataFormacion['nombrePrograma'] ?></li>                                            
@@ -165,7 +190,7 @@ $this->title = 'My Yii Application';
                             </div>
                             <h3>Tecnólogos</h3>
                             <div class="listas-programas-container">
-                                <ul class="listas-programas">
+                                <ul class="listas-programas list-unstyled">
                                     <?php foreach ($pformacion as $dataFormacion): ?>
                                         <?php if ($dataFormacion['tipoFormacion'] == 'Tecnólogo'): ?>
                                             <li><?= $dataFormacion['nombrePrograma'] ?></li>
@@ -182,7 +207,7 @@ $this->title = 'My Yii Application';
                             </div>
                             <h3>Especialización Tecnológica</h3>
                             <div class="listas-programas-container">
-                                <ul class="listas-programas">
+                                <ul class="listas-programas list-unstyled">
                                     <?php foreach ($pformacion as $dataFormacion): ?>
                                         <?php if ($dataFormacion['tipoFormacion'] == 'Tecnólogo'): ?>
                                             <li><?= $dataFormacion['nombrePrograma'] ?></li>
@@ -194,135 +219,32 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
             </div>
-            <?= Html::img('@web/images/plus-figure.svg', ['class' => 'figure-encuestas']) ?>
         </section>
         <section class="encuestas-section">
             <div class="container">
                 <h2 class="text-center section-title">Encuestas</h2>
                 <p class="text-center encuestas-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe sit numquam, facere excepturi pariatur 
                 esse nostrum, at architecto. Rem, quod molestias. Doloribus nulla animi itaque suscipit, ipsa minima iusto quaerat 
-                quis odit enim maxime velit iure quidem.</p>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="encuesta-card">
-                            <h4 class="text-center">Título de encuesta</h4>
+                quis odit enim maxime velit iure quidem.</p>                
+                    
+                <div class="encuesta-card">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h3 class="text-center">Título de encuesta</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint natus repellendus doloribus fugit architecto inventore 
                             quibusdam commodi cum, facere, quisquam. Adipisci optio maxime iure dolore.</p>
-                            <a href="" class="survery-link">Ir a la encuesta</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="encuesta-card">
-                            <h4 class="text-center">Título de encuesta</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint natus repellendus doloribus fugit architecto inventore 
-                            quibusdam commodi cum, facere, quisquam. Adipisci optio maxime iure dolore.</p>
-                            <a href="" class="survery-link">Ir a la encuesta</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="encuesta-card">
-                            <h4 class="text-center">Título de encuesta</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint natus repellendus doloribus fugit architecto inventore 
-                            quibusdam commodi cum, facere, quisquam. Adipisci optio maxime iure dolore.</p>
-                            <a href="" class="survery-link">Ir a la encuesta</a>
+                            <a href="https://goo.gl/forms/WkC2sucoJIRgocsg1" class="survery-link">Ir a la encuesta</a>                            
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
 
         <section class="gallery-section">
             <div class="container">
-                    <h1 class="text-center section-title">Galería <strong>SENA</strong></h1>
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
-                                <!-- Loading Screen -->
-                                <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('images/gallery/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
-                                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/01.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/01.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/02.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/02.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/03.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/03.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/04.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/04.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/05.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/05.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/06.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/06.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/07.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/07.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/08.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/08.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/09.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/09.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/10.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/10.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/11.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/11.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/12.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/12.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/13.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/13.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>
-                                    <div>
-                                        <?= Html::img('@web/images/gallery/14.jpg', ['data-u' => 'image', 'alt' => 'photo-gallery']) ?>
-                                        <?= Html::img('@web/images/gallery/14.jpg', ['data-u' => 'thumb', 'alt' => 'thumb-gallery']) ?>
-                                    </div>                                    
-                                    <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
-                                </div>
-                                <!-- Thumbnail Navigator -->
-                                <div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
-                                    <!-- Thumbnail Item Skin Begin -->
-                                    <div data-u="slides" style="cursor: default;">
-                                        <div data-u="prototype" class="p">
-                                            <div class="w">
-                                                <div data-u="thumbnailtemplate" class="t"></div>
-                                            </div>
-                                            <div class="c"></div>
-                                        </div>
-                                    </div>
-                                    <!-- Thumbnail Item Skin End -->
-                                </div>
-                                <!-- Arrow Navigator -->
-                                <span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
-                                <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
-                            </div>
-                                
-                            
-                    </div>
-                </div>
-            </div>
-                     
+            </div>                    
            
         </section>
 
@@ -376,8 +298,6 @@ $this->title = 'My Yii Application';
                              
                 </div>
             </div>
-
-            <hr>
             <a href="javascript:void(0)" class="back-to-top animated">
                 <i class="fa fa-angle-up"></i>
             </a>
@@ -387,7 +307,7 @@ $this->title = 'My Yii Application';
                 <a href="" data-toggle="tooltip" title="Instagram" class="instagram-link"><i class="fa fa-instagram fa-2x"></i></a>
                 <a href="" data-toggle="tooltip" title="Google +" class="google-plus-link"><i class="fa fa-google-plus fa-2x"></i></a>
             </nav>  
-            <p class="">&copy; Todos los derechos reservados <?= date('Y') ?></p>
+            <!-- <p class="">&copy; Todos los derechos reservados <?= date('Y') ?></p> -->
 
         </div>
     </footer>

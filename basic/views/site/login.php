@@ -30,7 +30,7 @@ $this->title = 'Login';
                             ],
                         ]); ?>
 
-                            <?= $form->field($model, 'email', ['template' => '{input}{beginLabel}Correo Electrónico{endLabel}<span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-16', 'autofocus' => true]) ?>
+                            <?= $form->field($model, 'email', ['template' => '{input}<label class="control-label" for="loginform-email">Correo Electrónico</label><span class="focus-border"></span>'])->input('email', ['class' => 'form-control effect-16', 'autofocus' => true]) ?>
 
                             <?= $form->field($model, 'password', ['template' => '{input}{beginLabel}Contraseña{endLabel}<span class="focus-border"></span>'])->input('password', ['class' => 'form-control effect-16']) ?>
 

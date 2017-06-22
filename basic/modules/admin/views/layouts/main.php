@@ -30,7 +30,10 @@ AppAsset::register($this);
     <nav>
         <ul class="list-unstyled">
             <li>
-                <?= Html::a('Programas de formación', Url::to(['programasformacion/index'])) ?>
+                <?= Html::a('Logout', ['site/logout'], ['data' => ['method' => 'post']]) ?>
+            </li>
+            <li>
+                <?= Html::a('Programas de formación', ['programasformacion/index']) ?>
             </li>
         </ul>
     </nav>

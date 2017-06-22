@@ -60,6 +60,18 @@ $(document).ready(function() {
         easing: "easeInBack"
       });
     });
+
+
+    $('.scroll-figure').velocity(
+    {
+        translateY: "3px",
+        opacity: 0.2,
+        duration: 2000
+    },
+    {
+        loop: true        
+    }
+    );
     // Labels Effects 
     $(window).load(function(){
         $(".form-group .effect-16").val("");
